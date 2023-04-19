@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dataadapter_0',['DataAdapter',['../class_data_adapter_1_1_data_adapter.html',1,'DataAdapter']]],
+  ['data_5ffor_5ftile_0',['data_for_tile',['../class_c_c_s_level_editing_data_1_1_c_c_s_level_editing_data.html#ad747b7bbef49be637dacf715f1438121',1,'CCSLevelEditingData::CCSLevelEditingData']]],
   ['deregisterphysicscomponent_1',['DeregisterPhysicsComponent',['../class_physics2_d.html#a8b662d7c0c14bcae553e8607b3c7ca7c',1,'Physics2D']]],
   ['detail_5f_5fgetdata_2',['Detail__GetData',['../classmaster_1_1_detail_frame.html#a44d1b266ed201df95a665c078ad58792',1,'master::DetailFrame']]],
   ['detail_5f_5fonaddcomponent_3',['Detail__OnAddComponent',['../classmaster_1_1_detail_frame.html#a491c1914b60bfaa399f28099bff059f5',1,'master::DetailFrame']]],

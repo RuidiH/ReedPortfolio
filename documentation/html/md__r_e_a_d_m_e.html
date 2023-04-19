@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CrispyCrunchShark: Add any additional notes here</title>
+<title>CCS: Add any additional notes here</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CrispyCrunchShark
+   <div id="projectname">CCS
    </div>
   </td>
  </tr>
@@ -72,17 +72,36 @@ $(function() {
   <div class="headertitle"><div class="title">Add any additional notes here </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><em>your additional notes, or things TA's and instructors should know</em></p>
+<div class="textblock"><ol type="1">
+<li>Not all the UI features are fully implemented, currently only changes on level editing will reflect on the game.</li>
+</ol>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Game/Engine Publicity</h1>
-<p><b>Project Website</b>: <em>please edit the project website with a link here</em> (See part 3)</p>
+<p><b>Project Website</b>: <a href="https://ruidih.github.io/">Link to Website</a></p>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Compilation Instructions</h1>
-<p><em>Please edit if there are any special build instructions beyond running <code>python3 build.py</code></em></p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<p><b>Currently the engine only supports compiling and running in MSYS2 MinGW x64 terminal on Windows</b></p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Compile Engine Library</h2>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Installing dependencies:</h3>
+<p>Open MSYS2 MinGW 64 terminal and run the following command: </p><div class="fragment"><div class="line">pacman -S mingw-w64-x86_64-python</div>
+<div class="line">pacman -S mingw-w64-x86_64-pybind11</div>
+<div class="line">pacman -S mingw-w64-x86_64-gcc</div>
+<div class="line">pacman -S mingw-w64-x86_64-SDL2</div>
+<div class="line">pacman -S mingw-w64-x86_64-SDL2_mixer</div>
+<div class="line">pacman -S mingw-w64-x86_64-box2d</div>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md7"></a>
+Compiling C++ Engine and build python model</h3>
+<p>Run the following command inside /Engine directory: </p><div class="fragment"><div class="line">sh mingw64build.sh</div>
+</div><!-- fragment --><p> The script will build the engine module <code>mygameengine.pyd</code> into /Engine/py directory.</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Running the engine</h3>
+<p>Inside /Engine/py directory, run the following command to start up the engine UI: </p><div class="fragment"><div class="line">python master.py</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
 Project Hieararchy</h1>
 <p>In the future, other engineers may take on our project, so we have to keep it organized given the following requirements below. Forming some good organization habits now will help us later on when our project grows as well. These are the required files you should have</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 ./Engine Directory Organization</h2>
 <ul>
 <li>Docs<ul>
@@ -118,7 +137,6 @@ Project Hieararchy</h1>
 </ul>
 </li>
 </ul>
-<p><b>Note: For the final project you may add additional directories if you like, for example for your game which demonstrates your engine works.</b></p>
 <p><b>Additional Notes:</b></p>
 <ol type="1">
 <li>src and include should only contain ".cpp" or ".hpp" files. Why? It makes it very fast to do a backup of your game project as one example. Secondly, binary files that are generated often clutter up directories. I should not see any binaries in your repository, you may use a '.gitignore' file to help prevent this automatically. </li>

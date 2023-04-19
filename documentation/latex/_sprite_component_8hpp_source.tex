@@ -35,64 +35,61 @@
 \DoxyCodeLine{00041\ \ \ \}}
 \DoxyCodeLine{00042\ }
 \DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a50f264f871579397b2993003aaa2b25d}{Init}}(\textcolor{keywordtype}{int}\ srcW,\ \textcolor{keywordtype}{int}\ srcH,\ \textcolor{keywordtype}{int}\ destW,\ \textcolor{keywordtype}{int}\ destH);}
-\DoxyCodeLine{00052\ \ \ \textcolor{comment}{//\ void\ SetPosition(int\ x,\ int\ y);}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}{Update}}();}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}{Render}}(SDL\_Renderer\ *ren,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ offset)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_ada97aaff9d63e1929ea746068f3a13cb}{LoadImage}}(std::string\ filePath,\ std::uintptr\_t\ renA);}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a9a6e366065cfd520d85e4fe10bbe3e6b}{GetDestX}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.x;\ \};}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00083\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a3f5b6f36db4a4b063d4c536253740a02}{GetDestY}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.y;\ \};}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a94e48ec177ffbbb67b69bbe71c61bd9a}{GetDestW}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.w;\ \};}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00095\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_acfedcd07dc33d31e33dfe6b2eac8b24e}{GetDestH}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.h;\ \};}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00104\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_aec83fe3a23ee7cb84a7e703aa7049ea6}{SetRect}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)}
-\DoxyCodeLine{00105\ \ \ \{}
-\DoxyCodeLine{00106\ \ \ \ \ mDest.x\ =\ x;}
-\DoxyCodeLine{00107\ \ \ \ \ mDest.y\ =\ y;}
-\DoxyCodeLine{00108\ \ \ \ \ mDest.w\ =\ w;}
-\DoxyCodeLine{00109\ \ \ \ \ mDest.h\ =\ h;}
-\DoxyCodeLine{00110\ \ \ \}}
-\DoxyCodeLine{00111\ }
-\DoxyCodeLine{00116\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a4bf06ecb178204d21aa31830539dd54a}{SetActionState}}(Action\ action);}
-\DoxyCodeLine{00117\ \ \ \textcolor{comment}{//\ start\ index\ from\ 0}}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00125\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a9bfe5e6d9390e0b166d614c10bb8b0ac}{SetIdleAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00133\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a6fdddf8efc688cbc5585f48968b6fc33}{SetRunAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
-\DoxyCodeLine{00134\ }
-\DoxyCodeLine{00141\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_afae7b425239ccd524f598db4a44053cb}{SetJumpAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
-\DoxyCodeLine{00142\ }
-\DoxyCodeLine{00147\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a579398d1cfd23621569439fc33884b1c}{BuildPhysics}}(\textcolor{keywordtype}{float}\ density);}
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ \ \ \textcolor{comment}{//\ Action\ GetActionState()\{return\ mActionState;\};}}
-\DoxyCodeLine{00150\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_component}{CameraComponent}};}
-\DoxyCodeLine{00151\ }
-\DoxyCodeLine{00152\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00158\ \ \ \textcolor{keywordtype}{void}\ RunAnimation(std::vector<int>\ animIndexes);}
-\DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00161\ \ \ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ mPrevPosition;}
-\DoxyCodeLine{00162\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ mCurrentFrame\{0\};}
-\DoxyCodeLine{00163\ \ \ \textcolor{comment}{//\ unsigned\ int\ mLastFrame\{7\};}}
-\DoxyCodeLine{00164\ \ \ \textcolor{comment}{//\ An\ SDL\ Surface\ contains\ pixel\ data\ to\ draw\ an\ image}}
-\DoxyCodeLine{00165\ \ \ SDL\_Surface\ *mSpriteSheet\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00166\ \ \ SDL\_Texture\ *mTexture\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00167\ \ \ SDL\_Rect\ mSrc;}
-\DoxyCodeLine{00168\ \ \ SDL\_Rect\ mDest;}
-\DoxyCodeLine{00169\ \ \ Action\ mActionState\ =\ Action::IDLE;}
-\DoxyCodeLine{00170\ \ \ \textcolor{keywordtype}{int}\ mSpriteSheetCol\ =\ 0;}
-\DoxyCodeLine{00171\ \ \ \textcolor{keywordtype}{int}\ mSpriteSheetRow\ =\ 0;}
-\DoxyCodeLine{00172\ \ \ std::vector<int>\ mIdleAnimIndexes\ =\ std::vector<int>();}
-\DoxyCodeLine{00173\ \ \ std::vector<int>\ mRunAnimIndexes\ =\ std::vector<int>();}
-\DoxyCodeLine{00174\ \ \ std::vector<int>\ mJumpAnimIndexes\ =\ std::vector<int>();}
-\DoxyCodeLine{00175\ \};}
-\DoxyCodeLine{00176\ }
-\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}{Update}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}{Render}}(SDL\_Renderer\ *ren,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ offset)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_ada97aaff9d63e1929ea746068f3a13cb}{LoadImage}}(std::string\ filePath,\ std::uintptr\_t\ renA);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a9a6e366065cfd520d85e4fe10bbe3e6b}{GetDestX}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.x;\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a3f5b6f36db4a4b063d4c536253740a02}{GetDestY}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.y;\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_a94e48ec177ffbbb67b69bbe71c61bd9a}{GetDestW}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.w;\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_component_acfedcd07dc33d31e33dfe6b2eac8b24e}{GetDestH}}()\ \{\ \textcolor{keywordflow}{return}\ mDest.h;\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_aec83fe3a23ee7cb84a7e703aa7049ea6}{SetRect}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)}
+\DoxyCodeLine{00104\ \ \ \{}
+\DoxyCodeLine{00105\ \ \ \ \ mDest.x\ =\ x;}
+\DoxyCodeLine{00106\ \ \ \ \ mDest.y\ =\ y;}
+\DoxyCodeLine{00107\ \ \ \ \ mDest.w\ =\ w;}
+\DoxyCodeLine{00108\ \ \ \ \ mDest.h\ =\ h;}
+\DoxyCodeLine{00109\ \ \ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a4bf06ecb178204d21aa31830539dd54a}{SetActionState}}(Action\ action);}
+\DoxyCodeLine{00116\ \ \ \textcolor{comment}{//\ start\ index\ from\ 0}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00124\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a9bfe5e6d9390e0b166d614c10bb8b0ac}{SetIdleAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00132\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a6fdddf8efc688cbc5585f48968b6fc33}{SetRunAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00140\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_afae7b425239ccd524f598db4a44053cb}{SetJumpAnimationIndexes}}(\textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \textcolor{comment}{//\ Action\ GetActionState()\{return\ mActionState;\};}}
+\DoxyCodeLine{00143\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_component}{CameraComponent}};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00151\ \ \ \textcolor{keywordtype}{void}\ RunAnimation(std::vector<int>\ animIndexes);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00154\ \ \ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ mPrevPosition;}
+\DoxyCodeLine{00155\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ mCurrentFrame\{0\};}
+\DoxyCodeLine{00156\ \ \ \textcolor{comment}{//\ unsigned\ int\ mLastFrame\{7\};}}
+\DoxyCodeLine{00157\ \ \ \textcolor{comment}{//\ An\ SDL\ Surface\ contains\ pixel\ data\ to\ draw\ an\ image}}
+\DoxyCodeLine{00158\ \ \ SDL\_Surface\ *mSpriteSheet\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00159\ \ \ SDL\_Texture\ *mTexture\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00160\ \ \ SDL\_Rect\ mSrc;}
+\DoxyCodeLine{00161\ \ \ SDL\_Rect\ mDest;}
+\DoxyCodeLine{00162\ \ \ Action\ mActionState\ =\ Action::IDLE;}
+\DoxyCodeLine{00163\ \ \ \textcolor{keywordtype}{int}\ mSpriteSheetCol\ =\ 0;}
+\DoxyCodeLine{00164\ \ \ \textcolor{keywordtype}{int}\ mSpriteSheetRow\ =\ 0;}
+\DoxyCodeLine{00165\ \ \ std::vector<int>\ mIdleAnimIndexes\ =\ std::vector<int>();}
+\DoxyCodeLine{00166\ \ \ std::vector<int>\ mRunAnimIndexes\ =\ std::vector<int>();}
+\DoxyCodeLine{00167\ \ \ std::vector<int>\ mJumpAnimIndexes\ =\ std::vector<int>();}
+\DoxyCodeLine{00168\ \};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

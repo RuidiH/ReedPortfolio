@@ -6,14 +6,10 @@ var searchData=
   ['sdlgraphicsprogram_3',['SDLGraphicsProgram',['../class_s_d_l_graphics_program.html',1,'']]],
   ['selectfilecommand_4',['SelectFileCommand',['../class_select_file_command_1_1_select_file_command.html',1,'SelectFileCommand']]],
   ['sfxaudiojob_5',['SFXAudioJob',['../class_s_f_x_audio_job.html',1,'']]],
-  ['showanimationeditorcommand_6',['ShowAnimationEditorCommand',['../class_show_animation_editor_command_1_1_show_animation_editor_command.html',1,'ShowAnimationEditorCommand']]],
-  ['showleveleditorcommand_7',['ShowLevelEditorCommand',['../class_show_level_editor_command_1_1_show_level_editor_command.html',1,'ShowLevelEditorCommand']]],
-  ['showspriteeditorcommand_8',['ShowSpriteEditorCommand',['../class_show_sprit_editor_command_1_1_show_sprite_editor_command.html',1,'ShowSpritEditorCommand']]],
-  ['sprite_5fspritesheet_5fframe_9',['Sprite_SpriteSheet_Frame',['../classmaster_1_1_sprite___sprite_sheet___frame.html',1,'master']]],
-  ['sprite_5ftile_5fframe_10',['Sprite_Tile_Frame',['../classmaster_1_1_sprite___tile___frame.html',1,'master']]],
-  ['spritecomponent_11',['SpriteComponent',['../class_sprite_component.html',1,'']]],
-  ['spriteeditingcanvas_12',['SpriteEditingCanvas',['../class_sprite_editing_canvas_1_1_sprite_editing_canvas.html',1,'SpriteEditingCanvas']]],
-  ['spriteeditor_13',['SpriteEditor',['../class_sprite_editor_1_1_sprite_editor.html',1,'SpriteEditor']]],
-  ['spriteframe_14',['SpriteFrame',['../classmaster_1_1_sprite_frame.html',1,'master']]],
-  ['spritesheetframe_15',['SpriteSheetFrame',['../class_level_editor_1_1_sprite_sheet_frame.html',1,'LevelEditor']]]
+  ['sprite_5fspritesheet_5fframe_6',['Sprite_SpriteSheet_Frame',['../classmaster_1_1_sprite___sprite_sheet___frame.html',1,'master']]],
+  ['sprite_5ftile_5fframe_7',['Sprite_Tile_Frame',['../classmaster_1_1_sprite___tile___frame.html',1,'master']]],
+  ['spritecomponent_8',['SpriteComponent',['../class_sprite_component.html',1,'']]],
+  ['spriteeditingcanvas_9',['SpriteEditingCanvas',['../class_sprite_editing_canvas_1_1_sprite_editing_canvas.html',1,'SpriteEditingCanvas']]],
+  ['spriteframe_10',['SpriteFrame',['../classmaster_1_1_sprite_frame.html',1,'master']]],
+  ['spritesheetframe_11',['SpriteSheetFrame',['../class_sprite_sheet_frame_1_1_sprite_sheet_frame.html',1,'SpriteSheetFrame']]]
 ];

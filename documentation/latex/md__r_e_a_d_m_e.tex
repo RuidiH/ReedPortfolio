@@ -1,7 +1,34 @@
-{\itshape your additional notes, or things TA\textquotesingle{}s and instructors should know}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Game/\+Engine Publicity}\label{md__r_e_a_d_m_e_autotoc_md3}
-{\bfseries{Project Website}}\+: {\itshape please edit the project website with a link here} (See part 3)\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Compilation Instructions}\label{md__r_e_a_d_m_e_autotoc_md4}
-{\itshape Please edit if there are any special build instructions beyond running {\ttfamily python3 build.\+py}}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{Project Hieararchy}\label{md__r_e_a_d_m_e_autotoc_md5}
-In the future, other engineers may take on our project, so we have to keep it organized given the following requirements below. Forming some good organization habits now will help us later on when our project grows as well. These are the required files you should have\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{./\+Engine Directory Organization}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyEnumerate}
+\item Not all the UI features are fully implemented, currently only changes on level editing will reflect on the game.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Game/\+Engine Publicity}\label{md__r_e_a_d_m_e_autotoc_md3}
+{\bfseries{Project Website}}\+: \href{https://ruidih.github.io/}{\texttt{ Link to Website}}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Compilation Instructions}\label{md__r_e_a_d_m_e_autotoc_md4}
+{\bfseries{Currently the engine only supports compiling and running in MSYS2 Min\+GW x64 terminal on Windows}}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Compile Engine Library}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{Installing dependencies\+:}\label{md__r_e_a_d_m_e_autotoc_md6}
+Open MSYS2 Min\+GW 64 terminal and run the following command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/python}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/pybind11}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/gcc}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2\_mixer}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/box2d}
+
+\end{DoxyCode}
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Compiling C++ Engine and build python model}\label{md__r_e_a_d_m_e_autotoc_md7}
+Run the following command inside /\+Engine directory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sh\ mingw64build.sh}
+
+\end{DoxyCode}
+ The script will build the engine module {\ttfamily mygameengine.\+pyd} into /\+Engine/py directory.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Running the engine}\label{md__r_e_a_d_m_e_autotoc_md8}
+Inside /\+Engine/py directory, run the following command to start up the engine UI\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ master.py}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{Project Hieararchy}\label{md__r_e_a_d_m_e_autotoc_md9}
+In the future, other engineers may take on our project, so we have to keep it organized given the following requirements below. Forming some good organization habits now will help us later on when our project grows as well. These are the required files you should have\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{./\+Engine Directory Organization}\label{md__r_e_a_d_m_e_autotoc_md10}
 
 \begin{DoxyItemize}
 \item Docs
@@ -37,8 +64,6 @@ In the future, other engineers may take on our project, so we have to keep it or
 \item Code that you have not written if any.
 \end{DoxyItemize}
 \end{DoxyItemize}
-
-{\bfseries{Note\+: For the final project you may add additional directories if you like, for example for your game which demonstrates your engine works.}}
 
 {\bfseries{Additional Notes\+:}}
 
