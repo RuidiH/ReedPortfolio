@@ -1,77 +1,89 @@
 \hypertarget{classmaster_1_1_u_i_controller}{}\doxysection{master.\+UIController Class Reference}
 \label{classmaster_1_1_u_i_controller}\index{master.UIController@{master.UIController}}
+
+
+UIController responsible for managing all frames.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a539e622d8c686b10a1ae77ed2a9459d8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, width, height)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_ab71369653315ef5ba745b4180b225dfe}{Turn\+On\+RTE}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize UI controller with designated width and height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_ab71369653315ef5ba745b4180b225dfe}\label{classmaster_1_1_u_i_controller_ab71369653315ef5ba745b4180b225dfe}} 
+def {\bfseries Turn\+On\+RTE} (self)
+\begin{DoxyCompactList}\small\item\em Turns on real time editing. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a2ea9ac1828f566daff2cdc216700a66e}{Set\+Up\+Engine}} (self)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a77f26b2a88ad114e23b87721b88d6918}{save\+Level\+Data}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Set up \mbox{\hyperlink{class_engine}{Engine}} and create corresponding objects and components. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a77f26b2a88ad114e23b87721b88d6918}\label{classmaster_1_1_u_i_controller_a77f26b2a88ad114e23b87721b88d6918}} 
+def {\bfseries save\+Level\+Data} (self)
+\begin{DoxyCompactList}\small\item\em Testing use function for saving a simple level. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_af3ee1413de15a346161bfefef8883fc5}{Run}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Run the UI. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a75464e1db6de194efc002d8aafaa935e}\label{classmaster_1_1_u_i_controller_a75464e1db6de194efc002d8aafaa935e}} 
 def {\bfseries Update} (self)
 \item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a195a7d98a8ee7877003d56ad1a774915}{Save\+File}} (self)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_ae157a1c6b2190dfb01b26a9fee720211}{Load\+File}} (self)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a63a869d54976468e41fe87d0c71042a7}{Play\+Game}} (self)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a853e1234d5dfd471b1fd6f95d0ccbf3b}{Display\+Frame}} (self, width, height, img)
-\item 
-def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a6cb20309d9e9211f25bd34725ed06272}{Detail\+Frame}} (self, width, height)
-\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a195a7d98a8ee7877003d56ad1a774915}\label{classmaster_1_1_u_i_controller_a195a7d98a8ee7877003d56ad1a774915}} 
+def {\bfseries Save\+File} (self)
+\begin{DoxyCompactList}\small\item\em Saving information to local files. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_ae157a1c6b2190dfb01b26a9fee720211}\label{classmaster_1_1_u_i_controller_ae157a1c6b2190dfb01b26a9fee720211}} 
+def {\bfseries Load\+File} (self)
+\begin{DoxyCompactList}\small\item\em Load information into the UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a63a869d54976468e41fe87d0c71042a7}\label{classmaster_1_1_u_i_controller_a63a869d54976468e41fe87d0c71042a7}} 
+def {\bfseries Play\+Game} (self)
+\begin{DoxyCompactList}\small\item\em Testing option for running a hardcodded game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a853e1234d5dfd471b1fd6f95d0ccbf3b}\label{classmaster_1_1_u_i_controller_a853e1234d5dfd471b1fd6f95d0ccbf3b}} 
+def {\bfseries Display\+Frame} (self, width, height, img)
+\begin{DoxyCompactList}\small\item\em Display frame shows objects create in the UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6cb20309d9e9211f25bd34725ed06272}\label{classmaster_1_1_u_i_controller_a6cb20309d9e9211f25bd34725ed06272}} 
+def {\bfseries Detail\+Frame} (self, width, height)
+\begin{DoxyCompactList}\small\item\em Detail frame will show transform, camera, physics, and controller component option. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_aaaa7cb6b7e474afcd6869bf352bb48f1}{Editor\+Frame}} (self, width, height)
-\item 
+\begin{DoxyCompactList}\small\item\em Editor frame locates on the middle. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_aa69402454742fe878cc4f98a6af2c541}{Sprite\+Frame}} (self, width, height)
-\item 
+\begin{DoxyCompactList}\small\item\em Sprite frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a069aa2ab9bfb84c3342f2e38143f6580}{Add\+Empty\+Game\+Object}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Add empty game object to UI controller. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_aae071d248ffe2f7a9e90daefdc526b20}{Controller\+\_\+\+\_\+\+On\+Object\+Label\+Clicked}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for when object label in the display frame received mouse click. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_ae90840cb9366d4f9b558140ff438cc80}{Controller\+\_\+\+\_\+\+On\+Update\+Object\+Name}} (self, id, name)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for when object name is update in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a6cb5e78f30fa69d65d4a6d09ef962297}{Controller\+\_\+\+\_\+\+On\+Update\+Transform}} (self, id, x, y)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updated transform in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a0caa6d4b0bd315a8016e72206e375461}{Controller\+\_\+\+\_\+\+On\+Update\+Physics}} (self, id, d)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating physics in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_ab1fa8f7d447b510b24de2a217e08f2b2}{Controller\+\_\+\+\_\+\+On\+Update\+Controller}} (self, id, speed, jump\+Force)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating controller component info in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a1b9ef3318c546a2a75d56837168622f1}{Controller\+\_\+\+\_\+\+On\+Update\+Camera}} (self, id, x, y, target)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating camera info in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a72f49e6ab9ff8b48abc4a1819ad5b9e1}{Controller\+\_\+\+\_\+\+On\+Update\+Sprite}} (self, id, src, w, h, sheet, r, j, i)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating sprite info in the detail frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a2d1d081e067451d83509961c27778ad2}{Controller\+\_\+\+\_\+\+On\+Update\+Tile}} (self, id, data)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating tile. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a1f54924879f5c3e97202b00d1fbddd74}{Controller\+\_\+\+\_\+\+On\+Add\+Transform}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding transform. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a62f5368e62ac58b2c31b55a3e58ade32}{Controller\+\_\+\+\_\+\+On\+Add\+Physics}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Call back on adding physics. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_aee5d70ebc3b5f441af6d0c404be97177}{Controller\+\_\+\+\_\+\+On\+Add\+Controller}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding controller. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_af091ceddbc55acde8ddfe65290b0e569}{Controller\+\_\+\+\_\+\+On\+Add\+Camera}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding Camera. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a62f4f435128b793e60c1f552f2a329dc}{Controller\+\_\+\+\_\+\+On\+Add\+Sprite}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding sprite. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a6b2ecd4d8211320c40de35fcb46d7cda}{Controller\+\_\+\+\_\+\+On\+Add\+Tile}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding tile. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a87dfd6013e58e9a3495f6e6b16490556}{Controller\+\_\+\+\_\+\+On\+Delete\+Transform}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting transform. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a9961255d288cc27e7e09df3d401f39f0}{Controller\+\_\+\+\_\+\+On\+Delete\+Physics}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting physics. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a35a9536fb0700bb3d14274ad13a28b90}{Controller\+\_\+\+\_\+\+On\+Delete\+Controller}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting controller component. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_aa5386c9580a6147e68d44ba6417abca3}{Controller\+\_\+\+\_\+\+On\+Delete\+Camera}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting camera. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a318658eff655484525b701c54d27612c}{Controller\+\_\+\+\_\+\+On\+Delete\+Sprite}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting sprite. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345bdb53e}{Controller\+\_\+\+\_\+\+On\+Delete\+Tile}} (self, id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback on deleting tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -132,9 +144,9 @@ def \mbox{\hyperlink{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345b
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}UIController responsible for managing all frames
+UIController responsible for managing all frames. 
 
-It keep tracks of all game object information and also have callbacks to add, update, and delete these information.
+\begin{DoxyVerb}It keep tracks of all game object information and also have callbacks to add, update, and delete these information.
 \end{DoxyVerb}
 
 
@@ -149,9 +161,18 @@ It keep tracks of all game object information and also have callbacks to add, up
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
 {\footnotesize\ttfamily def master.\+UIController.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Initialize UI controller with designated width and height
-\end{DoxyVerb}
- 
+
+
+Initialize UI controller with designated width and height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width of UI screen \\
+\hline
+{\em height} & height of UI screen \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a069aa2ab9bfb84c3342f2e38143f6580}\label{classmaster_1_1_u_i_controller_a069aa2ab9bfb84c3342f2e38143f6580}} 
@@ -160,258 +181,321 @@ It keep tracks of all game object information and also have callbacks to add, up
 \doxysubsubsection{\texorpdfstring{AddEmptyGameObject()}{AddEmptyGameObject()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Add\+Empty\+Game\+Object (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Add empty game object to UI controller
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_af091ceddbc55acde8ddfe65290b0e569}\label{classmaster_1_1_u_i_controller_af091ceddbc55acde8ddfe65290b0e569}} 
+
+
+Add empty game object to UI controller. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_af091ceddbc55acde8ddfe65290b0e569}\label{classmaster_1_1_u_i_controller_af091ceddbc55acde8ddfe65290b0e569}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddCamera@{Controller\_\_OnAddCamera}}
 \index{Controller\_\_OnAddCamera@{Controller\_\_OnAddCamera}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddCamera()}{Controller\_\_OnAddCamera()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Camera (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding Camera
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_aee5d70ebc3b5f441af6d0c404be97177}\label{classmaster_1_1_u_i_controller_aee5d70ebc3b5f441af6d0c404be97177}} 
+
+
+Callback on adding Camera. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_aee5d70ebc3b5f441af6d0c404be97177}\label{classmaster_1_1_u_i_controller_aee5d70ebc3b5f441af6d0c404be97177}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddController@{Controller\_\_OnAddController}}
 \index{Controller\_\_OnAddController@{Controller\_\_OnAddController}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddController()}{Controller\_\_OnAddController()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Controller (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding controller
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a62f5368e62ac58b2c31b55a3e58ade32}\label{classmaster_1_1_u_i_controller_a62f5368e62ac58b2c31b55a3e58ade32}} 
+
+
+Callback on adding controller. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a62f5368e62ac58b2c31b55a3e58ade32}\label{classmaster_1_1_u_i_controller_a62f5368e62ac58b2c31b55a3e58ade32}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddPhysics@{Controller\_\_OnAddPhysics}}
 \index{Controller\_\_OnAddPhysics@{Controller\_\_OnAddPhysics}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddPhysics()}{Controller\_\_OnAddPhysics()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Physics (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Call back on adding physics
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a62f4f435128b793e60c1f552f2a329dc}\label{classmaster_1_1_u_i_controller_a62f4f435128b793e60c1f552f2a329dc}} 
+
+
+Call back on adding physics. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a62f4f435128b793e60c1f552f2a329dc}\label{classmaster_1_1_u_i_controller_a62f4f435128b793e60c1f552f2a329dc}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddSprite@{Controller\_\_OnAddSprite}}
 \index{Controller\_\_OnAddSprite@{Controller\_\_OnAddSprite}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddSprite()}{Controller\_\_OnAddSprite()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding sprite
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6b2ecd4d8211320c40de35fcb46d7cda}\label{classmaster_1_1_u_i_controller_a6b2ecd4d8211320c40de35fcb46d7cda}} 
+
+
+Callback on adding sprite. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6b2ecd4d8211320c40de35fcb46d7cda}\label{classmaster_1_1_u_i_controller_a6b2ecd4d8211320c40de35fcb46d7cda}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddTile@{Controller\_\_OnAddTile}}
 \index{Controller\_\_OnAddTile@{Controller\_\_OnAddTile}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddTile()}{Controller\_\_OnAddTile()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding tile
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a1f54924879f5c3e97202b00d1fbddd74}\label{classmaster_1_1_u_i_controller_a1f54924879f5c3e97202b00d1fbddd74}} 
+
+
+Callback on adding tile. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a1f54924879f5c3e97202b00d1fbddd74}\label{classmaster_1_1_u_i_controller_a1f54924879f5c3e97202b00d1fbddd74}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnAddTransform@{Controller\_\_OnAddTransform}}
 \index{Controller\_\_OnAddTransform@{Controller\_\_OnAddTransform}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnAddTransform()}{Controller\_\_OnAddTransform()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Add\+Transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding transform
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_aa5386c9580a6147e68d44ba6417abca3}\label{classmaster_1_1_u_i_controller_aa5386c9580a6147e68d44ba6417abca3}} 
+
+
+Callback on adding transform. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_aa5386c9580a6147e68d44ba6417abca3}\label{classmaster_1_1_u_i_controller_aa5386c9580a6147e68d44ba6417abca3}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeleteCamera@{Controller\_\_OnDeleteCamera}}
 \index{Controller\_\_OnDeleteCamera@{Controller\_\_OnDeleteCamera}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeleteCamera()}{Controller\_\_OnDeleteCamera()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Camera (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting camera
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a35a9536fb0700bb3d14274ad13a28b90}\label{classmaster_1_1_u_i_controller_a35a9536fb0700bb3d14274ad13a28b90}} 
+
+
+Callback on deleting camera. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a35a9536fb0700bb3d14274ad13a28b90}\label{classmaster_1_1_u_i_controller_a35a9536fb0700bb3d14274ad13a28b90}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeleteController@{Controller\_\_OnDeleteController}}
 \index{Controller\_\_OnDeleteController@{Controller\_\_OnDeleteController}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeleteController()}{Controller\_\_OnDeleteController()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Controller (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting controller component
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a9961255d288cc27e7e09df3d401f39f0}\label{classmaster_1_1_u_i_controller_a9961255d288cc27e7e09df3d401f39f0}} 
+
+
+Callback on deleting controller component. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a9961255d288cc27e7e09df3d401f39f0}\label{classmaster_1_1_u_i_controller_a9961255d288cc27e7e09df3d401f39f0}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeletePhysics@{Controller\_\_OnDeletePhysics}}
 \index{Controller\_\_OnDeletePhysics@{Controller\_\_OnDeletePhysics}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeletePhysics()}{Controller\_\_OnDeletePhysics()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Physics (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting physics
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a318658eff655484525b701c54d27612c}\label{classmaster_1_1_u_i_controller_a318658eff655484525b701c54d27612c}} 
+
+
+Callback on deleting physics. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a318658eff655484525b701c54d27612c}\label{classmaster_1_1_u_i_controller_a318658eff655484525b701c54d27612c}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeleteSprite@{Controller\_\_OnDeleteSprite}}
 \index{Controller\_\_OnDeleteSprite@{Controller\_\_OnDeleteSprite}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeleteSprite()}{Controller\_\_OnDeleteSprite()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting sprite
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345bdb53e}\label{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345bdb53e}} 
+
+
+Callback on deleting sprite. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345bdb53e}\label{classmaster_1_1_u_i_controller_a8a51566a6691de21ccf6154345bdb53e}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeleteTile@{Controller\_\_OnDeleteTile}}
 \index{Controller\_\_OnDeleteTile@{Controller\_\_OnDeleteTile}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeleteTile()}{Controller\_\_OnDeleteTile()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting tile
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a87dfd6013e58e9a3495f6e6b16490556}\label{classmaster_1_1_u_i_controller_a87dfd6013e58e9a3495f6e6b16490556}} 
+
+
+Callback on deleting tile. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a87dfd6013e58e9a3495f6e6b16490556}\label{classmaster_1_1_u_i_controller_a87dfd6013e58e9a3495f6e6b16490556}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnDeleteTransform@{Controller\_\_OnDeleteTransform}}
 \index{Controller\_\_OnDeleteTransform@{Controller\_\_OnDeleteTransform}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnDeleteTransform()}{Controller\_\_OnDeleteTransform()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Delete\+Transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting transform
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_aae071d248ffe2f7a9e90daefdc526b20}\label{classmaster_1_1_u_i_controller_aae071d248ffe2f7a9e90daefdc526b20}} 
+
+
+Callback on deleting transform. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_aae071d248ffe2f7a9e90daefdc526b20}\label{classmaster_1_1_u_i_controller_aae071d248ffe2f7a9e90daefdc526b20}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnObjectLabelClicked@{Controller\_\_OnObjectLabelClicked}}
 \index{Controller\_\_OnObjectLabelClicked@{Controller\_\_OnObjectLabelClicked}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnObjectLabelClicked()}{Controller\_\_OnObjectLabelClicked()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Object\+Label\+Clicked (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for when object label in the display frame received mouse click
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a1b9ef3318c546a2a75d56837168622f1}\label{classmaster_1_1_u_i_controller_a1b9ef3318c546a2a75d56837168622f1}} 
+
+
+Callback for when object label in the display frame received mouse click. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a1b9ef3318c546a2a75d56837168622f1}\label{classmaster_1_1_u_i_controller_a1b9ef3318c546a2a75d56837168622f1}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateCamera@{Controller\_\_OnUpdateCamera}}
 \index{Controller\_\_OnUpdateCamera@{Controller\_\_OnUpdateCamera}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateCamera()}{Controller\_\_OnUpdateCamera()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Camera (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{target }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating camera info in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_ab1fa8f7d447b510b24de2a217e08f2b2}\label{classmaster_1_1_u_i_controller_ab1fa8f7d447b510b24de2a217e08f2b2}} 
+
+
+Callback for updating camera info in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em x} & camera x position \\
+\hline
+{\em y} & camera y position \\
+\hline
+{\em target} & the camera follows this target \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_ab1fa8f7d447b510b24de2a217e08f2b2}\label{classmaster_1_1_u_i_controller_ab1fa8f7d447b510b24de2a217e08f2b2}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateController@{Controller\_\_OnUpdateController}}
 \index{Controller\_\_OnUpdateController@{Controller\_\_OnUpdateController}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateController()}{Controller\_\_OnUpdateController()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Controller (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{speed,  }\item[{}]{jump\+Force }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating controller component info in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_ae90840cb9366d4f9b558140ff438cc80}\label{classmaster_1_1_u_i_controller_ae90840cb9366d4f9b558140ff438cc80}} 
+
+
+Callback for updating controller component info in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em speed} & movement speed \\
+\hline
+{\em jump\+Force} & upward force on jump \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_ae90840cb9366d4f9b558140ff438cc80}\label{classmaster_1_1_u_i_controller_ae90840cb9366d4f9b558140ff438cc80}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateObjectName@{Controller\_\_OnUpdateObjectName}}
 \index{Controller\_\_OnUpdateObjectName@{Controller\_\_OnUpdateObjectName}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateObjectName()}{Controller\_\_OnUpdateObjectName()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Object\+Name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{name }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for when object name is update in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a0caa6d4b0bd315a8016e72206e375461}\label{classmaster_1_1_u_i_controller_a0caa6d4b0bd315a8016e72206e375461}} 
+
+
+Callback for when object name is update in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em name} & new name for game object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a0caa6d4b0bd315a8016e72206e375461}\label{classmaster_1_1_u_i_controller_a0caa6d4b0bd315a8016e72206e375461}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdatePhysics@{Controller\_\_OnUpdatePhysics}}
 \index{Controller\_\_OnUpdatePhysics@{Controller\_\_OnUpdatePhysics}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdatePhysics()}{Controller\_\_OnUpdatePhysics()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Physics (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{d }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating physics in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a72f49e6ab9ff8b48abc4a1819ad5b9e1}\label{classmaster_1_1_u_i_controller_a72f49e6ab9ff8b48abc4a1819ad5b9e1}} 
+
+
+Callback for updating physics in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em d} & density on physics \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a72f49e6ab9ff8b48abc4a1819ad5b9e1}\label{classmaster_1_1_u_i_controller_a72f49e6ab9ff8b48abc4a1819ad5b9e1}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateSprite@{Controller\_\_OnUpdateSprite}}
 \index{Controller\_\_OnUpdateSprite@{Controller\_\_OnUpdateSprite}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateSprite()}{Controller\_\_OnUpdateSprite()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{src,  }\item[{}]{w,  }\item[{}]{h,  }\item[{}]{sheet,  }\item[{}]{r,  }\item[{}]{j,  }\item[{}]{i }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating sprite info in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a2d1d081e067451d83509961c27778ad2}\label{classmaster_1_1_u_i_controller_a2d1d081e067451d83509961c27778ad2}} 
+
+
+Callback for updating sprite info in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object \\
+\hline
+{\em src} & source of sprite \\
+\hline
+{\em w} & width of sprite \\
+\hline
+{\em h} & height of sprite \\
+\hline
+{\em sheet} & sheet from sprite sheet frame \\
+\hline
+{\em r} & run animation indices \\
+\hline
+{\em j} & jump animation indices \\
+\hline
+{\em i} & idle animation indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a2d1d081e067451d83509961c27778ad2}\label{classmaster_1_1_u_i_controller_a2d1d081e067451d83509961c27778ad2}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateTile@{Controller\_\_OnUpdateTile}}
 \index{Controller\_\_OnUpdateTile@{Controller\_\_OnUpdateTile}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateTile()}{Controller\_\_OnUpdateTile()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating tile
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6cb5e78f30fa69d65d4a6d09ef962297}\label{classmaster_1_1_u_i_controller_a6cb5e78f30fa69d65d4a6d09ef962297}} 
+
+
+Callback for updating tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object \\
+\hline
+{\em data} & tile for tile from sheet frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6cb5e78f30fa69d65d4a6d09ef962297}\label{classmaster_1_1_u_i_controller_a6cb5e78f30fa69d65d4a6d09ef962297}} 
 \index{master.UIController@{master.UIController}!Controller\_\_OnUpdateTransform@{Controller\_\_OnUpdateTransform}}
 \index{Controller\_\_OnUpdateTransform@{Controller\_\_OnUpdateTransform}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Controller\_\_OnUpdateTransform()}{Controller\_\_OnUpdateTransform()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Controller\+\_\+\+\_\+\+On\+Update\+Transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updated transform in the detail frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a6cb20309d9e9211f25bd34725ed06272}\label{classmaster_1_1_u_i_controller_a6cb20309d9e9211f25bd34725ed06272}} 
-\index{master.UIController@{master.UIController}!DetailFrame@{DetailFrame}}
-\index{DetailFrame@{DetailFrame}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{DetailFrame()}{DetailFrame()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Detail\+Frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Detail frame will show transform, camera, physics, and controller component option.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a853e1234d5dfd471b1fd6f95d0ccbf3b}\label{classmaster_1_1_u_i_controller_a853e1234d5dfd471b1fd6f95d0ccbf3b}} 
-\index{master.UIController@{master.UIController}!DisplayFrame@{DisplayFrame}}
-\index{DisplayFrame@{DisplayFrame}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{DisplayFrame()}{DisplayFrame()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Display\+Frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{width,  }\item[{}]{height,  }\item[{}]{img }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Display frame shows objects create in the UI.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_aaaa7cb6b7e474afcd6869bf352bb48f1}\label{classmaster_1_1_u_i_controller_aaaa7cb6b7e474afcd6869bf352bb48f1}} 
+Callback for updated transform in the detail frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em x} & x position \\
+\hline
+{\em y} & y position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_aaaa7cb6b7e474afcd6869bf352bb48f1}\label{classmaster_1_1_u_i_controller_aaaa7cb6b7e474afcd6869bf352bb48f1}} 
 \index{master.UIController@{master.UIController}!EditorFrame@{EditorFrame}}
 \index{EditorFrame@{EditorFrame}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{EditorFrame()}{EditorFrame()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Editor\+Frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Editor frame locates on the middle. It displays the canvas for drawing the level.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_ae157a1c6b2190dfb01b26a9fee720211}\label{classmaster_1_1_u_i_controller_ae157a1c6b2190dfb01b26a9fee720211}} 
-\index{master.UIController@{master.UIController}!LoadFile@{LoadFile}}
-\index{LoadFile@{LoadFile}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{LoadFile()}{LoadFile()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Load\+File (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Load information into the UI.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a63a869d54976468e41fe87d0c71042a7}\label{classmaster_1_1_u_i_controller_a63a869d54976468e41fe87d0c71042a7}} 
-\index{master.UIController@{master.UIController}!PlayGame@{PlayGame}}
-\index{PlayGame@{PlayGame}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{PlayGame()}{PlayGame()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Play\+Game (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Testing option for running a hardcodded game.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_af3ee1413de15a346161bfefef8883fc5}\label{classmaster_1_1_u_i_controller_af3ee1413de15a346161bfefef8883fc5}} 
+Editor frame locates on the middle. 
+
+It displays the canvas for drawing the level. \mbox{\Hypertarget{classmaster_1_1_u_i_controller_af3ee1413de15a346161bfefef8883fc5}\label{classmaster_1_1_u_i_controller_af3ee1413de15a346161bfefef8883fc5}} 
 \index{master.UIController@{master.UIController}!Run@{Run}}
 \index{Run@{Run}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{Run()}{Run()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Run the UI. Also run the engine When real time editing is on.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a195a7d98a8ee7877003d56ad1a774915}\label{classmaster_1_1_u_i_controller_a195a7d98a8ee7877003d56ad1a774915}} 
-\index{master.UIController@{master.UIController}!SaveFile@{SaveFile}}
-\index{SaveFile@{SaveFile}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{SaveFile()}{SaveFile()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Save\+File (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Saving information to local files.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a77f26b2a88ad114e23b87721b88d6918}\label{classmaster_1_1_u_i_controller_a77f26b2a88ad114e23b87721b88d6918}} 
-\index{master.UIController@{master.UIController}!saveLevelData@{saveLevelData}}
-\index{saveLevelData@{saveLevelData}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{saveLevelData()}{saveLevelData()}}
-{\footnotesize\ttfamily def master.\+UIController.\+save\+Level\+Data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Testing use function for saving a simple level.
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a2ea9ac1828f566daff2cdc216700a66e}\label{classmaster_1_1_u_i_controller_a2ea9ac1828f566daff2cdc216700a66e}} 
+Run the UI. 
+
+Also run the engine When real time editing is on. \mbox{\Hypertarget{classmaster_1_1_u_i_controller_a2ea9ac1828f566daff2cdc216700a66e}\label{classmaster_1_1_u_i_controller_a2ea9ac1828f566daff2cdc216700a66e}} 
 \index{master.UIController@{master.UIController}!SetUpEngine@{SetUpEngine}}
 \index{SetUpEngine@{SetUpEngine}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{SetUpEngine()}{SetUpEngine()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Set\+Up\+Engine (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set up Engine and create corresponding objects and components
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_aa69402454742fe878cc4f98a6af2c541}\label{classmaster_1_1_u_i_controller_aa69402454742fe878cc4f98a6af2c541}} 
+
+
+Set up \mbox{\hyperlink{class_engine}{Engine}} and create corresponding objects and components. 
+
+\mbox{\Hypertarget{classmaster_1_1_u_i_controller_aa69402454742fe878cc4f98a6af2c541}\label{classmaster_1_1_u_i_controller_aa69402454742fe878cc4f98a6af2c541}} 
 \index{master.UIController@{master.UIController}!SpriteFrame@{SpriteFrame}}
 \index{SpriteFrame@{SpriteFrame}!master.UIController@{master.UIController}}
 \doxysubsubsection{\texorpdfstring{SpriteFrame()}{SpriteFrame()}}
 {\footnotesize\ttfamily def master.\+UIController.\+Sprite\+Frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Sprite frame 
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_u_i_controller_ab71369653315ef5ba745b4180b225dfe}\label{classmaster_1_1_u_i_controller_ab71369653315ef5ba745b4180b225dfe}} 
-\index{master.UIController@{master.UIController}!TurnOnRTE@{TurnOnRTE}}
-\index{TurnOnRTE@{TurnOnRTE}!master.UIController@{master.UIController}}
-\doxysubsubsection{\texorpdfstring{TurnOnRTE()}{TurnOnRTE()}}
-{\footnotesize\ttfamily def master.\+UIController.\+Turn\+On\+RTE (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Turns on real time editing.
-\end{DoxyVerb}
- 
+
+Sprite frame. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/master.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/master.\+py\end{DoxyCompactItemize}

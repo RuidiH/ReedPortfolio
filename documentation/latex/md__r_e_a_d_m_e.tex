@@ -1,73 +1,157 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md38}{}\doxysection{The Final Project!}\label{md__r_e_a_d_m_e_autotoc_md38}
+For this assignment you are going to be building a \textquotesingle{}Game Maker\textquotesingle{} as your final project!
 
-\begin{DoxyEnumerate}
-\item Not all the UI features are fully implemented, currently only changes on level editing will reflect on the game.
-\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Game/\+Engine Publicity}\label{md__r_e_a_d_m_e_autotoc_md3}
-{\bfseries{Project Website}}\+: \href{https://ruidih.github.io/}{\texttt{ Link to Website}}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Compilation Instructions}\label{md__r_e_a_d_m_e_autotoc_md4}
-{\bfseries{Currently the engine only supports compiling and running in MSYS2 Min\+GW x64 terminal on Windows}}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Compile Engine Library}\label{md__r_e_a_d_m_e_autotoc_md5}
-\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{Installing dependencies\+:}\label{md__r_e_a_d_m_e_autotoc_md6}
-Open MSYS2 Min\+GW 64 terminal and run the following command\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/python}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/pybind11}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/gcc}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2\_mixer}
-\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/box2d}
-
-\end{DoxyCode}
- \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Compiling C++ Engine and build python model}\label{md__r_e_a_d_m_e_autotoc_md7}
-Run the following command inside /\+Engine directory\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{sh\ mingw64build.sh}
-
-\end{DoxyCode}
- The script will build the engine module {\ttfamily mygameengine.\+pyd} into /\+Engine/py directory.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Running the engine}\label{md__r_e_a_d_m_e_autotoc_md8}
-Inside /\+Engine/py directory, run the following command to start up the engine UI\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{python\ master.py}
-
-\end{DoxyCode}
-\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{Project Hieararchy}\label{md__r_e_a_d_m_e_autotoc_md9}
-In the future, other engineers may take on our project, so we have to keep it organized given the following requirements below. Forming some good organization habits now will help us later on when our project grows as well. These are the required files you should have\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{./\+Engine Directory Organization}\label{md__r_e_a_d_m_e_autotoc_md10}
+You will have some flexibility and creativity in how the overall game making engine is built and what types of game(s) your engine can make.\hypertarget{md__r_e_a_d_m_e_autotoc_md39}{}\doxysubsection{Logistics}\label{md__r_e_a_d_m_e_autotoc_md39}
 
 \begin{DoxyItemize}
-\item Docs
-\begin{DoxyItemize}
-\item Source Code Documentation
-\end{DoxyItemize}
-\item Assets
-\begin{DoxyItemize}
-\item Art assets (With the Sub directories music, sound, images, and anything else)
-\end{DoxyItemize}
-\item src
-\begin{DoxyItemize}
-\item source code(.cpp files) The make file or any build scripts that automate the building of your project should reside here.
-\end{DoxyItemize}
-\item include
-\begin{DoxyItemize}
-\item header files(.h and .hpp files)
-\end{DoxyItemize}
-\item lib
-\begin{DoxyItemize}
-\item libraries (.so, .dll, .a, .dylib files). Note this is a good place to put SDL
-\end{DoxyItemize}
-\item bin
-\begin{DoxyItemize}
-\item This is the directory where your built executable(.exe for windows, .app for Mac, or a.\+out for Linux) and any additional generated files are put after each build.
-\end{DoxyItemize}
-\item Engine\+Build (Optional)
-\begin{DoxyItemize}
-\item You may optionally put a .zip to you final deliverable. One should be able to copy and paste this directory, and only this directory onto another machine and be able to run the game. This is optional because for this course we will be building your projects from source. However, in the game industry it is useful to always have a build of a game ready for testers, thus a game project hieararchy would likely have this directory in a repo or other storage medium.
-\end{DoxyItemize}
-\item Third\+Party
-\begin{DoxyItemize}
-\item Code that you have not written if any.
-\end{DoxyItemize}
-\end{DoxyItemize}
+\item You will be working on this assignment as a team on your choice (or a combination) of the Mac, Linux, or Windows Operating Sytstem.
+\item You will put all of your code and deliverables in the \href{./Engine}{\texttt{ Engine}} directory.
+\item Make sure everyone has a way to work on this codebase, with a common set of tools.
+\item Everyone should make code contributions to the repository (i.\+e. everyone should have some commits in the project log)
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md40}{}\doxysubsection{Team}\label{md__r_e_a_d_m_e_autotoc_md40}
+Team Name\+: {\itshape Edit this to something cool here}
 
-{\bfseries{Additional Notes\+:}}
+Update your Team member Names here (Up to 4).
 
 
 \begin{DoxyEnumerate}
-\item src and include should only contain \char`\"{}.\+cpp\char`\"{} or \char`\"{}.\+hpp\char`\"{} files. Why? It makes it very fast to do a backup of your game project as one example. Secondly, binary files that are generated often clutter up directories. I should not see any binaries in your repository, you may use a \textquotesingle{}.gitignore\textquotesingle{} file to help prevent this automatically. 
-\end{DoxyEnumerate}
+\item {\itshape Jinming Zhang}
+\item {\itshape Ruidi Huang}
+\item {\itshape Ziyun Chen}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md41}{}\doxysubsection{Assignment Milestones}\label{md__r_e_a_d_m_e_autotoc_md41}
+
+\begin{DoxyEnumerate}
+\item C\+:/\+Reed/\+School/\+NEU/\+Academic documents/\+Building a Game Engine/\+Crispy\+Crunchy\+Shark/finalproject-\/crispy-\/crunch-\/shark/part1\+\_\+\+README.\+md \char`\"{}\+Part 1 README\char`\"{}
+\begin{DoxyItemize}
+\item Read the project description
+\end{DoxyItemize}
+\item C\+:/\+Reed/\+School/\+NEU/\+Academic documents/\+Building a Game Engine/\+Crispy\+Crunchy\+Shark/finalproject-\/crispy-\/crunch-\/shark/part2\+\_\+\+README.\+md \char`\"{}\+Part 2 README\char`\"{}
+\begin{DoxyItemize}
+\item More specific requierments of the project and who is going to be responsible for each part
+\end{DoxyItemize}
+\item C\+:/\+Reed/\+School/\+NEU/\+Academic documents/\+Building a Game Engine/\+Crispy\+Crunchy\+Shark/finalproject-\/crispy-\/crunch-\/shark/part3\+\_\+\+README.\+md \char`\"{}\+Part 3 README\char`\"{}
+\begin{DoxyItemize}
+\item Portfolio instructions ~\newline
+
+\end{DoxyItemize}
+\item Team member Evaluation\+: \href{https://forms.gle/qiD6guzN5W5LxAcV9}{\texttt{ https\+://forms.\+gle/qi\+D6guz\+N5\+W5\+Lx\+Ac\+V9}}
+\begin{DoxyItemize}
+\item {\bfseries{This must be filled out before the project is due.}}
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md42}{}\doxysubsection{Universal Resources}\label{md__r_e_a_d_m_e_autotoc_md42}
+You will be using SDL2 to build this project. Make sure you can run SDL by following the instructions here\+: (Note you do not need to glad library, unless you are doing additional work with Open\+GL 3.\+3+)
+
+
+\begin{DoxyItemize}
+\item General SDL2 programming tutorials\+:
+\begin{DoxyItemize}
+\item \href{http://lazyfoo.net/tutorials/SDL/}{\texttt{ http\+://lazyfoo.\+net/tutorials/\+SDL/}}
+\end{DoxyItemize}
+\item General SDL2 setup \href{https://www.youtube.com/watch?v=QM4WW8hcsPU&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0}{\texttt{ Full SDL playlist}}
+\begin{DoxyItemize}
+\item Linux\+: \href{https://www.youtube.com/embed/xNCFSMkpwWo}{\texttt{ https\+://www.\+youtube.\+com/embed/x\+NCFSMkpw\+Wo}}
+\item Windows\+: \href{https://www.youtube.com/embed/nZbytgAhvoY}{\texttt{ https\+://www.\+youtube.\+com/embed/n\+Zbytg\+AhvoY}}
+\item Mac\+: \href{https://www.youtube.com/embed/xVl1ysRj_lQ}{\texttt{ https\+://www.\+youtube.\+com/embed/x\+Vl1ys\+Rj\+\_\+lQ}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md43}{}\doxysection{Part 1 and 2 Rubric (75\%)}\label{md__r_e_a_d_m_e_autotoc_md43}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+
+
+Points 
+
+Description  ~\newline
+ 
+
+25\% (Engineering/\+Design Patterns) 
+
+On the polish of your final project (did it work as intended, were there bugs, did I have to struggle to get your tool running, was your solution well engineered, were there patterns used, etc.)  
+
+40\% (Requirements) 
+
+Did you complete all of the requirements from part 2?  
+
+10\%\% (Wow Factor) 
+
+On the creativity and overall \textquotesingle{}wow\textquotesingle{} factor of your project. Was there a cool feature or surprise that got me excited about the project? Does this project have potential to be extended in the future? Were there creative additional tools that supported your work. Was there something not covered in class that you were excited about, learned, and implemented anyway? (Document this to bring to my attention if so!)  $<$/tbody$>$ \hypertarget{md__r_e_a_d_m_e_autotoc_md44}{}\doxysection{Part 3 -\/ Rubric (20\%)}\label{md__r_e_a_d_m_e_autotoc_md44}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+
+
+Points 
+
+Description  
+
+4\% (\mbox{\hyperlink{class_engine}{Engine}} Architecture diagram) 
+
+Did you add the engine architecture diagram to your website \char`\"{}./media/\+C4\+Engine.\+pdf\char`\"{}?  ~\newline
+ 
+
+4\% (Documentation) 
+
+Did you generate something like \char`\"{}http\+://www.\+horde3d.\+org/docs/html/\+\_\+api.\+html\char`\"{}?  ~\newline
+ 
+
+4\% (Build) 
+
+Does the build work when I download your repo and run the game?  
+
+4\% (Post mortem) 
+
+Did you learn anything and provide a brief and well-\/thought out reflection of these learnings?  
+
+4\% (Website) 
+
+Do you have a webpage that presents your project in a positive way with the above materials.  $<$/tbody$>$ \hypertarget{md__r_e_a_d_m_e_autotoc_md45}{}\doxysection{Teammate Evaluation -\/ Rubric (5\%)}\label{md__r_e_a_d_m_e_autotoc_md45}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+
+
+Points 
+
+Description  
+
+5\% (Team member evaluation) 
+
+Did you fill it out? How did your teammates rate you?  $<$/tbody$>$ 
+
+{\bfseries{Note\+: Everyone on your team earns the same grade for all parts of the project.}}\hypertarget{md__r_e_a_d_m_e_autotoc_md46}{}\doxysubsection{Notes on working in teams}\label{md__r_e_a_d_m_e_autotoc_md46}
+
+\begin{DoxyItemize}
+\item Pragmatically
+\begin{DoxyItemize}
+\item It is useful to work in separate branches in git, and then merge your code to master, and then resolve the merge conflicts (ideally with the person you are working with).
+\item If you are uncomfortable with this in github, then pair programming may be a viable option (I do however want to see commits from everyone).
+\end{DoxyItemize}
+\item On working with others
+\begin{DoxyItemize}
+\item Be responsive
+\begin{DoxyItemize}
+\item Check your email, respond to your teammates within 24-\/48 hours on the preferred communication platform
+\end{DoxyItemize}
+\item Be proactive
+\begin{DoxyItemize}
+\item Alert the course staff if there are issues sooner rather than later--we cannot do anything the last day before the project is due.
+\end{DoxyItemize}
+\item Contribute
+\begin{DoxyItemize}
+\item The course staff looks at the commit logs to make sure everyone participated (No free rides--earn your grade!)
+\item Note\+: One team member doing all the work is not heroic either
+\begin{DoxyItemize}
+\item Balance the work load--no one should complete more than 50\% of the project on a 4 person team for example.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md47}{}\doxyparagraph{More Resources on working in Teams}\label{md__r_e_a_d_m_e_autotoc_md47}
+
+\begin{DoxyItemize}
+\item \href{http://www.bitmascot.com/what-makes-a-successful-game-team/}{\texttt{ What Makes a Winning Game Development Team?}}
+\item \href{https://appliedsportpsych.org/resources/resources-for-athletes/the-3-c-s-of-being-a-captain/}{\texttt{ The 3 C\textquotesingle{}s of being a captain}}
+\item \href{https://dzone.com/articles/etiquette-for-pair-programming}{\texttt{ Etiquette for Pair Programming}} 
+\end{DoxyItemize}

@@ -1,0 +1,87 @@
+
+\begin{DoxyEnumerate}
+\item Not all the UI features are fully implemented, currently only changes on level editing will reflect on the game.
+\end{DoxyEnumerate}\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Game/\+Engine Publicity}\label{md__engine__r_e_a_d_m_e_autotoc_md3}
+{\bfseries{Project Website}}\+: \href{https://ruidih.github.io/}{\texttt{ Link to Website}}\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md4}{}\doxysection{References}\label{md__engine__r_e_a_d_m_e_autotoc_md4}
+Our engine uses the following third party libraries\+:
+\begin{DoxyItemize}
+\item \href{https://www.libsdl.org/}{\texttt{ SDL2}}
+\item \href{https://box2d.org/}{\texttt{ SDL2\+\_\+\+Mixer}}
+\item \href{https://box2d.org/}{\texttt{ box2D}}
+\item \href{https://readthedocs.org/projects/pybind11/}{\texttt{ pybind11}}
+\item \href{https://docs.python.org/3/library/tkinter.html}{\texttt{ tkinter}}
+\end{DoxyItemize}\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md5}{}\doxysection{Compilation Instructions}\label{md__engine__r_e_a_d_m_e_autotoc_md5}
+{\bfseries{Currently the engine only supports compiling and running in MSYS2 Min\+GW x64 terminal on Windows}}\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{Compile Engine Library}\label{md__engine__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Installing dependencies\+:}\label{md__engine__r_e_a_d_m_e_autotoc_md7}
+Open MSYS2 Min\+GW 64 terminal and run the following command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/python}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/pybind11}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/gcc}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/SDL2\_mixer}
+\DoxyCodeLine{pacman\ -\/S\ mingw-\/w64-\/x86\_64-\/box2d}
+
+\end{DoxyCode}
+ \hypertarget{md__engine__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Compiling C++ Engine and build python model}\label{md__engine__r_e_a_d_m_e_autotoc_md8}
+Run the following command inside /\+Engine/\+CPPEngine/ directory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sh\ mingw64build.sh}
+
+\end{DoxyCode}
+ The script will build the engine module {\ttfamily mygameengine.\+pyd} into /\+Engine/\+GUI/ directory.\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md9}{}\doxysubsubsection{Running the example game build by the engine}\label{md__engine__r_e_a_d_m_e_autotoc_md9}
+Inside /\+Engine/\+GUI directory, run the following command to run the example game made with the engine 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ GameEngine.py}
+
+\end{DoxyCode}
+\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{Running the engine}\label{md__engine__r_e_a_d_m_e_autotoc_md10}
+Inside /\+Engine/\+GUI directory, run the following command to start up the engine UI\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ master.py}
+
+\end{DoxyCode}
+\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md11}{}\doxysection{Project Hieararchy}\label{md__engine__r_e_a_d_m_e_autotoc_md11}
+In the future, other engineers may take on our project, so we have to keep it organized given the following requirements below. Forming some good organization habits now will help us later on when our project grows as well. These are the required files you should have\hypertarget{md__engine__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{./\+Engine Directory Organization}\label{md__engine__r_e_a_d_m_e_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Docs
+\begin{DoxyItemize}
+\item Source Code Documentation
+\end{DoxyItemize}
+\item Assets
+\begin{DoxyItemize}
+\item Art assets (With the Sub directories music, sound, images, and anything else)
+\end{DoxyItemize}
+\item src
+\begin{DoxyItemize}
+\item source code(.cpp files) The make file or any build scripts that automate the building of your project should reside here.
+\end{DoxyItemize}
+\item include
+\begin{DoxyItemize}
+\item header files(.h and .hpp files)
+\end{DoxyItemize}
+\item lib
+\begin{DoxyItemize}
+\item libraries (.so, .dll, .a, .dylib files). Note this is a good place to put SDL
+\end{DoxyItemize}
+\item bin
+\begin{DoxyItemize}
+\item This is the directory where your built executable(.exe for windows, .app for Mac, or a.\+out for Linux) and any additional generated files are put after each build.
+\end{DoxyItemize}
+\item Engine\+Build (Optional)
+\begin{DoxyItemize}
+\item You may optionally put a .zip to you final deliverable. One should be able to copy and paste this directory, and only this directory onto another machine and be able to run the game. This is optional because for this course we will be building your projects from source. However, in the game industry it is useful to always have a build of a game ready for testers, thus a game project hieararchy would likely have this directory in a repo or other storage medium.
+\end{DoxyItemize}
+\item Third\+Party
+\begin{DoxyItemize}
+\item Code that you have not written if any.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+{\bfseries{Additional Notes\+:}}
+
+
+\begin{DoxyEnumerate}
+\item src and include should only contain \char`\"{}.\+cpp\char`\"{} or \char`\"{}.\+hpp\char`\"{} files. Why? It makes it very fast to do a backup of your game project as one example. Secondly, binary files that are generated often clutter up directories. I should not see any binaries in your repository, you may use a \textquotesingle{}.gitignore\textquotesingle{} file to help prevent this automatically. 
+\end{DoxyEnumerate}

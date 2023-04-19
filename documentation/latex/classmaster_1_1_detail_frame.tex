@@ -1,5 +1,10 @@
 \hypertarget{classmaster_1_1_detail_frame}{}\doxysection{master.\+Detail\+Frame Class Reference}
 \label{classmaster_1_1_detail_frame}\index{master.DetailFrame@{master.DetailFrame}}
+
+
+Detail frame draws basic component information UI for selected object label.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -7,33 +12,33 @@
 def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, width, height)
 \item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a3443ad5da176910cec279546b234c179}{Update}} (self, data)
-\item 
+\begin{DoxyCompactList}\small\item\em Update detail frame with data of the current selected game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a44d1b266ed201df95a665c078ad58792}{Detail\+\_\+\+\_\+\+Get\+Data}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for current object data. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a0ab14fc218bf1dc9d8181f667ba501cc}{Detail\+\_\+\+\_\+\+On\+Update\+Name}} (self, name)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on name update. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a940bf281cf1d8473e935ea341dae9b4f}{Detail\+\_\+\+\_\+\+On\+Update\+Transform}} (self, x, y)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on update transform. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a457e9591bf51be1272f68af4207ceded}{Detail\+\_\+\+\_\+\+On\+Update\+Physics}} (self, density)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on update physics. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_ac1178b7fea32311d76bf62d24ed5753b}{Detail\+\_\+\+\_\+\+On\+Update\+Controller}} (self, speed, jump\+Force)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on update controller. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_afc8f6a00c5aad2cd999880d3ec177aca}{Detail\+\_\+\+\_\+\+On\+Update\+Camera}} (self, zoneX, zoneY, target)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on update camera. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a491c1914b60bfaa399f28099bff059f5}{Detail\+\_\+\+\_\+\+On\+Add\+Component}} (self, component)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding component. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_ada6b80500010a16dfe0062c532fc4269}{Detail\+\_\+\+\_\+\+On\+Delete\+Transform}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting transform. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a9f0fe6391eff892fc069fb01cd75cdfc}{Detail\+\_\+\+\_\+\+On\+Delete\+Physics}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting physics. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_ace3296ab7e30539f907eeb57cf4da35e}{Detail\+\_\+\+\_\+\+On\+Delete\+Controller}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting controller. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a54eb968173470c4566a129622581e02a}{Detail\+\_\+\+\_\+\+On\+Delete\+Camera}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting camera. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a7ede906fe221ba9621cd87b9becab884}{Detail\+\_\+\+\_\+\+On\+Delete\+Sprite}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on deleting sprite. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9996}{Detail\+\_\+\+\_\+\+On\+Delete\+Tile}} (self)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback on deleting tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -76,9 +81,9 @@ def \mbox{\hyperlink{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}Detail frame draws basic component information UI for selected object label
-\end{DoxyVerb}
- 
+Detail frame draws basic component information UI for selected object label. 
+
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classmaster_1_1_detail_frame_a44d1b266ed201df95a665c078ad58792}\label{classmaster_1_1_detail_frame_a44d1b266ed201df95a665c078ad58792}} 
@@ -87,114 +92,142 @@ def \mbox{\hyperlink{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9
 \doxysubsubsection{\texorpdfstring{Detail\_\_GetData()}{Detail\_\_GetData()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+Get\+Data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Getter for current object data
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a491c1914b60bfaa399f28099bff059f5}\label{classmaster_1_1_detail_frame_a491c1914b60bfaa399f28099bff059f5}} 
+
+
+Getter for current object data. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a491c1914b60bfaa399f28099bff059f5}\label{classmaster_1_1_detail_frame_a491c1914b60bfaa399f28099bff059f5}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnAddComponent@{Detail\_\_OnAddComponent}}
 \index{Detail\_\_OnAddComponent@{Detail\_\_OnAddComponent}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnAddComponent()}{Detail\_\_OnAddComponent()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Add\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{component }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding component
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a54eb968173470c4566a129622581e02a}\label{classmaster_1_1_detail_frame_a54eb968173470c4566a129622581e02a}} 
+
+
+Callback on adding component. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a54eb968173470c4566a129622581e02a}\label{classmaster_1_1_detail_frame_a54eb968173470c4566a129622581e02a}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeleteCamera@{Detail\_\_OnDeleteCamera}}
 \index{Detail\_\_OnDeleteCamera@{Detail\_\_OnDeleteCamera}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeleteCamera()}{Detail\_\_OnDeleteCamera()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Camera (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting camera
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_ace3296ab7e30539f907eeb57cf4da35e}\label{classmaster_1_1_detail_frame_ace3296ab7e30539f907eeb57cf4da35e}} 
+
+
+Callback on deleting camera. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_ace3296ab7e30539f907eeb57cf4da35e}\label{classmaster_1_1_detail_frame_ace3296ab7e30539f907eeb57cf4da35e}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeleteController@{Detail\_\_OnDeleteController}}
 \index{Detail\_\_OnDeleteController@{Detail\_\_OnDeleteController}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeleteController()}{Detail\_\_OnDeleteController()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Controller (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting controller
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a9f0fe6391eff892fc069fb01cd75cdfc}\label{classmaster_1_1_detail_frame_a9f0fe6391eff892fc069fb01cd75cdfc}} 
+
+
+Callback on deleting controller. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a9f0fe6391eff892fc069fb01cd75cdfc}\label{classmaster_1_1_detail_frame_a9f0fe6391eff892fc069fb01cd75cdfc}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeletePhysics@{Detail\_\_OnDeletePhysics}}
 \index{Detail\_\_OnDeletePhysics@{Detail\_\_OnDeletePhysics}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeletePhysics()}{Detail\_\_OnDeletePhysics()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Physics (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting physics
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a7ede906fe221ba9621cd87b9becab884}\label{classmaster_1_1_detail_frame_a7ede906fe221ba9621cd87b9becab884}} 
+
+
+Callback on deleting physics. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a7ede906fe221ba9621cd87b9becab884}\label{classmaster_1_1_detail_frame_a7ede906fe221ba9621cd87b9becab884}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeleteSprite@{Detail\_\_OnDeleteSprite}}
 \index{Detail\_\_OnDeleteSprite@{Detail\_\_OnDeleteSprite}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeleteSprite()}{Detail\_\_OnDeleteSprite()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Sprite (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting sprite
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9996}\label{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9996}} 
+
+
+Callback on deleting sprite. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9996}\label{classmaster_1_1_detail_frame_a7548d7a8bae309ed1ee1d3613ede9996}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeleteTile@{Detail\_\_OnDeleteTile}}
 \index{Detail\_\_OnDeleteTile@{Detail\_\_OnDeleteTile}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeleteTile()}{Detail\_\_OnDeleteTile()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Tile (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting tile
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_ada6b80500010a16dfe0062c532fc4269}\label{classmaster_1_1_detail_frame_ada6b80500010a16dfe0062c532fc4269}} 
+
+
+Callback on deleting tile. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_ada6b80500010a16dfe0062c532fc4269}\label{classmaster_1_1_detail_frame_ada6b80500010a16dfe0062c532fc4269}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnDeleteTransform@{Detail\_\_OnDeleteTransform}}
 \index{Detail\_\_OnDeleteTransform@{Detail\_\_OnDeleteTransform}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnDeleteTransform()}{Detail\_\_OnDeleteTransform()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Delete\+Transform (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on deleting transform
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_afc8f6a00c5aad2cd999880d3ec177aca}\label{classmaster_1_1_detail_frame_afc8f6a00c5aad2cd999880d3ec177aca}} 
+
+
+Callback on deleting transform. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_afc8f6a00c5aad2cd999880d3ec177aca}\label{classmaster_1_1_detail_frame_afc8f6a00c5aad2cd999880d3ec177aca}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnUpdateCamera@{Detail\_\_OnUpdateCamera}}
 \index{Detail\_\_OnUpdateCamera@{Detail\_\_OnUpdateCamera}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnUpdateCamera()}{Detail\_\_OnUpdateCamera()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Update\+Camera (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{zoneX,  }\item[{}]{zoneY,  }\item[{}]{target }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on update camera
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_ac1178b7fea32311d76bf62d24ed5753b}\label{classmaster_1_1_detail_frame_ac1178b7fea32311d76bf62d24ed5753b}} 
+
+
+Callback on update camera. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_ac1178b7fea32311d76bf62d24ed5753b}\label{classmaster_1_1_detail_frame_ac1178b7fea32311d76bf62d24ed5753b}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnUpdateController@{Detail\_\_OnUpdateController}}
 \index{Detail\_\_OnUpdateController@{Detail\_\_OnUpdateController}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnUpdateController()}{Detail\_\_OnUpdateController()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Update\+Controller (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{speed,  }\item[{}]{jump\+Force }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on update controller
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a0ab14fc218bf1dc9d8181f667ba501cc}\label{classmaster_1_1_detail_frame_a0ab14fc218bf1dc9d8181f667ba501cc}} 
+
+
+Callback on update controller. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a0ab14fc218bf1dc9d8181f667ba501cc}\label{classmaster_1_1_detail_frame_a0ab14fc218bf1dc9d8181f667ba501cc}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnUpdateName@{Detail\_\_OnUpdateName}}
 \index{Detail\_\_OnUpdateName@{Detail\_\_OnUpdateName}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnUpdateName()}{Detail\_\_OnUpdateName()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Update\+Name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on name update
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a457e9591bf51be1272f68af4207ceded}\label{classmaster_1_1_detail_frame_a457e9591bf51be1272f68af4207ceded}} 
+
+
+Callback on name update. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a457e9591bf51be1272f68af4207ceded}\label{classmaster_1_1_detail_frame_a457e9591bf51be1272f68af4207ceded}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnUpdatePhysics@{Detail\_\_OnUpdatePhysics}}
 \index{Detail\_\_OnUpdatePhysics@{Detail\_\_OnUpdatePhysics}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnUpdatePhysics()}{Detail\_\_OnUpdatePhysics()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Update\+Physics (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{density }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on update physics
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a940bf281cf1d8473e935ea341dae9b4f}\label{classmaster_1_1_detail_frame_a940bf281cf1d8473e935ea341dae9b4f}} 
+
+
+Callback on update physics. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a940bf281cf1d8473e935ea341dae9b4f}\label{classmaster_1_1_detail_frame_a940bf281cf1d8473e935ea341dae9b4f}} 
 \index{master.DetailFrame@{master.DetailFrame}!Detail\_\_OnUpdateTransform@{Detail\_\_OnUpdateTransform}}
 \index{Detail\_\_OnUpdateTransform@{Detail\_\_OnUpdateTransform}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Detail\_\_OnUpdateTransform()}{Detail\_\_OnUpdateTransform()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Detail\+\_\+\+\_\+\+On\+Update\+Transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on update transform
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_detail_frame_a3443ad5da176910cec279546b234c179}\label{classmaster_1_1_detail_frame_a3443ad5da176910cec279546b234c179}} 
+
+
+Callback on update transform. 
+
+\mbox{\Hypertarget{classmaster_1_1_detail_frame_a3443ad5da176910cec279546b234c179}\label{classmaster_1_1_detail_frame_a3443ad5da176910cec279546b234c179}} 
 \index{master.DetailFrame@{master.DetailFrame}!Update@{Update}}
 \index{Update@{Update}!master.DetailFrame@{master.DetailFrame}}
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily def master.\+Detail\+Frame.\+Update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update detail frame with data of the current selected game object
-\end{DoxyVerb}
- 
+
+
+Update detail frame with data of the current selected game object. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/master.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/master.\+py\end{DoxyCompactItemize}
