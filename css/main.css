@@ -19,3 +19,8 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.sub_section {
+  border-top: 1px solid #ccc;
+  padding: 25px 0px;
+}
