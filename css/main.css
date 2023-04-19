@@ -18,6 +18,12 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
 }
+.boder_top {
+  border-top: 1px solid #ccc;
+}
+.boder_bottom {
+  border-bottom: 1px solid #ccc;
+}
 
 .teammember {
   text-align: center;
@@ -29,7 +35,6 @@ body {
 }
 
 .sub_section {
-  border-top: 1px solid #ccc;
   padding: 25px 0px;
 }
 
