@@ -1,29 +1,33 @@
 \hypertarget{classmaster_1_1_sprite_frame}{}\doxysection{master.\+Sprite\+Frame Class Reference}
 \label{classmaster_1_1_sprite_frame}\index{master.SpriteFrame@{master.SpriteFrame}}
+
+
+Sprite frame draws the frame on the right.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmaster_1_1_sprite_frame_aa9c9b493c85c1795158274062e2e76cb}\label{classmaster_1_1_sprite_frame_aa9c9b493c85c1795158274062e2e76cb}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, width, height)
-\item 
+def \mbox{\hyperlink{classmaster_1_1_sprite_frame_aa9c9b493c85c1795158274062e2e76cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, parent, width, height)
+\begin{DoxyCompactList}\small\item\em Sprite Frame init. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_a6a1a316aaef4f7c9f6fc8b29e57f09aa}{Start}} (self, data=None)
-\item 
+\begin{DoxyCompactList}\small\item\em setting up sprite frame \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_a355e6f627f369f7af04002bcc6a845d5}{Sheet\+Frame}} (self, data)
-\item 
+\begin{DoxyCompactList}\small\item\em Sheet frame uses sprite sheet frame that is used for splitting canvas. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_afa7b7fd3cacf0cfe60ec26e3d7aef3b2}{Update}} (self, data)
-\item 
+\begin{DoxyCompactList}\small\item\em Update the frame based on object clicked in the display frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_acd2d5a9ddea750d4d13442f4283ac698}{On\+Add\+Component}} (self, component)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for adding component. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_ac1a3301c31e0dc4533d64cd65baaf6d3}{Sprite\+\_\+\+\_\+\+On\+Delete\+Sprite}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on sprite frame for deleting sprite. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_af9a4d2775b5bef661243a384b00ca4a2}{Sprite\+\_\+\+\_\+\+On\+Delete\+Tile}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on sprite frame for deleting tile. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_aeb638d16ff3696c24cd5ff397ca9d624}{Sprite\+\_\+\+\_\+\+On\+Apply\+Sprite}} (self, data)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for level editing canvas that updates information. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_abe94d1edfd796ffd3860f96751e7dd10}{Sprite\+\_\+\+\_\+\+On\+Update\+Sprite}} (self, src, w, h, run, jump, idle)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback for updating sprite sheet in Sprite Frame. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf981b}{Sprite\+\_\+\+\_\+\+On\+Update\+Tile}} (self, ss\+Data)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback for updating tile in sprite frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -87,9 +91,31 @@ def \mbox{\hyperlink{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf9
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}Sprite frame draws the frame on the right. Updates sprite/tile information and allow choosing and indexing sprite.
-\end{DoxyVerb}
- 
+Sprite frame draws the frame on the right. 
+
+Updates sprite/tile information and allow choosing and indexing sprite. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_aa9c9b493c85c1795158274062e2e76cb}\label{classmaster_1_1_sprite_frame_aa9c9b493c85c1795158274062e2e76cb}} 
+\index{master.SpriteFrame@{master.SpriteFrame}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!master.SpriteFrame@{master.SpriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def master.\+Sprite\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
+
+
+
+Sprite Frame init. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & reference to parent for calling callbacks \\
+\hline
+{\em width} & width of sprite frame \\
+\hline
+{\em height} & height of height frame \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classmaster_1_1_sprite_frame_acd2d5a9ddea750d4d13442f4283ac698}\label{classmaster_1_1_sprite_frame_acd2d5a9ddea750d4d13442f4283ac698}} 
@@ -98,74 +124,92 @@ def \mbox{\hyperlink{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf9
 \doxysubsubsection{\texorpdfstring{OnAddComponent()}{OnAddComponent()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+On\+Add\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{component }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for adding component
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_a355e6f627f369f7af04002bcc6a845d5}\label{classmaster_1_1_sprite_frame_a355e6f627f369f7af04002bcc6a845d5}} 
+
+
+Callback for adding component. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_a355e6f627f369f7af04002bcc6a845d5}\label{classmaster_1_1_sprite_frame_a355e6f627f369f7af04002bcc6a845d5}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!SheetFrame@{SheetFrame}}
 \index{SheetFrame@{SheetFrame}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{SheetFrame()}{SheetFrame()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sheet\+Frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Sheet frame uses sprite sheet frame that is used for splitting canvas
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_aeb638d16ff3696c24cd5ff397ca9d624}\label{classmaster_1_1_sprite_frame_aeb638d16ff3696c24cd5ff397ca9d624}} 
+
+
+Sheet frame uses sprite sheet frame that is used for splitting canvas. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_aeb638d16ff3696c24cd5ff397ca9d624}\label{classmaster_1_1_sprite_frame_aeb638d16ff3696c24cd5ff397ca9d624}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Sprite\_\_OnApplySprite@{Sprite\_\_OnApplySprite}}
 \index{Sprite\_\_OnApplySprite@{Sprite\_\_OnApplySprite}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Sprite\_\_OnApplySprite()}{Sprite\_\_OnApplySprite()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sprite\+\_\+\+\_\+\+On\+Apply\+Sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for level editing canvas that updates information
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_ac1a3301c31e0dc4533d64cd65baaf6d3}\label{classmaster_1_1_sprite_frame_ac1a3301c31e0dc4533d64cd65baaf6d3}} 
+
+
+Callback for level editing canvas that updates information. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_ac1a3301c31e0dc4533d64cd65baaf6d3}\label{classmaster_1_1_sprite_frame_ac1a3301c31e0dc4533d64cd65baaf6d3}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Sprite\_\_OnDeleteSprite@{Sprite\_\_OnDeleteSprite}}
 \index{Sprite\_\_OnDeleteSprite@{Sprite\_\_OnDeleteSprite}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Sprite\_\_OnDeleteSprite()}{Sprite\_\_OnDeleteSprite()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sprite\+\_\+\+\_\+\+On\+Delete\+Sprite (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on sprite frame for deleting sprite
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_af9a4d2775b5bef661243a384b00ca4a2}\label{classmaster_1_1_sprite_frame_af9a4d2775b5bef661243a384b00ca4a2}} 
+
+
+Callback on sprite frame for deleting sprite. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_af9a4d2775b5bef661243a384b00ca4a2}\label{classmaster_1_1_sprite_frame_af9a4d2775b5bef661243a384b00ca4a2}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Sprite\_\_OnDeleteTile@{Sprite\_\_OnDeleteTile}}
 \index{Sprite\_\_OnDeleteTile@{Sprite\_\_OnDeleteTile}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Sprite\_\_OnDeleteTile()}{Sprite\_\_OnDeleteTile()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sprite\+\_\+\+\_\+\+On\+Delete\+Tile (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on sprite frame for deleting tile
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_abe94d1edfd796ffd3860f96751e7dd10}\label{classmaster_1_1_sprite_frame_abe94d1edfd796ffd3860f96751e7dd10}} 
+
+
+Callback on sprite frame for deleting tile. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_abe94d1edfd796ffd3860f96751e7dd10}\label{classmaster_1_1_sprite_frame_abe94d1edfd796ffd3860f96751e7dd10}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Sprite\_\_OnUpdateSprite@{Sprite\_\_OnUpdateSprite}}
 \index{Sprite\_\_OnUpdateSprite@{Sprite\_\_OnUpdateSprite}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Sprite\_\_OnUpdateSprite()}{Sprite\_\_OnUpdateSprite()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sprite\+\_\+\+\_\+\+On\+Update\+Sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{src,  }\item[{}]{w,  }\item[{}]{h,  }\item[{}]{run,  }\item[{}]{jump,  }\item[{}]{idle }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating sprite sheet in Sprite Frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf981b}\label{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf981b}} 
+
+
+Callback for updating sprite sheet in Sprite Frame. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf981b}\label{classmaster_1_1_sprite_frame_afd569756cb5942e67e59cf8023cf981b}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Sprite\_\_OnUpdateTile@{Sprite\_\_OnUpdateTile}}
 \index{Sprite\_\_OnUpdateTile@{Sprite\_\_OnUpdateTile}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Sprite\_\_OnUpdateTile()}{Sprite\_\_OnUpdateTile()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Sprite\+\_\+\+\_\+\+On\+Update\+Tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ss\+Data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback for updating tile in sprite frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_a6a1a316aaef4f7c9f6fc8b29e57f09aa}\label{classmaster_1_1_sprite_frame_a6a1a316aaef4f7c9f6fc8b29e57f09aa}} 
+
+
+Callback for updating tile in sprite frame. 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_a6a1a316aaef4f7c9f6fc8b29e57f09aa}\label{classmaster_1_1_sprite_frame_a6a1a316aaef4f7c9f6fc8b29e57f09aa}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Start@{Start}}
 \index{Start@{Start}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Start()}{Start()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data = {\ttfamily None} }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}setting up sprite frame
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_sprite_frame_afa7b7fd3cacf0cfe60ec26e3d7aef3b2}\label{classmaster_1_1_sprite_frame_afa7b7fd3cacf0cfe60ec26e3d7aef3b2}} 
+
+
+setting up sprite frame 
+
+\mbox{\Hypertarget{classmaster_1_1_sprite_frame_afa7b7fd3cacf0cfe60ec26e3d7aef3b2}\label{classmaster_1_1_sprite_frame_afa7b7fd3cacf0cfe60ec26e3d7aef3b2}} 
 \index{master.SpriteFrame@{master.SpriteFrame}!Update@{Update}}
 \index{Update@{Update}!master.SpriteFrame@{master.SpriteFrame}}
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily def master.\+Sprite\+Frame.\+Update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the frame based on object clicked in the display frame
-\end{DoxyVerb}
- 
+
+
+Update the frame based on object clicked in the display frame. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/master.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/master.\+py\end{DoxyCompactItemize}

@@ -1,28 +1,33 @@
 \hypertarget{class_game_engine_1_1_game_engine}{}\doxysection{Game\+Engine.\+Game\+Engine Class Reference}
 \label{class_game_engine_1_1_game_engine}\index{GameEngine.GameEngine@{GameEngine.GameEngine}}
+
+
+Responsible for using functions from exported mygameengine.\+pyd file to build games.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a7c3b802e86e796eaa39b9e4cbad7178f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, w=1280, h=720)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize necessary values. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a174823d8212a1a79b4fb1977e5941368}{Add\+Game\+Object}} (self, id)
-\item 
+\begin{DoxyCompactList}\small\item\em Add game object to \mbox{\hyperlink{namespace_game_engine}{Game\+Engine}}. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_adebbcd3c7b8837f5929a591e94dc6070}{Add\+Transform\+Component}} (self, id, x, y)
-\item 
+\begin{DoxyCompactList}\small\item\em Add transform component to a object with given id. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_acd5804e00afaa283d92a47703296a9b0}{Add\+Controller\+Component}} (self, id, jump\+Force, speed)
-\item 
+\begin{DoxyCompactList}\small\item\em Add controller component to a game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_aefa22b18f1b046e6cdf8bab262568873}{Add\+Sprite\+Component}} (self, id, source, sprite\+Info, run, jump, idle)
-\item 
+\begin{DoxyCompactList}\small\item\em Add sprite componnet to a game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_ab6366787308274dd6f6b7c5f3189e6a1}{Add\+Physics\+Component}} (self, id, density=10.\+0)
-\item 
+\begin{DoxyCompactList}\small\item\em Add physics component to a game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a69c9524e46ece8a0ea2398e91b266888}{Add\+Tile\+Component}} (self, id, map)
-\item 
+\begin{DoxyCompactList}\small\item\em Add tile component to a game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a175b6a30afd2fca584733e6f60401106}{Add\+Camera\+Component}} (self, id, x, y, target)
-\item 
+\begin{DoxyCompactList}\small\item\em Add camera component to a game object. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_ac6b90b1a44c032bf2ba3b54cb508d88e}{Run\+Game}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Run game loop. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990998d9e19}{Sample\+Game}} (self)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em a hardcoded sample game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,10 +52,7 @@ def \mbox{\hyperlink{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}_summary_
-Responsible for using functions from exported mygameengine.pyd file to build games.
-\end{DoxyVerb}
- 
+Responsible for using functions from exported mygameengine.\+pyd file to build games. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_game_engine_1_1_game_engine_a7c3b802e86e796eaa39b9e4cbad7178f}\label{class_game_engine_1_1_game_engine_a7c3b802e86e796eaa39b9e4cbad7178f}} 
@@ -59,13 +61,18 @@ Responsible for using functions from exported mygameengine.pyd file to build gam
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{w = {\ttfamily 1280},  }\item[{}]{h = {\ttfamily 720} }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Initialize necessary values
 
-Args:
-    w (int, optional): _description_. Defaults to 1280. Set width of game window
-    h (int, optional): _description_. Defaults to 720. Set height of game window
-\end{DoxyVerb}
- 
+
+Initialize necessary values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Defaults to 1280. Set width of game window \\
+\hline
+{\em h} & Defaults to 720. Set height of game window \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_game_engine_1_1_game_engine_a175b6a30afd2fca584733e6f60401106}\label{class_game_engine_1_1_game_engine_a175b6a30afd2fca584733e6f60401106}} 
@@ -74,109 +81,155 @@ Args:
 \doxysubsubsection{\texorpdfstring{AddCameraComponent()}{AddCameraComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Camera\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{target }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add camera component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    x (_type_): _description_ deadzone width
-    y (_type_): _description_ deadzone height
-    target (_type_): _description_ target the camera is following
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_acd5804e00afaa283d92a47703296a9b0}\label{class_game_engine_1_1_game_engine_acd5804e00afaa283d92a47703296a9b0}} 
+
+Add camera component to a game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em x} & deadzone width \\
+\hline
+{\em y} & deadzone height \\
+\hline
+{\em target} & the camera is following \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_acd5804e00afaa283d92a47703296a9b0}\label{class_game_engine_1_1_game_engine_acd5804e00afaa283d92a47703296a9b0}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddControllerComponent@{AddControllerComponent}}
 \index{AddControllerComponent@{AddControllerComponent}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddControllerComponent()}{AddControllerComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Controller\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{jump\+Force,  }\item[{}]{speed }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add controller component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    jumpForce (_type_): _description_ the upward force given to a object in the physics world when player jumps
-    speed (_type_): _description_   the movement speed of going right or left in the physics world.
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_a174823d8212a1a79b4fb1977e5941368}\label{class_game_engine_1_1_game_engine_a174823d8212a1a79b4fb1977e5941368}} 
+
+Add controller component to a game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em jump\+Force} & the upward force given to a object in the physics world when player jumps \\
+\hline
+{\em speed} & the movement speed of going right or left in the physics world. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_a174823d8212a1a79b4fb1977e5941368}\label{class_game_engine_1_1_game_engine_a174823d8212a1a79b4fb1977e5941368}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddGameObject@{AddGameObject}}
 \index{AddGameObject@{AddGameObject}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddGameObject()}{AddGameObject()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Game\+Object (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add game object to GameEngine
 
-Args:
-    id (_type_): _description_  index of the game object
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_ab6366787308274dd6f6b7c5f3189e6a1}\label{class_game_engine_1_1_game_engine_ab6366787308274dd6f6b7c5f3189e6a1}} 
+
+Add game object to \mbox{\hyperlink{namespace_game_engine}{Game\+Engine}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & index of the game object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_ab6366787308274dd6f6b7c5f3189e6a1}\label{class_game_engine_1_1_game_engine_ab6366787308274dd6f6b7c5f3189e6a1}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddPhysicsComponent@{AddPhysicsComponent}}
 \index{AddPhysicsComponent@{AddPhysicsComponent}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddPhysicsComponent()}{AddPhysicsComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Physics\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{density = {\ttfamily 10.0} }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add physics component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    density (float, optional): _description_. Defaults to 10.0. density of player, deciding player mass.
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_aefa22b18f1b046e6cdf8bab262568873}\label{class_game_engine_1_1_game_engine_aefa22b18f1b046e6cdf8bab262568873}} 
+
+Add physics component to a game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em density} & Defaults to 10.\+0. density of player, deciding player mass. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_aefa22b18f1b046e6cdf8bab262568873}\label{class_game_engine_1_1_game_engine_aefa22b18f1b046e6cdf8bab262568873}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddSpriteComponent@{AddSpriteComponent}}
 \index{AddSpriteComponent@{AddSpriteComponent}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddSpriteComponent()}{AddSpriteComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Sprite\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{source,  }\item[{}]{sprite\+Info,  }\item[{}]{run,  }\item[{}]{jump,  }\item[{}]{idle }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add sprite componnet to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    source (_type_): _description_  source of sprite image
-    spriteInfo (_type_): _description_ dimension of sprite
-    run (_type_): _description_ indexes for running animation
-    jump (_type_): _description_ indexes for jumping animation
-    idle (_type_): _description_ indexes for idle animation
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_a69c9524e46ece8a0ea2398e91b266888}\label{class_game_engine_1_1_game_engine_a69c9524e46ece8a0ea2398e91b266888}} 
+
+Add sprite componnet to a game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em source} & source of sprite image \\
+\hline
+{\em sprite\+Info} & dimension of sprite \\
+\hline
+{\em run} & indexes for running animation \\
+\hline
+{\em jump} & indexes for jumping animation \\
+\hline
+{\em idle} & indexes for idle animation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_a69c9524e46ece8a0ea2398e91b266888}\label{class_game_engine_1_1_game_engine_a69c9524e46ece8a0ea2398e91b266888}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddTileComponent@{AddTileComponent}}
 \index{AddTileComponent@{AddTileComponent}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddTileComponent()}{AddTileComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Tile\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{map }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add tile component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    map (_type_): _description_ the level map we use to draw
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_adebbcd3c7b8837f5929a591e94dc6070}\label{class_game_engine_1_1_game_engine_adebbcd3c7b8837f5929a591e94dc6070}} 
+
+Add tile component to a game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & game object id \\
+\hline
+{\em map} & the level map we use to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_adebbcd3c7b8837f5929a591e94dc6070}\label{class_game_engine_1_1_game_engine_adebbcd3c7b8837f5929a591e94dc6070}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!AddTransformComponent@{AddTransformComponent}}
 \index{AddTransformComponent@{AddTransformComponent}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{AddTransformComponent()}{AddTransformComponent()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Add\+Transform\+Component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Add transform component to a object with given id
 
-Args:
-    id (_type_): _description_ game object id
-    x (_type_): _description_ x position of the transform
-    y (_type_): _description_ y position of the transform
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_ac6b90b1a44c032bf2ba3b54cb508d88e}\label{class_game_engine_1_1_game_engine_ac6b90b1a44c032bf2ba3b54cb508d88e}} 
+
+Add transform component to a object with given id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & object id \\
+\hline
+{\em x} & position of the transform \\
+\hline
+{\em y} & position of the transform \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_ac6b90b1a44c032bf2ba3b54cb508d88e}\label{class_game_engine_1_1_game_engine_ac6b90b1a44c032bf2ba3b54cb508d88e}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!RunGame@{RunGame}}
 \index{RunGame@{RunGame}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{RunGame()}{RunGame()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Run\+Game (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ Run game loop
-\end{DoxyVerb}
- \mbox{\Hypertarget{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990998d9e19}\label{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990998d9e19}} 
+
+
+Run game loop. 
+
+\mbox{\Hypertarget{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990998d9e19}\label{class_game_engine_1_1_game_engine_a2bd5d79a68ce740d3e12e990998d9e19}} 
 \index{GameEngine.GameEngine@{GameEngine.GameEngine}!SampleGame@{SampleGame}}
 \index{SampleGame@{SampleGame}!GameEngine.GameEngine@{GameEngine.GameEngine}}
 \doxysubsubsection{\texorpdfstring{SampleGame()}{SampleGame()}}
 {\footnotesize\ttfamily def Game\+Engine.\+Game\+Engine.\+Sample\+Game (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_ a hardcoded sample game. Note it does not use any other functions in GameEngine class since there was not enough time to finish everything.
-\end{DoxyVerb}
- 
+
+
+a hardcoded sample game. 
+
+Note it does not use any other functions in \mbox{\hyperlink{namespace_game_engine}{Game\+Engine}} class since there was not enough time to finish everything. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/Game\+Engine.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/Game\+Engine.\+py\end{DoxyCompactItemize}

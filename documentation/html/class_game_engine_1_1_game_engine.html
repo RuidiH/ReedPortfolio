@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CCS: GameEngine.GameEngine Class Reference</title>
+<title>CrispyCrunchyShark: GameEngine.GameEngine Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CCS
+   <div id="projectname">CrispyCrunchyShark
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>GameEngine</b></li><li class="navelem"><a class="el" href="class_game_engine_1_1_game_engine.html">GameEngine</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_game_engine.html">GameEngine</a></li><li class="navelem"><a class="el" href="class_game_engine_1_1_game_engine.html">GameEngine</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,28 +80,41 @@ $(function() {
   <div class="headertitle"><div class="title">GameEngine.GameEngine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Responsible for using functions from exported mygameengine.pyd file to build games.  
+ <a href="class_game_engine_1_1_game_engine.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c3b802e86e796eaa39b9e4cbad7178f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#a7c3b802e86e796eaa39b9e4cbad7178f">__init__</a> (self, w=1280, h=720)</td></tr>
+<tr class="memdesc:a7c3b802e86e796eaa39b9e4cbad7178f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize necessary values.  <br /></td></tr>
 <tr class="separator:a7c3b802e86e796eaa39b9e4cbad7178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174823d8212a1a79b4fb1977e5941368"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#a174823d8212a1a79b4fb1977e5941368">AddGameObject</a> (self, id)</td></tr>
+<tr class="memdesc:a174823d8212a1a79b4fb1977e5941368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add game object to <a class="el" href="namespace_game_engine.html" title="GameEngine in Python that construct objects and components with given parameters.">GameEngine</a>.  <br /></td></tr>
 <tr class="separator:a174823d8212a1a79b4fb1977e5941368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebbcd3c7b8837f5929a591e94dc6070"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#adebbcd3c7b8837f5929a591e94dc6070">AddTransformComponent</a> (self, id, x, y)</td></tr>
+<tr class="memdesc:adebbcd3c7b8837f5929a591e94dc6070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add transform component to a object with given id.  <br /></td></tr>
 <tr class="separator:adebbcd3c7b8837f5929a591e94dc6070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd5804e00afaa283d92a47703296a9b0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#acd5804e00afaa283d92a47703296a9b0">AddControllerComponent</a> (self, id, jumpForce, speed)</td></tr>
+<tr class="memdesc:acd5804e00afaa283d92a47703296a9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add controller component to a game object.  <br /></td></tr>
 <tr class="separator:acd5804e00afaa283d92a47703296a9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa22b18f1b046e6cdf8bab262568873"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#aefa22b18f1b046e6cdf8bab262568873">AddSpriteComponent</a> (self, id, source, spriteInfo, run, jump, idle)</td></tr>
+<tr class="memdesc:aefa22b18f1b046e6cdf8bab262568873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add sprite componnet to a game object.  <br /></td></tr>
 <tr class="separator:aefa22b18f1b046e6cdf8bab262568873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6366787308274dd6f6b7c5f3189e6a1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#ab6366787308274dd6f6b7c5f3189e6a1">AddPhysicsComponent</a> (self, id, density=10.0)</td></tr>
+<tr class="memdesc:ab6366787308274dd6f6b7c5f3189e6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add physics component to a game object.  <br /></td></tr>
 <tr class="separator:ab6366787308274dd6f6b7c5f3189e6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c9524e46ece8a0ea2398e91b266888"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#a69c9524e46ece8a0ea2398e91b266888">AddTileComponent</a> (self, id, map)</td></tr>
+<tr class="memdesc:a69c9524e46ece8a0ea2398e91b266888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tile component to a game object.  <br /></td></tr>
 <tr class="separator:a69c9524e46ece8a0ea2398e91b266888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a175b6a30afd2fca584733e6f60401106"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#a175b6a30afd2fca584733e6f60401106">AddCameraComponent</a> (self, id, x, y, target)</td></tr>
+<tr class="memdesc:a175b6a30afd2fca584733e6f60401106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add camera component to a game object.  <br /></td></tr>
 <tr class="separator:a175b6a30afd2fca584733e6f60401106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b90b1a44c032bf2ba3b54cb508d88e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#ac6b90b1a44c032bf2ba3b54cb508d88e">RunGame</a> (self)</td></tr>
+<tr class="memdesc:ac6b90b1a44c032bf2ba3b54cb508d88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run game loop.  <br /></td></tr>
 <tr class="separator:ac6b90b1a44c032bf2ba3b54cb508d88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd5d79a68ce740d3e12e990998d9e19"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_engine_1_1_game_engine.html#a2bd5d79a68ce740d3e12e990998d9e19">SampleGame</a> (self)</td></tr>
+<tr class="memdesc:a2bd5d79a68ce740d3e12e990998d9e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">a hardcoded sample game.  <br /></td></tr>
 <tr class="separator:a2bd5d79a68ce740d3e12e990998d9e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -126,9 +139,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5dc2d2829469e0a407c266de2c19bdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">_summary_
-Responsible for using functions from exported mygameengine.pyd file to build games.
-</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Responsible for using functions from exported mygameengine.pyd file to build games. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7c3b802e86e796eaa39b9e4cbad7178f" name="a7c3b802e86e796eaa39b9e4cbad7178f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c3b802e86e796eaa39b9e4cbad7178f">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -160,12 +172,16 @@ Responsible for using functions from exported mygameengine.pyd file to build gam
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Initialize necessary values
 
-Args:
-    w (int, optional): _description_. Defaults to 1280. Set width of game window
-    h (int, optional): _description_. Defaults to 720. Set height of game window
-</pre> 
+<p>Initialize necessary values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Defaults to 1280. Set width of game window </td></tr>
+    <tr><td class="paramname">h</td><td>Defaults to 720. Set height of game window </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -212,14 +228,18 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add camera component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    x (_type_): _description_ deadzone width
-    y (_type_): _description_ deadzone height
-    target (_type_): _description_ target the camera is following
-</pre> 
+<p>Add camera component to a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>game object id </td></tr>
+    <tr><td class="paramname">x</td><td>deadzone width </td></tr>
+    <tr><td class="paramname">y</td><td>deadzone height </td></tr>
+    <tr><td class="paramname">target</td><td>the camera is following </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acd5804e00afaa283d92a47703296a9b0" name="acd5804e00afaa283d92a47703296a9b0"></a>
@@ -259,13 +279,17 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add controller component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    jumpForce (_type_): _description_ the upward force given to a object in the physics world when player jumps
-    speed (_type_): _description_   the movement speed of going right or left in the physics world.
-</pre> 
+<p>Add controller component to a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>game object id </td></tr>
+    <tr><td class="paramname">jumpForce</td><td>the upward force given to a object in the physics world when player jumps </td></tr>
+    <tr><td class="paramname">speed</td><td>the movement speed of going right or left in the physics world. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a174823d8212a1a79b4fb1977e5941368" name="a174823d8212a1a79b4fb1977e5941368"></a>
@@ -293,11 +317,15 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add game object to GameEngine
 
-Args:
-    id (_type_): _description_  index of the game object
-</pre> 
+<p>Add game object to <a class="el" href="namespace_game_engine.html" title="GameEngine in Python that construct objects and components with given parameters.">GameEngine</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index of the game object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab6366787308274dd6f6b7c5f3189e6a1" name="ab6366787308274dd6f6b7c5f3189e6a1"></a>
@@ -331,12 +359,16 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add physics component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    density (float, optional): _description_. Defaults to 10.0. density of player, deciding player mass.
-</pre> 
+<p>Add physics component to a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>game object id </td></tr>
+    <tr><td class="paramname">density</td><td>Defaults to 10.0. density of player, deciding player mass. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aefa22b18f1b046e6cdf8bab262568873" name="aefa22b18f1b046e6cdf8bab262568873"></a>
@@ -394,16 +426,20 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add sprite componnet to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    source (_type_): _description_  source of sprite image
-    spriteInfo (_type_): _description_ dimension of sprite
-    run (_type_): _description_ indexes for running animation
-    jump (_type_): _description_ indexes for jumping animation
-    idle (_type_): _description_ indexes for idle animation
-</pre> 
+<p>Add sprite componnet to a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>game object id </td></tr>
+    <tr><td class="paramname">source</td><td>source of sprite image </td></tr>
+    <tr><td class="paramname">spriteInfo</td><td>dimension of sprite </td></tr>
+    <tr><td class="paramname">run</td><td>indexes for running animation </td></tr>
+    <tr><td class="paramname">jump</td><td>indexes for jumping animation </td></tr>
+    <tr><td class="paramname">idle</td><td>indexes for idle animation </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a69c9524e46ece8a0ea2398e91b266888" name="a69c9524e46ece8a0ea2398e91b266888"></a>
@@ -437,12 +473,16 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add tile component to a game object
 
-Args:
-    id (_type_): _description_ game object id
-    map (_type_): _description_ the level map we use to draw
-</pre> 
+<p>Add tile component to a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>game object id </td></tr>
+    <tr><td class="paramname">map</td><td>the level map we use to draw </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="adebbcd3c7b8837f5929a591e94dc6070" name="adebbcd3c7b8837f5929a591e94dc6070"></a>
@@ -482,13 +522,17 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Add transform component to a object with given id
 
-Args:
-    id (_type_): _description_ game object id
-    x (_type_): _description_ x position of the transform
-    y (_type_): _description_ y position of the transform
-</pre> 
+<p>Add transform component to a object with given id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>object id </td></tr>
+    <tr><td class="paramname">x</td><td>position of the transform </td></tr>
+    <tr><td class="paramname">y</td><td>position of the transform </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac6b90b1a44c032bf2ba3b54cb508d88e" name="ac6b90b1a44c032bf2ba3b54cb508d88e"></a>
@@ -506,8 +550,9 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ Run game loop
-</pre> 
+
+<p>Run game loop. </p>
+
 </div>
 </div>
 <a id="a2bd5d79a68ce740d3e12e990998d9e19" name="a2bd5d79a68ce740d3e12e990998d9e19"></a>
@@ -525,12 +570,14 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">_summary_ a hardcoded sample game. Note it does not use any other functions in GameEngine class since there was not enough time to finish everything.
-</pre> 
+
+<p>a hardcoded sample game. </p>
+<p>Note it does not use any other functions in <a class="el" href="namespace_game_engine.html" title="GameEngine in Python that construct objects and components with given parameters.">GameEngine</a> class since there was not enough time to finish everything. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>py/GameEngine.py</li>
+<li>Engine/GUI/GameEngine.py</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

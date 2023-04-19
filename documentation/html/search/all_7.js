@@ -1,7 +1,7 @@
 var searchData=
 [
   ['gamebuilder_0',['GameBuilder',['../classbuildgame_1_1_game_builder.html',1,'buildgame']]],
-  ['gameengine_1',['GameEngine',['../class_game_engine_1_1_game_engine.html',1,'GameEngine']]],
+  ['gameengine_1',['GameEngine',['../namespace_game_engine.html',1,'GameEngine'],['../class_game_engine_1_1_game_engine.html',1,'GameEngine.GameEngine']]],
   ['gameobject_2',['GameObject',['../class_game_object.html',1,'']]],
   ['gameobjecttk_3',['GameObjectTK',['../classmaster_1_1_game_object_t_k.html',1,'master']]],
   ['getaddress_4',['GetAddress',['../class_camera_component.html#aadc2f656efdfe1dc29f2a7425d9a4208',1,'CameraComponent::GetAddress()'],['../class_controller_component.html#a0e95781c94ec439ce7832377c400a182',1,'ControllerComponent::GetAddress()'],['../class_physics_component.html#a9f4283e3107d84f00f3de447a2202ab6',1,'PhysicsComponent::GetAddress()'],['../class_sprite_component.html#a925ffd08b564f9835121e907a145d36e',1,'SpriteComponent::GetAddress()'],['../class_tile_component.html#aaa4c823d00f55bfe2860912e71878d29',1,'TileComponent::GetAddress()'],['../class_transform_component.html#ab815e450551252ecfd87c8818d7fa6e7',1,'TransformComponent::GetAddress()'],['../class_game_object.html#ae885d43da0a344bc5fb097be93408338',1,'GameObject::GetAddress()'],['../class_layer_manager.html#a2ddbcd194de9ffaea9234e5d04ac0b5f',1,'LayerManager::GetAddress()']]],

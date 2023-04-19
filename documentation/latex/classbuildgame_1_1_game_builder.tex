@@ -1,16 +1,20 @@
 \hypertarget{classbuildgame_1_1_game_builder}{}\doxysection{buildgame.\+Game\+Builder Class Reference}
 \label{classbuildgame_1_1_game_builder}\index{buildgame.GameBuilder@{buildgame.GameBuilder}}
+
+
+Build game using saved data from UI.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classbuildgame_1_1_game_builder_a06d86982d331bff329a29de893b62248}\label{classbuildgame_1_1_game_builder_a06d86982d331bff329a29de893b62248}} 
 def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, w=1280, h=720)
 \item 
-\mbox{\Hypertarget{classbuildgame_1_1_game_builder_ac5213d05dbebd5303d5c5486d57a6dec}\label{classbuildgame_1_1_game_builder_ac5213d05dbebd5303d5c5486d57a6dec}} 
-def {\bfseries Create\+Objects} (self)
-\item 
+def \mbox{\hyperlink{classbuildgame_1_1_game_builder_ac5213d05dbebd5303d5c5486d57a6dec}{Create\+Objects}} (self)
+\begin{DoxyCompactList}\small\item\em Construct game objects with data in .json file. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classbuildgame_1_1_game_builder_a5d49f4e0021167e2d821080e2af8eb9c}{Load\+Data}} (self, filename=\char`\"{}\char`\"{})
-\item 
+\begin{DoxyCompactList}\small\item\em Loads json datas. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classbuildgame_1_1_game_builder_a56aa0e52db04a9331835865e062de0b4}\label{classbuildgame_1_1_game_builder_a56aa0e52db04a9331835865e062de0b4}} 
 def {\bfseries Run} (self)
 \end{DoxyCompactItemize}
@@ -37,21 +41,39 @@ def {\bfseries Run} (self)
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Build game using saved data from UI. 
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classbuildgame_1_1_game_builder_a5d49f4e0021167e2d821080e2af8eb9c}\label{classbuildgame_1_1_game_builder_a5d49f4e0021167e2d821080e2af8eb9c}} 
+\mbox{\Hypertarget{classbuildgame_1_1_game_builder_ac5213d05dbebd5303d5c5486d57a6dec}\label{classbuildgame_1_1_game_builder_ac5213d05dbebd5303d5c5486d57a6dec}} 
+\index{buildgame.GameBuilder@{buildgame.GameBuilder}!CreateObjects@{CreateObjects}}
+\index{CreateObjects@{CreateObjects}!buildgame.GameBuilder@{buildgame.GameBuilder}}
+\doxysubsubsection{\texorpdfstring{CreateObjects()}{CreateObjects()}}
+{\footnotesize\ttfamily def buildgame.\+Game\+Builder.\+Create\+Objects (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Construct game objects with data in .json file. 
+
+Currently not working. \mbox{\Hypertarget{classbuildgame_1_1_game_builder_a5d49f4e0021167e2d821080e2af8eb9c}\label{classbuildgame_1_1_game_builder_a5d49f4e0021167e2d821080e2af8eb9c}} 
 \index{buildgame.GameBuilder@{buildgame.GameBuilder}!LoadData@{LoadData}}
 \index{LoadData@{LoadData}!buildgame.GameBuilder@{buildgame.GameBuilder}}
 \doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
 {\footnotesize\ttfamily def buildgame.\+Game\+Builder.\+Load\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}_summary_
-    Loads json data
 
-Args:
-    filename (str, optional): _description_. Defaults to "". file path
-\end{DoxyVerb}
- 
+
+Loads json datas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Defaults to \char`\"{}\char`\"{}. file path \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/buildgame.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/buildgame.\+py\end{DoxyCompactItemize}

@@ -30,5 +30,6 @@ var searchData=
   ['controller_5f_5fonupdatesprite_27',['Controller__OnUpdateSprite',['../classmaster_1_1_u_i_controller.html#a72f49e6ab9ff8b48abc4a1819ad5b9e1',1,'master::UIController']]],
   ['controller_5f_5fonupdatetile_28',['Controller__OnUpdateTile',['../classmaster_1_1_u_i_controller.html#a2d1d081e067451d83509961c27778ad2',1,'master::UIController']]],
   ['controller_5f_5fonupdatetransform_29',['Controller__OnUpdateTransform',['../classmaster_1_1_u_i_controller.html#a6cb5e78f30fa69d65d4a6d09ef962297',1,'master::UIController']]],
-  ['controllercomponent_30',['ControllerComponent',['../class_controller_component.html',1,'']]]
+  ['controllercomponent_30',['ControllerComponent',['../class_controller_component.html',1,'']]],
+  ['createobjects_31',['CreateObjects',['../classbuildgame_1_1_game_builder.html#ac5213d05dbebd5303d5c5486d57a6dec',1,'buildgame::GameBuilder']]]
 ];

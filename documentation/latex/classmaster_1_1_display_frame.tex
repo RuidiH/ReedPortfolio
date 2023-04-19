@@ -1,17 +1,21 @@
 \hypertarget{classmaster_1_1_display_frame}{}\doxysection{master.\+Display\+Frame Class Reference}
 \label{classmaster_1_1_display_frame}\index{master.DisplayFrame@{master.DisplayFrame}}
+
+
+Display frame draws selectable objects.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmaster_1_1_display_frame_a415becff20b8643326a47519fadf3890}\label{classmaster_1_1_display_frame_a415becff20b8643326a47519fadf3890}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, width, height, logo)
-\item 
+def \mbox{\hyperlink{classmaster_1_1_display_frame_a415becff20b8643326a47519fadf3890}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, parent, width, height, logo)
+\begin{DoxyCompactList}\small\item\em contruct Display frame \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_display_frame_ab50a0cc285546e0d21fa69135ad2a9d5}{Update}} (self, data, id=-\/1)
-\item 
+\begin{DoxyCompactList}\small\item\em Update display frame on item clicked. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_display_frame_a3a1215d7fe7903d23953932ea216c174}{Display\+\_\+\+\_\+\+On\+Add\+Game\+Object}} (self)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback on adding game object label. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328db416}{Display\+\_\+\+\_\+\+On\+Label\+Click}} (self, id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback on object label clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,9 +37,31 @@ def \mbox{\hyperlink{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328d
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}Display frame draws selectable objects
-\end{DoxyVerb}
- 
+Display frame draws selectable objects. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmaster_1_1_display_frame_a415becff20b8643326a47519fadf3890}\label{classmaster_1_1_display_frame_a415becff20b8643326a47519fadf3890}} 
+\index{master.DisplayFrame@{master.DisplayFrame}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!master.DisplayFrame@{master.DisplayFrame}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def master.\+Display\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent,  }\item[{}]{width,  }\item[{}]{height,  }\item[{}]{logo }\end{DoxyParamCaption})}
+
+
+
+contruct Display frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & pointer to parent \\
+\hline
+{\em width} & width of current frame \\
+\hline
+{\em height} & height of current frame @oaram logo logo displays on game object label \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classmaster_1_1_display_frame_a3a1215d7fe7903d23953932ea216c174}\label{classmaster_1_1_display_frame_a3a1215d7fe7903d23953932ea216c174}} 
@@ -44,26 +70,32 @@ def \mbox{\hyperlink{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328d
 \doxysubsubsection{\texorpdfstring{Display\_\_OnAddGameObject()}{Display\_\_OnAddGameObject()}}
 {\footnotesize\ttfamily def master.\+Display\+Frame.\+Display\+\_\+\+\_\+\+On\+Add\+Game\+Object (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on adding game object label
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328db416}\label{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328db416}} 
+
+
+Callback on adding game object label. 
+
+\mbox{\Hypertarget{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328db416}\label{classmaster_1_1_display_frame_a4bd2027085f1a8cf816745b5328db416}} 
 \index{master.DisplayFrame@{master.DisplayFrame}!Display\_\_OnLabelClick@{Display\_\_OnLabelClick}}
 \index{Display\_\_OnLabelClick@{Display\_\_OnLabelClick}!master.DisplayFrame@{master.DisplayFrame}}
 \doxysubsubsection{\texorpdfstring{Display\_\_OnLabelClick()}{Display\_\_OnLabelClick()}}
 {\footnotesize\ttfamily def master.\+Display\+Frame.\+Display\+\_\+\+\_\+\+On\+Label\+Click (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Callback on object label clicked
-\end{DoxyVerb}
- \mbox{\Hypertarget{classmaster_1_1_display_frame_ab50a0cc285546e0d21fa69135ad2a9d5}\label{classmaster_1_1_display_frame_ab50a0cc285546e0d21fa69135ad2a9d5}} 
+
+
+Callback on object label clicked. 
+
+\mbox{\Hypertarget{classmaster_1_1_display_frame_ab50a0cc285546e0d21fa69135ad2a9d5}\label{classmaster_1_1_display_frame_ab50a0cc285546e0d21fa69135ad2a9d5}} 
 \index{master.DisplayFrame@{master.DisplayFrame}!Update@{Update}}
 \index{Update@{Update}!master.DisplayFrame@{master.DisplayFrame}}
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily def master.\+Display\+Frame.\+Update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update display frame on item clicked
-\end{DoxyVerb}
- 
+
+
+Update display frame on item clicked. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-py/master.\+py\end{DoxyCompactItemize}
+Engine/\+GUI/master.\+py\end{DoxyCompactItemize}
