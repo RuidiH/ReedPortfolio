@@ -1,0 +1,35 @@
+\hypertarget{_i_graphics_engine_renderer_8hpp_source}{}\doxysection{IGraphics\+Engine\+Renderer.\+hpp}
+\label{_i_graphics_engine_renderer_8hpp_source}\index{include/core/IGraphicsEngineRenderer.hpp@{include/core/IGraphicsEngineRenderer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GRAPHICS\_ENGINE\_RENDERER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GRAPHICS\_ENGINE\_RENDERER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphicsEngineRenderer}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_i_graphics_engine_renderer_a325c7b3f89ca510ed038e52e9a3c3d74}{IGraphicsEngineRenderer}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)\ :\ mScreenWidth(w),\ mScreenHeight(h)\{\};}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_i_graphics_engine_renderer}{\string~IGraphicsEngineRenderer}}()\{\};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}{SetRenderDrawColor}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ g,\ \textcolor{keywordtype}{int}\ b,\ \textcolor{keywordtype}{int}\ a)\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}{RenderClear}}()\ =\ 0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}{RenderPresent}}()\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00048\ \ \ \textcolor{comment}{//\ Screen\ dimension\ constants}}
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{int}\ mScreenWidth\{0\};}
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{int}\ mScreenHeight\{0\};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

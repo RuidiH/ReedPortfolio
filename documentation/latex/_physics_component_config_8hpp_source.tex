@@ -1,0 +1,37 @@
+\hypertarget{_physics_component_config_8hpp_source}{}\doxysection{Physics\+Component\+Config.\+hpp}
+\label{_physics_component_config_8hpp_source}\index{include/core/physics/PhysicsComponentConfig.hpp@{include/core/physics/PhysicsComponentConfig.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}GameObject.hpp"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_physics_component_config}{PhysicsComponentConfig}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \textcolor{keyword}{enum}\ BodyType}
+\DoxyCodeLine{00014\ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Static,}
+\DoxyCodeLine{00016\ \ \ \ \ Dynamic}
+\DoxyCodeLine{00017\ \ \ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{int}\ ShapeWidth\{0\};}
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{int}\ ShapeHeight\{0\};}
+\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{int}\ PositionX\{0\};}
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{int}\ PositionY\{0\};}
+\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{bool}\ FixedRotation\{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{float}\ FixtureDensity\{0\};}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{float}\ FixtureFriction\{0\};}
+\DoxyCodeLine{00026\ \ \ BodyType\ bodyType\{Static\};}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{void}\ *userData\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{int}\ FixtureCategoryBits\{0\};}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{int}\ FixtureMaskBits\{0\};}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{bool}\ isSensor\{\textcolor{keyword}{false}\};}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{class_physics_component_config}{PhysicsComponentConfig}}();}
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{class_physics_component_config}{\string~PhysicsComponentConfig}}();}
+\DoxyCodeLine{00033\ \ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics_component_config_a14ea1344a95f06743078fed64d0dbffe}{AssignUserData}}(\mbox{\hyperlink{class_game_object}{GameObject}}\ *player);\ }
+\DoxyCodeLine{00038\ \};}
+
+\end{DoxyCode}

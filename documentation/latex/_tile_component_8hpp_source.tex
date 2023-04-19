@@ -1,0 +1,58 @@
+\hypertarget{_tile_component_8hpp_source}{}\doxysection{Tile\+Component.\+hpp}
+\label{_tile_component_8hpp_source}\index{include/buildin/TileComponent.hpp@{include/buildin/TileComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TILE\_COMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TILE\_COMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}TileMap.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Engine.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}TransformComponent.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}GridData.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tile_component}{TileComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{class_tile_component}{TileComponent}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{class_tile_component}{TileComponent}}\ *\mbox{\hyperlink{class_tile_component_aaa4c823d00f55bfe2860912e71878d29}{GetAddress}}()}
+\DoxyCodeLine{00037\ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00039\ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_component_ab700cd5c82894f17946e1b96220bb60a}{Init}}(std::uintptr\_t\ renAddress,\ \textcolor{keywordtype}{float}\ textureSpeed\ =\ 1.0f);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ UpdateMap(std::vector<TileGridData>\ data);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_component_a8fae5ab95939088ef27b6f72c0cfd11a}{BuildPhysics}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_component_a2b2aef7425c3eed1a928475e3f8206e8}{SetGridSize}}(\textcolor{keywordtype}{int}\ size)\ \{\ gridSize\ =\ size;\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_component_a932b5d6a5556f7737cec2960379b218d}{Render}}(SDL\_Renderer\ *ren,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ offset)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_component_ab584fceecc7483f42584c83c9f0ad810}{Update}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ std::vector<TileGridData>\ mTileGrids;}
+\DoxyCodeLine{00080\ \ \ SDL\_Renderer\ *mRenderer;}
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{int}\ gridSize\ =\ 64;}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

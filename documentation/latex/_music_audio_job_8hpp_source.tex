@@ -1,0 +1,30 @@
+\hypertarget{_music_audio_job_8hpp_source}{}\doxysection{Music\+Audio\+Job.\+hpp}
+\label{_music_audio_job_8hpp_source}\index{include/core/audio/MusicAudioJob.hpp@{include/core/audio/MusicAudioJob.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_mixer.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SDL\_mixer.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}AudioJob.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_music_audio_job}{MusicAudioJob}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_audio_job}{AudioJob}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ Mix\_Music\ *music\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \mbox{\hyperlink{class_music_audio_job}{MusicAudioJob}}(std::string\ p);}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_music_audio_job_a6cc72e1dbd85ce0c47946b37b1f159d7}{LoadMedia}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_music_audio_job_a5393725b20fa37618b8cae3467d65b34}{PlayMedia}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_audio_job_ab3094fa5e80e0d28c0a38dc4e9d8fdf2}{PauseMedia}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_audio_job_a2ea868b635d300f21ac0e690d5d8fa2d}{ResumeMedia}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_audio_job_a8ab26a9d850b5b29045b64648134a172}{TerminateMedia}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_music_audio_job}{\string~MusicAudioJob}}();}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

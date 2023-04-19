@@ -1,0 +1,51 @@
+\hypertarget{_physics_component_8hpp_source}{}\doxysection{Physics\+Component.\+hpp}
+\label{_physics_component_8hpp_source}\index{include/buildin/PhysicsComponent.hpp@{include/buildin/PhysicsComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PHYSICSCOMPONENT\_COMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PHYSICSCOMPONENT\_COMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <Box2D/Box2D.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}ControllerComponent.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PhysicsComponentConfig.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_physics_component}{PhysicsComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{class_physics_component_aeb544a2a04cde8f050c6a51ec436ec4e}{PhysicsComponent}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_physics_component_ac77afe4cc81460ea6027e6c21739a4af}{\string~PhysicsComponent}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{class_physics_component}{PhysicsComponent}}\ *\mbox{\hyperlink{class_physics_component_a9f4283e3107d84f00f3de447a2202ab6}{GetAddress}}()}
+\DoxyCodeLine{00037\ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00039\ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics_component_af9903df5c50d49b3cc22d2879b740c7c}{Config}}(std::vector<PhysicsComponentConfig>\ configs);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics_component_ac4ac3d36785aad9dd195ff66f75981fe}{FixedUpdate}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics_component_acbf31523c7b2ae961f7f381c36919ee5}{SetVelocity}}();}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ AddForce();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ std::vector<b2Body\ *>\ \mbox{\hyperlink{class_physics_component_ae602a0bd552b3e207138929e60ed17ac}{GetBodies}}()\ \{\ \textcolor{keywordflow}{return}\ mBody;\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics_component_ace7ede21ca4228c8d871d03ffdfe81cc}{Render}}(SDL\_Renderer\ *renderer,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ vec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ std::vector<b2Body\ *>\ mBody;}
+\DoxyCodeLine{00073\ \ \ \textcolor{keywordtype}{float}\ mSpriteW;}
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{float}\ mSpriteH;}
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{float}\ mSpeed;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_controller_component}{ControllerComponent}};}
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

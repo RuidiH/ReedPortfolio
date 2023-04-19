@@ -1,0 +1,281 @@
+\hypertarget{_s_d_l_graphics_program_8h_source}{}\doxysection{SDLGraphics\+Program.\+h}
+\label{_s_d_l_graphics_program_8h_source}\index{include/SDLGraphicsProgram.h@{include/SDLGraphicsProgram.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SDLGRAPHICSPROGRAM}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SDLGRAPHICSPROGRAM}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ ====================\ Libraries\ ==================}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Depending\ on\ the\ operating\ system\ we\ use}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ The\ paths\ to\ SDL\ are\ actually\ different.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ The\ \#define\ statement\ should\ be\ passed\ in}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ when\ compiling\ using\ the\ -\/D\ argument.}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ This\ gives\ an\ example\ of\ how\ a\ programmer}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ may\ support\ multiple\ platforms\ with\ different}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ dependencies.}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ The\ glad\ library\ helps\ setup\ OpenGL\ extensions.}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <glad/glad.h>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Purpose:}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ This\ class\ sets\ up\ a\ full\ graphics\ program\ using\ SDL}}
+\DoxyCodeLine{00028\ \textcolor{comment}{//}}
+\DoxyCodeLine{00029\ \textcolor{comment}{//}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//}}
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_d_l_graphics_program}{SDLGraphicsProgram}}\{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_program}{SDLGraphicsProgram}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Destructor}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_program}{\string~SDLGraphicsProgram}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Setup\ OpenGL}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ initGL();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Per\ frame\ update}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Renders\ shapes\ to\ the\ screen}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ loop\ that\ runs\ forever}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ loop();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ Get\ Pointer\ to\ Window}}
+\DoxyCodeLine{00047\ \ \ \ \ SDL\_Window*\ getSDLWindow();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Helper\ Function\ to\ Query\ OpenGL\ information.}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ getOpenGLVersionInfo();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Screen\ dimension\ constants}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ screenHeight;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ screenWidth;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ The\ window\ we'll\ be\ rendering\ to}}
+\DoxyCodeLine{00056\ \ \ \ \ SDL\_Window*\ gWindow\ ;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ OpenGL\ context}}
+\DoxyCodeLine{00058\ \ \ \ \ SDL\_GLContext\ gContext;}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{comment}{//\ Initialization\ function}}
+\DoxyCodeLine{00063\ \textcolor{comment}{//\ Returns\ a\ true\ or\ false\ value\ based\ on\ successful\ completion\ of\ setup.}}
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ Takes\ in\ dimensions\ of\ window.}}
+\DoxyCodeLine{00065\ SDLGraphicsProgram::SDLGraphicsProgram(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h):screenWidth(w),screenHeight(h)\{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ Initialization\ flag}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ success\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//\ String\ to\ hold\ any\ errors\ that\ occur.}}
+\DoxyCodeLine{00069\ \ \ \ \ std::stringstream\ errorStream;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{//\ The\ window\ we'll\ be\ rendering\ to}}
+\DoxyCodeLine{00071\ \ \ \ \ gWindow\ =\ NULL;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{//\ Render\ flag}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ Initialize\ SDL}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{if}(SDL\_Init(SDL\_INIT\_VIDEO)<\ 0)\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}SDL\ could\ not\ initialize!\ SDL\ Error:\ "{}}\ <<\ SDL\_GetError()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ success\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Use\ OpenGL\ 3.3\ core}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ SDL\_GL\_SetAttribute(\ SDL\_GL\_CONTEXT\_MAJOR\_VERSION,\ 3\ );}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ SDL\_GL\_SetAttribute(\ SDL\_GL\_CONTEXT\_MINOR\_VERSION,\ 3\ );}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ SDL\_GL\_SetAttribute(\ SDL\_GL\_CONTEXT\_PROFILE\_MASK,\ SDL\_GL\_CONTEXT\_PROFILE\_CORE\ );}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ want\ to\ request\ a\ double\ buffer\ for\ smooth\ updating.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ SDL\_GL\_SetAttribute(SDL\_GL\_DOUBLEBUFFER,\ 1);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ SDL\_GL\_SetAttribute(SDL\_GL\_DEPTH\_SIZE,\ 24);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Create\ window}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ gWindow\ =\ SDL\_CreateWindow(\ \textcolor{stringliteral}{"{}Lab"{}},}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_WINDOWPOS\_UNDEFINED,}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_WINDOWPOS\_UNDEFINED,}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screenWidth,}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ screenHeight,}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_WINDOW\_OPENGL\ |\ SDL\_WINDOW\_SHOWN\ );}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ Window\ did\ not\ create.}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ gWindow\ ==\ NULL\ )\{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}Window\ could\ not\ be\ created!\ SDL\ Error:\ "{}}\ <<\ SDL\_GetError()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ success\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Create\ an\ OpenGL\ Graphics\ Context}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ gContext\ =\ SDL\_GL\_CreateContext(\ gWindow\ );}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ gContext\ ==\ NULL)\{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}OpenGL\ context\ could\ not\ be\ created!\ SDL\ Error:\ "{}}\ <<\ SDL\_GetError()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ success\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ GLAD\ Library}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!gladLoadGLLoader(SDL\_GL\_GetProcAddress))\{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ iniitalize\ GLAD\(\backslash\)n"{}};}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ success\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Initialize\ OpenGL}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!initGL())\{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ initialize\ OpenGL!\(\backslash\)n"{}};}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ success\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{//\ If\ initialization\ did\ not\ work,\ then\ print\ out\ a\ list\ of\ errors\ in\ the\ constructor.}}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{if}(!success)\{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ errorStream\ <<\ \textcolor{stringliteral}{"{}SDLGraphicsProgram::SDLGraphicsProgram\ -\/\ Failed\ to\ initialize!\(\backslash\)n"{}};}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ std::string\ errors=errorStream.str();}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},errors.c\_str());}
+\DoxyCodeLine{00127\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}SDLGraphicsProgram::SDLGraphicsProgram\ -\/\ No\ SDL,\ GLAD,\ or\ OpenGL,\ errors\ detected\ during\ initialization\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{00129\ \ \ \ \ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{comment}{//\ SDL\_LogSetAllPriority(SDL\_LOG\_PRIORITY\_WARN);\ //\ Uncomment\ to\ enable\ extra\ debug\ support!}}
+\DoxyCodeLine{00132\ \ \ \ \ getOpenGLVersionInfo();}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{comment}{//\ Proper\ shutdown\ of\ SDL\ and\ destroy\ initialized\ objects}}
+\DoxyCodeLine{00138\ SDLGraphicsProgram::\string~SDLGraphicsProgram()\{}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{comment}{//Destroy\ window}}
+\DoxyCodeLine{00140\ \ \ \ \ SDL\_DestroyWindow(\ gWindow\ );}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{comment}{//\ Point\ gWindow\ to\ NULL\ to\ ensure\ it\ points\ to\ nothing.}}
+\DoxyCodeLine{00142\ \ \ \ \ gWindow\ =\ NULL;}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{comment}{//Quit\ SDL\ subsystems}}
+\DoxyCodeLine{00144\ \ \ \ \ SDL\_Quit();}
+\DoxyCodeLine{00145\ \}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//\ Initialize\ OpenGL}}
+\DoxyCodeLine{00149\ \textcolor{comment}{//\ Setup\ any\ of\ our\ shaders\ here.}}
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{bool}\ SDLGraphicsProgram::initGL()\{}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{comment}{//Success\ flag}}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{bool}\ success\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordflow}{return}\ success;}
+\DoxyCodeLine{00155\ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \textcolor{comment}{//\ Update\ OpenGL}}
+\DoxyCodeLine{00159\ \textcolor{keywordtype}{void}\ SDLGraphicsProgram::update()\{}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{comment}{//\ Render}}
+\DoxyCodeLine{00164\ \textcolor{comment}{//\ The\ render\ function\ gets\ called\ once\ per\ loop}}
+\DoxyCodeLine{00165\ \textcolor{keywordtype}{void}\ SDLGraphicsProgram::render()\{}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{comment}{//\ Initialize\ clear\ color}}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{comment}{//\ Setup\ our\ OpenGL\ State\ machine}}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{comment}{//\ TODO:\ Read\ this}}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{comment}{//\ The\ below\ command\ is\ new!}}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{comment}{//\ What\ we\ are\ doing,\ is\ telling\ opengl\ to\ create\ a\ depth(or\ Z-\/buffer)\ }}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{comment}{//\ for\ us\ that\ is\ stored\ every\ frame.}}
+\DoxyCodeLine{00172\ \ \ \ \ glEnable(GL\_DEPTH\_TEST);}
+\DoxyCodeLine{00173\ \ \ \ \ glEnable(GL\_TEXTURE\_2D);\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{comment}{//\ This\ is\ the\ background\ of\ the\ screen.}}
+\DoxyCodeLine{00175\ \ \ \ \ glViewport(0,\ 0,\ screenWidth,\ screenHeight);}
+\DoxyCodeLine{00176\ \ \ \ \ glClearColor(\ 0.2f,\ 0.2f,\ 0.2f,\ 1.f\ );}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{comment}{//\ TODO:\ Read\ this}}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{comment}{//\ Clear\ color\ buffer\ and\ Depth\ Buffer}}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{comment}{//\ Remember\ that\ the\ 'depth\ buffer'\ is\ our}}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{comment}{//\ z-\/buffer\ that\ figures\ out\ how\ far\ away\ items\ are\ every\ frame}}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{comment}{//\ and\ we\ have\ to\ do\ this\ every\ frame!}}
+\DoxyCodeLine{00182\ \ \ \ \ glClear(GL\_DEPTH\_BUFFER\_BIT\ |\ GL\_COLOR\_BUFFER\_BIT);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{comment}{//\ Delay\ to\ slow\ things\ down\ just\ a\ bit!}}
+\DoxyCodeLine{00185\ \ \ \ \ SDL\_Delay(50);\ }
+\DoxyCodeLine{00186\ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \textcolor{comment}{//Loops\ forever!}}
+\DoxyCodeLine{00190\ \textcolor{keywordtype}{void}\ SDLGraphicsProgram::loop()\{}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{comment}{//\ Main\ loop\ flag}}
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{comment}{//\ If\ this\ is\ quit\ =\ 'true'\ then\ the\ program\ terminates.}}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{bool}\ quit\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{comment}{//\ Event\ handler\ that\ handles\ various\ events\ in\ SDL}}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{comment}{//\ that\ are\ related\ to\ input\ and\ output}}
+\DoxyCodeLine{00196\ \ \ \ \ SDL\_Event\ e;}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{comment}{//\ Enable\ text\ input}}
+\DoxyCodeLine{00198\ \ \ \ \ SDL\_StartTextInput();}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{comment}{//\ While\ application\ is\ running}}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordflow}{while}(!quit)\{}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Handle\ events\ on\ queue}}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(SDL\_PollEvent(\ \&e\ )\ !=\ 0)\{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ User\ posts\ an\ event\ to\ quit}}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ An\ example\ is\ hitting\ the\ "{}x"{}\ in\ the\ corner\ of\ the\ window.}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e.type\ ==\ SDL\_QUIT)\{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ quit\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}\ \textcolor{comment}{//\ End\ SDL\_PollEvent\ loop.}}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Update\ our\ scene}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Render\ using\ OpenGL}}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ render();\ \ \ \textcolor{comment}{//\ TODO:\ potentially\ move\ this\ depending\ on\ your\ logic}}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ how\ you\ handle\ drawing\ a\ triangle\ or\ rectangle.}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Update\ screen\ of\ our\ specified\ window}}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ SDL\_GL\_SwapWindow(getSDLWindow());}
+\DoxyCodeLine{00217\ \ \ \ \ \}}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{comment}{//Disable\ text\ input}}
+\DoxyCodeLine{00220\ \ \ \ \ SDL\_StopTextInput();}
+\DoxyCodeLine{00221\ \}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \textcolor{comment}{//\ Get\ Pointer\ to\ Window}}
+\DoxyCodeLine{00225\ SDL\_Window*\ SDLGraphicsProgram::getSDLWindow()\{}
+\DoxyCodeLine{00226\ \ \ \textcolor{keywordflow}{return}\ gWindow;}
+\DoxyCodeLine{00227\ \}}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \textcolor{comment}{//\ Helper\ Function\ to\ get\ OpenGL\ Version\ Information}}
+\DoxyCodeLine{00230\ \textcolor{keywordtype}{void}\ SDLGraphicsProgram::getOpenGLVersionInfo()\{}
+\DoxyCodeLine{00231\ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}(Note:\ If\ you\ have\ two\ GPU's,\ make\ sure\ the\ correct\ one\ is\ selected)"{}});}
+\DoxyCodeLine{00232\ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Vendor:\ \%s"{}},(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*)glGetString(GL\_VENDOR));}
+\DoxyCodeLine{00233\ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Renderer:\ \%s"{}},(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*)glGetString(GL\_RENDERER));}
+\DoxyCodeLine{00234\ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Version:\ \%s"{}},(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*)glGetString(GL\_VERSION));}
+\DoxyCodeLine{00235\ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Shading\ language:\ \%s"{}},(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*)glGetString(GL\_SHADING\_LANGUAGE\_VERSION));}
+\DoxyCodeLine{00236\ \}}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \textcolor{comment}{//\ Include\ the\ pybindings}}
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\#include\ <pybind11/pybind11.h>}}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \textcolor{keyword}{namespace\ }py\ =\ pybind11;}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \textcolor{comment}{//\ Creates\ a\ macro\ function\ that\ will\ be\ called}}
+\DoxyCodeLine{00247\ \textcolor{comment}{//\ whenever\ the\ module\ is\ imported\ into\ python}}
+\DoxyCodeLine{00248\ \textcolor{comment}{//\ 'mymodule'\ is\ what\ we\ 'import'\ into\ python.}}
+\DoxyCodeLine{00249\ \textcolor{comment}{//\ 'm'\ is\ the\ interface\ (creates\ a\ py::module\ object)}}
+\DoxyCodeLine{00250\ \textcolor{comment}{//\ \ \ \ \ \ for\ which\ the\ bindings\ are\ created.}}
+\DoxyCodeLine{00251\ \textcolor{comment}{//\ \ The\ magic\ here\ is\ in\ 'template\ metaprogramming'}}
+\DoxyCodeLine{00252\ PYBIND11\_MODULE(mymodule,\ m)\{}
+\DoxyCodeLine{00253\ \ \ \ \ m.doc()\ =\ \textcolor{stringliteral}{"{}our\ game\ engine\ as\ a\ library"{}};\ \textcolor{comment}{//\ Optional\ docstring}}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \ \ \ \ py::class\_<SDLGraphicsProgram>(m,\ \textcolor{stringliteral}{"{}SDLGraphicsProgram"{}})}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ .def(py::init<int,int>(),\ py::arg(\textcolor{stringliteral}{"{}w"{}}),\ py::arg(\textcolor{stringliteral}{"{}h"{}}))\ \ \ \textcolor{comment}{//\ our\ constructor}}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}initGL"{}},\ \&SDLGraphicsProgram::initGL)\ \ \ \ \ \ \textcolor{comment}{//\ Expose\ member\ methods}}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}update"{}},\ \&SDLGraphicsProgram::update)}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}render"{}},\ \&SDLGraphicsProgram::render)\ }
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}loop"{}},\ \&SDLGraphicsProgram::loop)\ }
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}getSDLWindow"{}},\ \&SDLGraphicsProgram::getSDLWindow,\ py::return\_value\_policy::reference)\ }
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ .def(\textcolor{stringliteral}{"{}getOpenGLVersionInfo"{}},\ \&SDLGraphicsProgram::getOpenGLVersionInfo);\ }
+\DoxyCodeLine{00263\ \}}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,50 @@
+\hypertarget{class_layer_manager}{}\doxysection{Layer\+Manager Class Reference}
+\label{class_layer_manager}\index{LayerManager@{LayerManager}}
+
+
+\mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} keeps track of rendering order of Game\+Objects.  
+
+
+
+
+{\ttfamily \#include $<$Layer\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_layer_manager_a2b9c910ddc7b21df9eff547758ee29e1}\label{class_layer_manager_a2b9c910ddc7b21df9eff547758ee29e1}} 
+void {\bfseries Add\+To\+Map} (int index, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$game\+Object)
+\begin{DoxyCompactList}\small\item\em Index\+: layer rendering priority. The lower the index, the earlier render will take place. game\+Object\+: a pointer pointing to another game\+Object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} $\ast$ \mbox{\hyperlink{class_layer_manager_a2ddbcd194de9ffaea9234e5d04ac0b5f}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address of the layer manager object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_layer_manager_ae834a5e62eff7d0adb1092a0693388f7}\label{class_layer_manager_ae834a5e62eff7d0adb1092a0693388f7}} 
+class \mbox{\hyperlink{class_layer_manager_ae834a5e62eff7d0adb1092a0693388f7}{Camera\+Component}}
+\begin{DoxyCompactList}\small\item\em Declare \mbox{\hyperlink{class_camera_component}{Camera\+Component}} as Friend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} keeps track of rendering order of Game\+Objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_layer_manager_a2ddbcd194de9ffaea9234e5d04ac0b5f}\label{class_layer_manager_a2ddbcd194de9ffaea9234e5d04ac0b5f}} 
+\index{LayerManager@{LayerManager}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!LayerManager@{LayerManager}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} $\ast$ Layer\+Manager\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address of the layer manager object. 
+
+\begin{DoxyReturn}{Returns}
+pointer of this object, Layer\+Manager$\ast$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/Layer\+Manager.\+hpp\item 
+src/core/Layer\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{class_physics2_d}{}\doxysection{Physics2D Class Reference}
+\label{class_physics2_d}\index{Physics2D@{Physics2D}}
+
+
+this is a singleton physics2D class,  
+
+
+
+
+{\ttfamily \#include $<$Physics2\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics2_d_a346b49b4084569b2cfd8967bdc7755b4}\label{class_physics2_d_a346b49b4084569b2cfd8967bdc7755b4}} 
+{\bfseries Physics2D} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Physics 2D object, initializing a vector of \mbox{\hyperlink{class_physics_component}{Physics\+Component}} pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics2_d_afbb0abd84e203cec68ae6bee7da2bfe0}{Init}} (b2\+Vec2 gravity)
+\begin{DoxyCompactList}\small\item\em initializing a Box2D world \end{DoxyCompactList}\item 
+b2\+World $\ast$ \mbox{\hyperlink{class_physics2_d_a78a8fb9f32b8a691d9cb691f1e6c96ce}{Get\+World}} ()
+\begin{DoxyCompactList}\small\item\em Get the Box2D world object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics2_d_aca09273ca5e5e961522c4c4afe6a54e9}{Register\+Physics\+Component}} (\mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em push the physics\+Component into the vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics2_d_a8b662d7c0c14bcae553e8607b3c7ca7c}{Deregister\+Physics\+Component}} (\mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em remove the physics\+Component from the vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics2_d_a08e193d71c983b57cd867ad6d3456142}{Fixed\+Update}} (float fixed\+Delta\+Time)
+\begin{DoxyCompactList}\small\item\em calling all the fixed\+Update function in each physics component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_physics2_d}{Physics2D}} $\ast$ \mbox{\hyperlink{class_physics2_d_a27cba9824775d08277693dabc973bd99}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em returning the \mbox{\hyperlink{class_physics2_d}{Physics2D}} static instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics2_d_a3e1914489e4bed4f9f23cdeab34a43dc}\label{class_physics2_d_a3e1914489e4bed4f9f23cdeab34a43dc}} 
+class {\bfseries Engine}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this is a singleton physics2D class, 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics2_d_a8b662d7c0c14bcae553e8607b3c7ca7c}\label{class_physics2_d_a8b662d7c0c14bcae553e8607b3c7ca7c}} 
+\index{Physics2D@{Physics2D}!DeregisterPhysicsComponent@{DeregisterPhysicsComponent}}
+\index{DeregisterPhysicsComponent@{DeregisterPhysicsComponent}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{DeregisterPhysicsComponent()}{DeregisterPhysicsComponent()}}
+{\footnotesize\ttfamily void Physics2\+D\+::\+Deregister\+Physics\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+remove the physics\+Component from the vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a physics\+Component pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics2_d_a08e193d71c983b57cd867ad6d3456142}\label{class_physics2_d_a08e193d71c983b57cd867ad6d3456142}} 
+\index{Physics2D@{Physics2D}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Physics2\+D\+::\+Fixed\+Update (\begin{DoxyParamCaption}\item[{float}]{fixed\+Delta\+Time }\end{DoxyParamCaption})}
+
+
+
+calling all the fixed\+Update function in each physics component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fixed\+Delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics2_d_a78a8fb9f32b8a691d9cb691f1e6c96ce}\label{class_physics2_d_a78a8fb9f32b8a691d9cb691f1e6c96ce}} 
+\index{Physics2D@{Physics2D}!GetWorld@{GetWorld}}
+\index{GetWorld@{GetWorld}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{GetWorld()}{GetWorld()}}
+{\footnotesize\ttfamily b2\+World $\ast$ Physics2\+D\+::\+Get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Box2D world object. 
+
+\begin{DoxyReturn}{Returns}
+b2\+World$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics2_d_afbb0abd84e203cec68ae6bee7da2bfe0}\label{class_physics2_d_afbb0abd84e203cec68ae6bee7da2bfe0}} 
+\index{Physics2D@{Physics2D}!Init@{Init}}
+\index{Init@{Init}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Physics2\+D\+::\+Init (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{gravity }\end{DoxyParamCaption})}
+
+
+
+initializing a Box2D world 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & a b2\+Vec2 indicating the force of gravity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics2_d_a27cba9824775d08277693dabc973bd99}\label{class_physics2_d_a27cba9824775d08277693dabc973bd99}} 
+\index{Physics2D@{Physics2D}!Instance@{Instance}}
+\index{Instance@{Instance}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics2_d}{Physics2D}} $\ast$ Physics2\+D\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returning the \mbox{\hyperlink{class_physics2_d}{Physics2D}} static instance 
+
+\begin{DoxyReturn}{Returns}
+Physics2\+D$\ast$ a physics2D static instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics2_d_aca09273ca5e5e961522c4c4afe6a54e9}\label{class_physics2_d_aca09273ca5e5e961522c4c4afe6a54e9}} 
+\index{Physics2D@{Physics2D}!RegisterPhysicsComponent@{RegisterPhysicsComponent}}
+\index{RegisterPhysicsComponent@{RegisterPhysicsComponent}!Physics2D@{Physics2D}}
+\doxysubsubsection{\texorpdfstring{RegisterPhysicsComponent()}{RegisterPhysicsComponent()}}
+{\footnotesize\ttfamily void Physics2\+D\+::\+Register\+Physics\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+push the physics\+Component into the vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a physics\+Component pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/physics/Physics2\+D.\+hpp\item 
+src/core/physics/Physics2\+D.\+cpp\end{DoxyCompactItemize}

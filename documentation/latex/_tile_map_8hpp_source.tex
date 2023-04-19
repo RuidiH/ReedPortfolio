@@ -1,0 +1,38 @@
+\hypertarget{_tile_map_8hpp_source}{}\doxysection{Tile\+Map.\+hpp}
+\label{_tile_map_8hpp_source}\index{include/core/TileMap.hpp@{include/core/TileMap.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TILE\_MAP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TILE\_MAP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tile_map}{TileMap}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ Init(std::string\ filepath,\ \textcolor{keywordtype}{int}\ tileHeight,\ \textcolor{keywordtype}{int}\ tileWidth,\ SDL\_Renderer*\ ren);}
+\DoxyCodeLine{00017\ \ \ \ \ SDL\_Rect\ GetTile(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00018\ \ \ \ \ SDL\_Texture\ *GetTileMapTexture();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ GetTileWidth()\{\textcolor{keywordflow}{return}\ mTileWidth;\};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ GetTileHeight()\{\textcolor{keywordflow}{return}\ mTileHeight;\};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ mTileHeight;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ mTileWidth;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ mTextureWidth;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ mTextureHeight;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ mTileNumber;}
+\DoxyCodeLine{00028\ \ \ \ \ SDL\_Texture\ *mTexture;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

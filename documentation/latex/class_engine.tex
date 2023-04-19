@@ -1,0 +1,138 @@
+\hypertarget{class_engine}{}\doxysection{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+
+
+this class sets up the main game engine  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_engine_a078e0f26cd3ad96d6e345dead8d4484b}\label{class_engine_a078e0f26cd3ad96d6e345dead8d4484b}} 
+{\bfseries Engine} (int width, int height, float gX, float gY)
+\item 
+\mbox{\Hypertarget{class_engine_a9ec9d3d7dc0f9e79032dd83801778eaf}\label{class_engine_a9ec9d3d7dc0f9e79032dd83801778eaf}} 
+void {\bfseries Main\+Game\+Loop} ()
+\begin{DoxyCompactList}\small\item\em handling frame capping, input, update and render \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a1359c9fcc171d5c3e399f99726a18612}{Input}} (bool $\ast$quit)
+\begin{DoxyCompactList}\small\item\em handling input and calling the input function on each game object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_ac84eefe06226f430a2448306e6fd2579}\label{class_engine_ac84eefe06226f430a2448306e6fd2579}} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em calling the update function on each game object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}\label{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}} 
+void {\bfseries Render} ()
+\begin{DoxyCompactList}\small\item\em calling the render function on the camera \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a3dbd2c0a65e642baa7eaa97caa6e4e64}\label{class_engine_a3dbd2c0a65e642baa7eaa97caa6e4e64}} 
+void {\bfseries Shutdown} ()
+\begin{DoxyCompactList}\small\item\em shutting down the engine \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_engine_a66531b4c2bb7d7cd66da44e4beb038c5}{Add\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em create new game object and push it back into a vector in the game object \end{DoxyCompactList}\item 
+std\+::uintptr\+\_\+t \mbox{\hyperlink{class_engine_a44eaac757fe97f5c0c387c066ef98bfc}{Get\+Renderer\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Get the Reference of the SDL\+\_\+\+Renderer object and convert it to uintptr\+\_\+t. \end{DoxyCompactList}\item 
+std\+::uintptr\+\_\+t \mbox{\hyperlink{class_engine_a48890d852ea28bb96f9f7164de145708}{Get\+World}} ()
+\begin{DoxyCompactList}\small\item\em Get the Box2D World object and convert it to uintptr\+\_\+t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a1b8bd28453948c09d0f688dae6c86445}{Set\+Camera\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em assigning the Camera Object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a9acb642828be8bd6479c5e8e1b0f2d26}\label{class_engine_a9acb642828be8bd6479c5e8e1b0f2d26}} 
+void {\bfseries Frame\+Capping} ()
+\begin{DoxyCompactList}\small\item\em capping frame rates \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a4ba410873d97c6e38fa10129938639e6}\label{class_engine_a4ba410873d97c6e38fa10129938639e6}} 
+void {\bfseries Set\+Time} ()
+\begin{DoxyCompactList}\small\item\em Set the previous time variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_engine_aef6705e6d03da2efa5214b42693add6c}\label{class_engine_aef6705e6d03da2efa5214b42693add6c}} 
+bool {\bfseries quit} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_engine_a287a3bbfc33926de3c0a958f41adc7af}\label{class_engine_a287a3bbfc33926de3c0a958f41adc7af}} 
+static Uint32 {\bfseries delta\+Time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class sets up the main game engine 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_a66531b4c2bb7d7cd66da44e4beb038c5}\label{class_engine_a66531b4c2bb7d7cd66da44e4beb038c5}} 
+\index{Engine@{Engine}!AddGameObject@{AddGameObject}}
+\index{AddGameObject@{AddGameObject}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{AddGameObject()}{AddGameObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ Engine\+::\+Add\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+create new game object and push it back into a vector in the game object 
+
+\begin{DoxyReturn}{Returns}
+Game\+Object$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a44eaac757fe97f5c0c387c066ef98bfc}\label{class_engine_a44eaac757fe97f5c0c387c066ef98bfc}} 
+\index{Engine@{Engine}!GetRendererRef@{GetRendererRef}}
+\index{GetRendererRef@{GetRendererRef}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetRendererRef()}{GetRendererRef()}}
+{\footnotesize\ttfamily std\+::uintptr\+\_\+t Engine\+::\+Get\+Renderer\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Reference of the SDL\+\_\+\+Renderer object and convert it to uintptr\+\_\+t. 
+
+\begin{DoxyReturn}{Returns}
+std\+::uintptr\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a48890d852ea28bb96f9f7164de145708}\label{class_engine_a48890d852ea28bb96f9f7164de145708}} 
+\index{Engine@{Engine}!GetWorld@{GetWorld}}
+\index{GetWorld@{GetWorld}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetWorld()}{GetWorld()}}
+{\footnotesize\ttfamily std\+::uintptr\+\_\+t Engine\+::\+Get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Box2D World object and convert it to uintptr\+\_\+t. 
+
+\begin{DoxyReturn}{Returns}
+std\+::uintptr\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a1359c9fcc171d5c3e399f99726a18612}\label{class_engine_a1359c9fcc171d5c3e399f99726a18612}} 
+\index{Engine@{Engine}!Input@{Input}}
+\index{Input@{Input}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Engine\+::\+Input (\begin{DoxyParamCaption}\item[{bool $\ast$}]{quit }\end{DoxyParamCaption})}
+
+
+
+handling input and calling the input function on each game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quit} & boolean \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a1b8bd28453948c09d0f688dae6c86445}\label{class_engine_a1b8bd28453948c09d0f688dae6c86445}} 
+\index{Engine@{Engine}!SetCameraObject@{SetCameraObject}}
+\index{SetCameraObject@{SetCameraObject}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetCameraObject()}{SetCameraObject()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Camera\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+assigning the Camera Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/Engine.\+hpp\item 
+src/core/Engine.\+cpp\end{DoxyCompactItemize}

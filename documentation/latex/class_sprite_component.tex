@@ -1,0 +1,331 @@
+\hypertarget{class_sprite_component}{}\doxysection{Sprite\+Component Class Reference}
+\label{class_sprite_component}\index{SpriteComponent@{SpriteComponent}}
+
+
+handling the sprites of player.  
+
+
+
+
+{\ttfamily \#include $<$Sprite\+Component.\+hpp$>$}
+
+Inheritance diagram for Sprite\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_component_ac8b2d3d04c0c66af2b5ce2565385b58c}\label{class_sprite_component_ac8b2d3d04c0c66af2b5ce2565385b58c}} 
+{\bfseries Sprite\+Component} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Sprite \mbox{\hyperlink{class_component}{Component}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} $\ast$ \mbox{\hyperlink{class_sprite_component_a925ffd08b564f9835121e907a145d36e}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address of this sprite component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a50f264f871579397b2993003aaa2b25d}{Init}} (int srcW, int srcH, int destW, int destH)
+\begin{DoxyCompactList}\small\item\em assigning the width, height, of the sizes of the sprites both from the source image and the destination rectangle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}{Update}} ()
+\begin{DoxyCompactList}\small\item\em handling the animations \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}{Render}} (SDL\+\_\+\+Renderer $\ast$ren, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} offset) override
+\begin{DoxyCompactList}\small\item\em handling the rendering based on the transform position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_ada97aaff9d63e1929ea746068f3a13cb}{Load\+Image}} (std\+::string file\+Path, std\+::uintptr\+\_\+t renA)
+\begin{DoxyCompactList}\small\item\em load image from a filepath and get the texture. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_component_a9a6e366065cfd520d85e4fe10bbe3e6b}{Get\+DestX}} ()
+\begin{DoxyCompactList}\small\item\em Get Render destination rectangle x. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_component_a3f5b6f36db4a4b063d4c536253740a02}{Get\+DestY}} ()
+\begin{DoxyCompactList}\small\item\em Get Render destination rectangle y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_component_a94e48ec177ffbbb67b69bbe71c61bd9a}{Get\+DestW}} ()
+\begin{DoxyCompactList}\small\item\em Get Render destination rectangle width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_component_acfedcd07dc33d31e33dfe6b2eac8b24e}{Get\+DestH}} ()
+\begin{DoxyCompactList}\small\item\em Get Render destination rectangle height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_aec83fe3a23ee7cb84a7e703aa7049ea6}{Set\+Rect}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Set the render destination Rect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a4bf06ecb178204d21aa31830539dd54a}{Set\+Action\+State}} (Action action)
+\begin{DoxyCompactList}\small\item\em Set the Action State based on the input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a9bfe5e6d9390e0b166d614c10bb8b0ac}{Set\+Idle\+Animation\+Indexes}} (int start, int end)
+\begin{DoxyCompactList}\small\item\em Set the Idle Animation Indexes, the indexes of the sprites of the Idle animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a6fdddf8efc688cbc5585f48968b6fc33}{Set\+Run\+Animation\+Indexes}} (int start, int end)
+\begin{DoxyCompactList}\small\item\em Set the Run Animation Indexes, the indexes of the sprites of the Run animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_afae7b425239ccd524f598db4a44053cb}{Set\+Jump\+Animation\+Indexes}} (int start, int end)
+\begin{DoxyCompactList}\small\item\em Set the Jump Animation Indexes, the indexes of the sprites of the Jump animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a579398d1cfd23621569439fc33884b1c}{Build\+Physics}} (float density)
+\begin{DoxyCompactList}\small\item\em add physics component for gameobjects with Sprite components \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_component_ae834a5e62eff7d0adb1092a0693388f7}\label{class_sprite_component_ae834a5e62eff7d0adb1092a0693388f7}} 
+class {\bfseries Camera\+Component}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handling the sprites of player. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_component_a579398d1cfd23621569439fc33884b1c}\label{class_sprite_component_a579398d1cfd23621569439fc33884b1c}} 
+\index{SpriteComponent@{SpriteComponent}!BuildPhysics@{BuildPhysics}}
+\index{BuildPhysics@{BuildPhysics}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{BuildPhysics()}{BuildPhysics()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Build\+Physics (\begin{DoxyParamCaption}\item[{float}]{density }\end{DoxyParamCaption})}
+
+
+
+add physics component for gameobjects with Sprite components 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a925ffd08b564f9835121e907a145d36e}\label{class_sprite_component_a925ffd08b564f9835121e907a145d36e}} 
+\index{SpriteComponent@{SpriteComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} $\ast$ Sprite\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address of this sprite component. 
+
+\begin{DoxyReturn}{Returns}
+Sprite\+Component$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_acfedcd07dc33d31e33dfe6b2eac8b24e}\label{class_sprite_component_acfedcd07dc33d31e33dfe6b2eac8b24e}} 
+\index{SpriteComponent@{SpriteComponent}!GetDestH@{GetDestH}}
+\index{GetDestH@{GetDestH}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetDestH()}{GetDestH()}}
+{\footnotesize\ttfamily int Sprite\+Component\+::\+Get\+DestH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Render destination rectangle height. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_a94e48ec177ffbbb67b69bbe71c61bd9a}\label{class_sprite_component_a94e48ec177ffbbb67b69bbe71c61bd9a}} 
+\index{SpriteComponent@{SpriteComponent}!GetDestW@{GetDestW}}
+\index{GetDestW@{GetDestW}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetDestW()}{GetDestW()}}
+{\footnotesize\ttfamily int Sprite\+Component\+::\+Get\+DestW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Render destination rectangle width. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_a9a6e366065cfd520d85e4fe10bbe3e6b}\label{class_sprite_component_a9a6e366065cfd520d85e4fe10bbe3e6b}} 
+\index{SpriteComponent@{SpriteComponent}!GetDestX@{GetDestX}}
+\index{GetDestX@{GetDestX}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetDestX()}{GetDestX()}}
+{\footnotesize\ttfamily int Sprite\+Component\+::\+Get\+DestX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Render destination rectangle x. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_a3f5b6f36db4a4b063d4c536253740a02}\label{class_sprite_component_a3f5b6f36db4a4b063d4c536253740a02}} 
+\index{SpriteComponent@{SpriteComponent}!GetDestY@{GetDestY}}
+\index{GetDestY@{GetDestY}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetDestY()}{GetDestY()}}
+{\footnotesize\ttfamily int Sprite\+Component\+::\+Get\+DestY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Render destination rectangle y. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_a50f264f871579397b2993003aaa2b25d}\label{class_sprite_component_a50f264f871579397b2993003aaa2b25d}} 
+\index{SpriteComponent@{SpriteComponent}!Init@{Init}}
+\index{Init@{Init}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{srcW,  }\item[{int}]{srcH,  }\item[{int}]{destW,  }\item[{int}]{destH }\end{DoxyParamCaption})}
+
+
+
+assigning the width, height, of the sizes of the sprites both from the source image and the destination rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em srcW} & \\
+\hline
+{\em srcH} & \\
+\hline
+{\em destW} & \\
+\hline
+{\em destH} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_ada97aaff9d63e1929ea746068f3a13cb}\label{class_sprite_component_ada97aaff9d63e1929ea746068f3a13cb}} 
+\index{SpriteComponent@{SpriteComponent}!LoadImage@{LoadImage}}
+\index{LoadImage@{LoadImage}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{LoadImage()}{LoadImage()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Load\+Image (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path,  }\item[{std\+::uintptr\+\_\+t}]{renA }\end{DoxyParamCaption})}
+
+
+
+load image from a filepath and get the texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a string of the file path \\
+\hline
+{\em renA} & SDL\+\_\+\+Renderer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}\label{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}} 
+\index{SpriteComponent@{SpriteComponent}!Render@{Render}}
+\index{Render@{Render}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+handling the rendering based on the transform position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & \\
+\hline
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a4bf06ecb178204d21aa31830539dd54a}\label{class_sprite_component_a4bf06ecb178204d21aa31830539dd54a}} 
+\index{SpriteComponent@{SpriteComponent}!SetActionState@{SetActionState}}
+\index{SetActionState@{SetActionState}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetActionState()}{SetActionState()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Action\+State (\begin{DoxyParamCaption}\item[{Action}]{action }\end{DoxyParamCaption})}
+
+
+
+Set the Action State based on the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action enum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a9bfe5e6d9390e0b166d614c10bb8b0ac}\label{class_sprite_component_a9bfe5e6d9390e0b166d614c10bb8b0ac}} 
+\index{SpriteComponent@{SpriteComponent}!SetIdleAnimationIndexes@{SetIdleAnimationIndexes}}
+\index{SetIdleAnimationIndexes@{SetIdleAnimationIndexes}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetIdleAnimationIndexes()}{SetIdleAnimationIndexes()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Idle\+Animation\+Indexes (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+Set the Idle Animation Indexes, the indexes of the sprites of the Idle animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & starting index \\
+\hline
+{\em end} & ending index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_afae7b425239ccd524f598db4a44053cb}\label{class_sprite_component_afae7b425239ccd524f598db4a44053cb}} 
+\index{SpriteComponent@{SpriteComponent}!SetJumpAnimationIndexes@{SetJumpAnimationIndexes}}
+\index{SetJumpAnimationIndexes@{SetJumpAnimationIndexes}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetJumpAnimationIndexes()}{SetJumpAnimationIndexes()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Jump\+Animation\+Indexes (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+Set the Jump Animation Indexes, the indexes of the sprites of the Jump animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & starting index \\
+\hline
+{\em end} & ending index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_aec83fe3a23ee7cb84a7e703aa7049ea6}\label{class_sprite_component_aec83fe3a23ee7cb84a7e703aa7049ea6}} 
+\index{SpriteComponent@{SpriteComponent}!SetRect@{SetRect}}
+\index{SetRect@{SetRect}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetRect()}{SetRect()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the render destination Rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em w} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a6fdddf8efc688cbc5585f48968b6fc33}\label{class_sprite_component_a6fdddf8efc688cbc5585f48968b6fc33}} 
+\index{SpriteComponent@{SpriteComponent}!SetRunAnimationIndexes@{SetRunAnimationIndexes}}
+\index{SetRunAnimationIndexes@{SetRunAnimationIndexes}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetRunAnimationIndexes()}{SetRunAnimationIndexes()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Run\+Animation\+Indexes (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+Set the Run Animation Indexes, the indexes of the sprites of the Run animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & starting index \\
+\hline
+{\em end} & ending index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}\label{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}} 
+\index{SpriteComponent@{SpriteComponent}!Update@{Update}}
+\index{Update@{Update}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+handling the animations 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Sprite\+Component.\+hpp\item 
+src/buildin/Sprite\+Component.\+cpp\end{DoxyCompactItemize}

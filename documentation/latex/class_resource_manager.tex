@@ -1,0 +1,165 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+this is a singleton resource manager class. handling loading the sprite and texture from files  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{class_resource_manager_a96c9fbcc16938470f12d6ac596bd2d7e}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em returning the resource manager instance \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_resource_manager_a682ba6d81695ddd06ec4e1309ddf063f}{Log}} (std\+::string text)
+\begin{DoxyCompactList}\small\item\em helper function for printing out the action messages \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}\label{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}} 
+static void {\bfseries Load\+Resource} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em loading bmp files to get SDL\+\_\+\+Surfaces and save the file path to the resource manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a9921033bb6373349f533ee9e0fec1517}\label{class_resource_manager_a9921033bb6373349f533ee9e0fec1517}} 
+static void {\bfseries Load\+Mix\+Music} (std\+::string mix\+Music\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_a25e911cbdcc9c50aa29aa27f216a14f3}\label{class_resource_manager_a25e911cbdcc9c50aa29aa27f216a14f3}} 
+static void {\bfseries Load\+Mix\+Chunk} (std\+::string mix\+Chunk\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_ac6bf9eda7305e92b6f8fb1ea39103ee7}\label{class_resource_manager_ac6bf9eda7305e92b6f8fb1ea39103ee7}} 
+static Mix\+\_\+\+Music $\ast$ {\bfseries Get\+Mix\+Music} (std\+::string mix\+Music\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_af1715dd1af1bf823138beb8e4aa34910}\label{class_resource_manager_af1715dd1af1bf823138beb8e4aa34910}} 
+static Mix\+\_\+\+Chunk $\ast$ {\bfseries Get\+Mix\+Chunk} (std\+::string mix\+Chunk\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_a6301cbf713176589dc3675e567e7c34d}\label{class_resource_manager_a6301cbf713176589dc3675e567e7c34d}} 
+static bool {\bfseries Free\+Mix\+Music} (std\+::string mix\+Music\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_a27bd9ccc7c412ec7467fc4ef5d0bf2f4}\label{class_resource_manager_a27bd9ccc7c412ec7467fc4ef5d0bf2f4}} 
+static bool {\bfseries Free\+Mix\+Chunk} (std\+::string mix\+Chunk\+Name)
+\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_resource_manager_a02db32275477bd91425cb5dddedd935f}{Get\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em if the file was not loaded before, load it, if the file has been loaded before, increase the access counter and return the stored sprite \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_resource_manager_aadf5713591311c1952c7d0ffa51c9963}{Get\+Texture\+Resource}} (SDL\+\_\+\+Renderer $\ast$renderer, std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em if the file was not loaded before, load it to the texture resource map if the file has been loaded before, increase the access counter and return the stored texture \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_resource_manager_aeb0d2ccd43a59e526298863d43b6f057}{Free\+Sprite\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Free a specific sprite resource based on the file path. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_resource_manager_a835e3ef2b8257324b7317c3d362ec163}{Free\+Texture\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Free a specific texture resource based on the file path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this is a singleton resource manager class. handling loading the sprite and texture from files 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_aeb0d2ccd43a59e526298863d43b6f057}\label{class_resource_manager_aeb0d2ccd43a59e526298863d43b6f057}} 
+\index{ResourceManager@{ResourceManager}!FreeSpriteResource@{FreeSpriteResource}}
+\index{FreeSpriteResource@{FreeSpriteResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{FreeSpriteResource()}{FreeSpriteResource()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Free\+Sprite\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Free a specific sprite resource based on the file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a835e3ef2b8257324b7317c3d362ec163}\label{class_resource_manager_a835e3ef2b8257324b7317c3d362ec163}} 
+\index{ResourceManager@{ResourceManager}!FreeTextureResource@{FreeTextureResource}}
+\index{FreeTextureResource@{FreeTextureResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{FreeTextureResource()}{FreeTextureResource()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Free\+Texture\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Free a specific texture resource based on the file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a02db32275477bd91425cb5dddedd935f}\label{class_resource_manager_a02db32275477bd91425cb5dddedd935f}} 
+\index{ResourceManager@{ResourceManager}!GetResource@{GetResource}}
+\index{GetResource@{GetResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetResource()}{GetResource()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Resource\+Manager\+::\+Get\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+if the file was not loaded before, load it, if the file has been loaded before, increase the access counter and return the stored sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_aadf5713591311c1952c7d0ffa51c9963}\label{class_resource_manager_aadf5713591311c1952c7d0ffa51c9963}} 
+\index{ResourceManager@{ResourceManager}!GetTextureResource@{GetTextureResource}}
+\index{GetTextureResource@{GetTextureResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetTextureResource()}{GetTextureResource()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Resource\+Manager\+::\+Get\+Texture\+Resource (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+if the file was not loaded before, load it to the texture resource map if the file has been loaded before, increase the access counter and return the stored texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+{\em image\+\_\+filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a96c9fbcc16938470f12d6ac596bd2d7e}\label{class_resource_manager_a96c9fbcc16938470f12d6ac596bd2d7e}} 
+\index{ResourceManager@{ResourceManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& Resource\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returning the resource manager instance 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a682ba6d81695ddd06ec4e1309ddf063f}\label{class_resource_manager_a682ba6d81695ddd06ec4e1309ddf063f}} 
+\index{ResourceManager@{ResourceManager}!Log@{Log}}
+\index{Log@{Log}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Log (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+helper function for printing out the action messages 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/Resource\+Manager.\+hpp\item 
+src/core/Resource\+Manager.\+cpp\end{DoxyCompactItemize}

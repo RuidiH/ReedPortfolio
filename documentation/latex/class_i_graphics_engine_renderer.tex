@@ -1,0 +1,121 @@
+\hypertarget{class_i_graphics_engine_renderer}{}\doxysection{IGraphics\+Engine\+Renderer Class Reference}
+\label{class_i_graphics_engine_renderer}\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+
+
+this class serves as an interface to the main graphics renderer for our engine.  
+
+
+
+
+{\ttfamily \#include $<$IGraphics\+Engine\+Renderer.\+hpp$>$}
+
+Inheritance diagram for IGraphics\+Engine\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_graphics_engine_renderer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_graphics_engine_renderer_a325c7b3f89ca510ed038e52e9a3c3d74}{IGraphics\+Engine\+Renderer}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}} object initializing window and renderer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}{Set\+Render\+Draw\+Color}} (int r, int g, int b, int a)=0
+\begin{DoxyCompactList}\small\item\em Set the Render Draw Color by calling SDL\+\_\+\+Set\+Render\+Draw\+Color. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}{Render\+Clear}} ()=0
+\begin{DoxyCompactList}\small\item\em handling SDL\+\_\+\+Render\+Clear \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}{Render\+Present}} ()=0
+\begin{DoxyCompactList}\small\item\em handling SDL\+\_\+\+Render\+Present \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_a5fc1eeeea4c45bac9a30b04380200632}\label{class_i_graphics_engine_renderer_a5fc1eeeea4c45bac9a30b04380200632}} 
+int {\bfseries m\+Screen\+Width} \{0\}
+\item 
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_a53ad0e9c3338aeb89ec73dda3b7f9a3d}\label{class_i_graphics_engine_renderer_a53ad0e9c3338aeb89ec73dda3b7f9a3d}} 
+int {\bfseries m\+Screen\+Height} \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class serves as an interface to the main graphics renderer for our engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_a325c7b3f89ca510ed038e52e9a3c3d74}\label{class_i_graphics_engine_renderer_a325c7b3f89ca510ed038e52e9a3c3d74}} 
+\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}!IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}!IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{IGraphicsEngineRenderer()}{IGraphicsEngineRenderer()}}
+{\footnotesize\ttfamily IGraphics\+Engine\+Renderer\+::\+IGraphics\+Engine\+Renderer (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}} object initializing window and renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & screen width \\
+\hline
+{\em h} & screen height \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}\label{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}} 
+\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}!RenderClear@{RenderClear}}
+\index{RenderClear@{RenderClear}!IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderClear()}{RenderClear()}}
+{\footnotesize\ttfamily virtual void IGraphics\+Engine\+Renderer\+::\+Render\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+handling SDL\+\_\+\+Render\+Clear 
+
+
+
+Implemented in \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_ae6edfc67a39076c0c12101ad85be4f6a}{SDLGraphics\+Engine\+Renderer}}.
+
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}\label{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}} 
+\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}!RenderPresent@{RenderPresent}}
+\index{RenderPresent@{RenderPresent}!IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderPresent()}{RenderPresent()}}
+{\footnotesize\ttfamily virtual void IGraphics\+Engine\+Renderer\+::\+Render\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+handling SDL\+\_\+\+Render\+Present 
+
+
+
+Implemented in \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_acddd7c456e4311d71fc1d43f29343d81}{SDLGraphics\+Engine\+Renderer}}.
+
+\mbox{\Hypertarget{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}\label{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}} 
+\index{IGraphicsEngineRenderer@{IGraphicsEngineRenderer}!SetRenderDrawColor@{SetRenderDrawColor}}
+\index{SetRenderDrawColor@{SetRenderDrawColor}!IGraphicsEngineRenderer@{IGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{SetRenderDrawColor()}{SetRenderDrawColor()}}
+{\footnotesize\ttfamily virtual void IGraphics\+Engine\+Renderer\+::\+Set\+Render\+Draw\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Render Draw Color by calling SDL\+\_\+\+Set\+Render\+Draw\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & int \\
+\hline
+{\em g} & int \\
+\hline
+{\em b} & int \\
+\hline
+{\em a} & int \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a91b29bf19986c6ad8710238778312277}{SDLGraphics\+Engine\+Renderer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/core/IGraphics\+Engine\+Renderer.\+hpp\end{DoxyCompactItemize}

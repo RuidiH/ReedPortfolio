@@ -1,0 +1,193 @@
+\hypertarget{class_camera_component}{}\doxysection{Camera\+Component Class Reference}
+\label{class_camera_component}\index{CameraComponent@{CameraComponent}}
+
+
+\mbox{\hyperlink{class_camera_component}{Camera\+Component}} should be attached onto a game object. There should only be one Camerame component at once in a game. It is used to follow a game object target. It has Screen\+Width, Screen\+Height, and it is in charge of rendering all the game\+Objects you can see at a certain frame.  
+
+
+
+
+{\ttfamily \#include $<$Camera\+Component.\+hpp$>$}
+
+Inheritance diagram for Camera\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_component}{Camera\+Component}} $\ast$ \mbox{\hyperlink{class_camera_component_aadc2f656efdfe1dc29f2a7425d9a4208}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address object This function provides an address to this component Especially useful in python. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_component_aae782546cabde0510b0dc188229efb9b}{Init}} (int screen\+Width, int screen\+Height, \mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} $\ast$layers)
+\begin{DoxyCompactList}\small\item\em Initializing the camera component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_component_ab422c1943fc29d2282f521550fb08248}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec) override
+\begin{DoxyCompactList}\small\item\em Rendering this function is in charge of rendering the frame using the SDL\+\_\+\+Renderer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_component_a4ffb5cf1f776c534d202458482b18840}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update is not being used. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Late\+Update function is used for following the target movement. Check if the rendering rectangle of the target object is out of deadzone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_component_a3236ae8a66bf00d24529826ca5800a30}{Update\+Dead\+Zone}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em This function is used for updating the width and height and x, y position of the Deadzone. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_camera_component_af94a4b818864c3fec7f1ec34134e49e5}\label{class_camera_component_af94a4b818864c3fec7f1ec34134e49e5}} 
+void {\bfseries Follow\+Target} ()
+\begin{DoxyCompactList}\small\item\em This function is handling the target following, mainly called by \mbox{\hyperlink{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}{Late\+Update()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_component_ae6a43f078c248c3142ae21764e2a9c32}{Set\+Target\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$target)
+\begin{DoxyCompactList}\small\item\em Set the Target Object object, storing the target object inside the variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_camera_component}{Camera\+Component}} should be attached onto a game object. There should only be one Camerame component at once in a game. It is used to follow a game object target. It has Screen\+Width, Screen\+Height, and it is in charge of rendering all the game\+Objects you can see at a certain frame. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_component_aadc2f656efdfe1dc29f2a7425d9a4208}\label{class_camera_component_aadc2f656efdfe1dc29f2a7425d9a4208}} 
+\index{CameraComponent@{CameraComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_component}{Camera\+Component}} $\ast$ Camera\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address object This function provides an address to this component Especially useful in python. 
+
+\begin{DoxyReturn}{Returns}
+Camera\+Component$\ast$ a pointer storing the address of this camera component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_component_aae782546cabde0510b0dc188229efb9b}\label{class_camera_component_aae782546cabde0510b0dc188229efb9b}} 
+\index{CameraComponent@{CameraComponent}!Init@{Init}}
+\index{Init@{Init}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{class_layer_manager}{Layer\+Manager}} $\ast$}]{layers }\end{DoxyParamCaption})}
+
+
+
+Initializing the camera component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Width} & width of screen \\
+\hline
+{\em screen\+Height} & height of \\
+\hline
+{\em layers} & -\/Layer\+Manager$\ast$ layers\+: it is a static object\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Width} & width of screen \\
+\hline
+{\em screen\+Height} & height of \\
+\hline
+{\em layers} & -\/Layer\+Manager$\ast$ layers\+: it is a static object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}\label{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}} 
+\index{CameraComponent@{CameraComponent}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Late\+Update function is used for following the target movement. Check if the rendering rectangle of the target object is out of deadzone. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Component}}.
+
+\mbox{\Hypertarget{class_camera_component_ab422c1943fc29d2282f521550fb08248}\label{class_camera_component_ab422c1943fc29d2282f521550fb08248}} 
+\index{CameraComponent@{CameraComponent}!Render@{Render}}
+\index{Render@{Render}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rendering this function is in charge of rendering the frame using the SDL\+\_\+\+Renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & SDL\+\_\+\+Renderer \\
+\hline
+{\em vec} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Component}}.
+
+\mbox{\Hypertarget{class_camera_component_ae6a43f078c248c3142ae21764e2a9c32}\label{class_camera_component_ae6a43f078c248c3142ae21764e2a9c32}} 
+\index{CameraComponent@{CameraComponent}!SetTargetObject@{SetTargetObject}}
+\index{SetTargetObject@{SetTargetObject}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{SetTargetObject()}{SetTargetObject()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Set\+Target\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+Set the Target Object object, storing the target object inside the variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Game\+Object$\ast$ target object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_component_a4ffb5cf1f776c534d202458482b18840}\label{class_camera_component_a4ffb5cf1f776c534d202458482b18840}} 
+\index{CameraComponent@{CameraComponent}!Update@{Update}}
+\index{Update@{Update}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update is not being used. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+\mbox{\Hypertarget{class_camera_component_a3236ae8a66bf00d24529826ca5800a30}\label{class_camera_component_a3236ae8a66bf00d24529826ca5800a30}} 
+\index{CameraComponent@{CameraComponent}!UpdateDeadZone@{UpdateDeadZone}}
+\index{UpdateDeadZone@{UpdateDeadZone}!CameraComponent@{CameraComponent}}
+\doxysubsubsection{\texorpdfstring{UpdateDeadZone()}{UpdateDeadZone()}}
+{\footnotesize\ttfamily void Camera\+Component\+::\+Update\+Dead\+Zone (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+This function is used for updating the width and height and x, y position of the Deadzone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Camera\+Component.\+hpp\item 
+src/buildin/Camera\+Component.\+cpp\end{DoxyCompactItemize}

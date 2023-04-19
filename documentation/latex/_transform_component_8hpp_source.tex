@@ -1,0 +1,42 @@
+\hypertarget{_transform_component_8hpp_source}{}\doxysection{Transform\+Component.\+hpp}
+\label{_transform_component_8hpp_source}\index{include/buildin/TransformComponent.hpp@{include/buildin/TransformComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TRANSFORM\_COMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TRANSFORM\_COMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transform_component}{TransformComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \mbox{\hyperlink{class_transform_component}{TransformComponent}}();}
+\DoxyCodeLine{00012\ \ \ \mbox{\hyperlink{class_transform_component}{\string~TransformComponent}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_component_ac64373e3544e608a71478514803f08c4}{Update}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{class_transform_component}{TransformComponent}}\ *\mbox{\hyperlink{class_transform_component_ab815e450551252ecfd87c8818d7fa6e7}{GetAddress}}()}
+\DoxyCodeLine{00021\ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00023\ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_component_ac5ff56ab1f0eb6b1c7afe73c0b2c0c81}{SetPosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00031\ \ \ \textcolor{comment}{//\ void\ SetSpeed(float\ spd);}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_component_ad602a0e7b04c52b0226dd87ec4e31bab}{MoveX}}(\textcolor{keywordtype}{int}\ dX);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_component_a6ad6c49b343f58d39c3dc9987ee01002}{MoveY}}(\textcolor{keywordtype}{int}\ dY);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_transform_component_a96ab446331fd0732c258b099b49c9714}{GetX}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mX;\ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_transform_component_a7f582f8cef62c002187c4d46d28fceac}{GetY}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mY;\ \}}
+\DoxyCodeLine{00056\ \ \ \textcolor{comment}{//\ float\ GetSpeed()\ const\ \{\ return\ mSpeed;\ \};}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \textcolor{comment}{//\ float\ mSpeed;}}
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{int}\ mX;}
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{int}\ mY;}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,57 @@
+\hypertarget{_camera_component_8hpp_source}{}\doxysection{Camera\+Component.\+hpp}
+\label{_camera_component_8hpp_source}\index{include/buildin/CameraComponent.hpp@{include/buildin/CameraComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CAMERA\_COMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CAMERA\_COMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ \#include\ "{}SpriteComponent.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}TransformComponent.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SpriteComponent.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}LayerManager.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}TinyMath.hpp"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_component}{CameraComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_camera_component}{CameraComponent}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{class_camera_component}{CameraComponent}}\ *\mbox{\hyperlink{class_camera_component_aadc2f656efdfe1dc29f2a7425d9a4208}{GetAddress}}()}
+\DoxyCodeLine{00033\ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00035\ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_aae782546cabde0510b0dc188229efb9b}{Init}}(\textcolor{keywordtype}{int}\ screenWidth,\ \textcolor{keywordtype}{int}\ screenHeight,\ \mbox{\hyperlink{class_layer_manager}{LayerManager}}\ *layers);}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{class_camera_component}{\string~CameraComponent}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_ab422c1943fc29d2282f521550fb08248}{Render}}(SDL\_Renderer\ *renderer,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ vec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_a4ffb5cf1f776c534d202458482b18840}{Update}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}{LateUpdate}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_a3236ae8a66bf00d24529826ca5800a30}{UpdateDeadZone}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_af94a4b818864c3fec7f1ec34134e49e5}{FollowTarget}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_component_ae6a43f078c248c3142ae21764e2a9c32}{SetTargetObject}}(\mbox{\hyperlink{class_game_object}{GameObject}}\ *target);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ \ \ \textcolor{comment}{/*\ data\ */}}
+\DoxyCodeLine{00091\ \ \ SDL\_Rect\ mDeadZone;}
+\DoxyCodeLine{00092\ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}\ *mTarget;}
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{int}\ mCAMERA\_WIDTH;}
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{int}\ mCAMERA\_HEIGHT;}
+\DoxyCodeLine{00095\ \ \ \mbox{\hyperlink{class_layer_manager}{LayerManager}}\ *mLayerManager;}
+\DoxyCodeLine{00096\ \ \ SDL\_Rect\ mCamera;}
+\DoxyCodeLine{00097\ \ \ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ mCameraOffset;}
+\DoxyCodeLine{00098\ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,165 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a1bd14aa169f501f94f1721943d716535}\label{class_game_object_a1bd14aa169f501f94f1721943d716535}} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em calling the update function and late update function of each component attached onto this game\+Object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ab7b1e109fe8baa023eaf8c6642d86665}\label{class_game_object_ab7b1e109fe8baa023eaf8c6642d86665}} 
+void {\bfseries Late\+Update} ()
+\begin{DoxyCompactList}\small\item\em This function is not being used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a59a953a29c1a62f3f03157064ef609ca}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} offset)
+\begin{DoxyCompactList}\small\item\em calling the render function of each component attached onto this game object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a430742cf91abb99337c556c88bef880a}\label{class_game_object_a430742cf91abb99337c556c88bef880a}} 
+void {\bfseries Input} ()
+\begin{DoxyCompactList}\small\item\em calling the input function of each component attached onto this game object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_game_object_ae885d43da0a344bc5fb097be93408338}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address of this game object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_object_abc2483b09c818335fc048fa1e73df806}{Get\+Component\+Size}} ()
+\begin{DoxyCompactList}\small\item\em returning the number of components attached \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{class_game_object_a811dc08b79009b3af153721df972e761}{Add\+Component}} ()
+\begin{DoxyCompactList}\small\item\em template function in charge of adding all kinds of component \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_game_object_a5216b8316fe1702edd1de4f188696cc3}{Remove\+Component}} ()
+\begin{DoxyCompactList}\small\item\em template function in charge of removing all kinds of component \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_game_object_afc7d6a0479b7e6ea4eced8ccd3ddfbc6}{Get\+Component}} ()
+\begin{DoxyCompactList}\small\item\em template function in charge of getting all kinds of component \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{class_game_object_ace5e8a7bdb6bf548b534cae696ed0db1}{Has\+Component}} ()
+\begin{DoxyCompactList}\small\item\em template function in charge of checking if a specific type of component is attached \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ae04ce23d3dbdc6161c62a95fbf366a8e}\label{class_game_object_ae04ce23d3dbdc6161c62a95fbf366a8e}} 
+int {\bfseries Get\+Layer\+Index} ()
+\item 
+\mbox{\Hypertarget{class_game_object_a553695fc7a279d386be10ded06e06c0c}\label{class_game_object_a553695fc7a279d386be10ded06e06c0c}} 
+void {\bfseries Set\+Layer\+Index} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a66891b8bfd67373dde0155ae7808bbb4}\label{class_game_object_a66891b8bfd67373dde0155ae7808bbb4}} 
+std\+::string {\bfseries tag}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_a811dc08b79009b3af153721df972e761}\label{class_game_object_a811dc08b79009b3af153721df972e761}} 
+\index{GameObject@{GameObject}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T $\ast$ Game\+Object\+::\+Add\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+template function in charge of adding all kinds of component 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ the component added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_ae885d43da0a344bc5fb097be93408338}\label{class_game_object_ae885d43da0a344bc5fb097be93408338}} 
+\index{GameObject@{GameObject}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ Game\+Object\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address of this game object. 
+
+\begin{DoxyReturn}{Returns}
+pointer Game\+Object$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_afc7d6a0479b7e6ea4eced8ccd3ddfbc6}\label{class_game_object_afc7d6a0479b7e6ea4eced8ccd3ddfbc6}} 
+\index{GameObject@{GameObject}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Game\+Object\+::\+Get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+template function in charge of getting all kinds of component 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ the component the usering is looking for 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_abc2483b09c818335fc048fa1e73df806}\label{class_game_object_abc2483b09c818335fc048fa1e73df806}} 
+\index{GameObject@{GameObject}!GetComponentSize@{GetComponentSize}}
+\index{GetComponentSize@{GetComponentSize}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetComponentSize()}{GetComponentSize()}}
+{\footnotesize\ttfamily int Game\+Object\+::\+Get\+Component\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returning the number of components attached 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_ace5e8a7bdb6bf548b534cae696ed0db1}\label{class_game_object_ace5e8a7bdb6bf548b534cae696ed0db1}} 
+\index{GameObject@{GameObject}!HasComponent@{HasComponent}}
+\index{HasComponent@{HasComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{HasComponent()}{HasComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Game\+Object\+::\+Has\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+template function in charge of checking if a specific type of component is attached 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a5216b8316fe1702edd1de4f188696cc3}\label{class_game_object_a5216b8316fe1702edd1de4f188696cc3}} 
+\index{GameObject@{GameObject}!RemoveComponent@{RemoveComponent}}
+\index{RemoveComponent@{RemoveComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{RemoveComponent()}{RemoveComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Game\+Object\+::\+Remove\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+template function in charge of removing all kinds of component 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{class_game_object_a59a953a29c1a62f3f03157064ef609ca}\label{class_game_object_a59a953a29c1a62f3f03157064ef609ca}} 
+\index{GameObject@{GameObject}!Render@{Render}}
+\index{Render@{Render}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{offset }\end{DoxyParamCaption})}
+
+
+
+calling the render function of each component attached onto this game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & SDL\+\_\+\+Renderer \\
+\hline
+{\em offset} & \mbox{\hyperlink{struct_vec2_d}{Vec2D}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/Game\+Object.\+hpp\item 
+src/core/Game\+Object.\+cpp\end{DoxyCompactItemize}

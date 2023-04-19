@@ -1,0 +1,166 @@
+\hypertarget{class_transform_component}{}\doxysection{Transform\+Component Class Reference}
+\label{class_transform_component}\index{TransformComponent@{TransformComponent}}
+
+
+This class is handling the transformation of a game object.  
+
+
+
+
+{\ttfamily \#include $<$Transform\+Component.\+hpp$>$}
+
+Inheritance diagram for Transform\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transform_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_transform_component_ac64373e3544e608a71478514803f08c4}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_component}{Transform\+Component}} $\ast$ \mbox{\hyperlink{class_transform_component_ab815e450551252ecfd87c8818d7fa6e7}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the address of this transform component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_component_ac5ff56ab1f0eb6b1c7afe73c0b2c0c81}{Set\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Set the Position of this transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_component_ad602a0e7b04c52b0226dd87ec4e31bab}{MoveX}} (int dX)
+\begin{DoxyCompactList}\small\item\em moving the transform along X axis \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_component_a6ad6c49b343f58d39c3dc9987ee01002}{MoveY}} (int dY)
+\begin{DoxyCompactList}\small\item\em moving the transform along Y axis \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transform_component_a96ab446331fd0732c258b099b49c9714}{GetX}} () const
+\begin{DoxyCompactList}\small\item\em returning the X position \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transform_component_a7f582f8cef62c002187c4d46d28fceac}{GetY}} () const
+\begin{DoxyCompactList}\small\item\em returning the Y position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is handling the transformation of a game object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transform_component_ab815e450551252ecfd87c8818d7fa6e7}\label{class_transform_component_ab815e450551252ecfd87c8818d7fa6e7}} 
+\index{TransformComponent@{TransformComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform_component}{Transform\+Component}} $\ast$ Transform\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the address of this transform component. 
+
+\begin{DoxyReturn}{Returns}
+Transform\+Component$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_component_a96ab446331fd0732c258b099b49c9714}\label{class_transform_component_a96ab446331fd0732c258b099b49c9714}} 
+\index{TransformComponent@{TransformComponent}!GetX@{GetX}}
+\index{GetX@{GetX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returning the X position 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_component_a7f582f8cef62c002187c4d46d28fceac}\label{class_transform_component_a7f582f8cef62c002187c4d46d28fceac}} 
+\index{TransformComponent@{TransformComponent}!GetY@{GetY}}
+\index{GetY@{GetY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returning the Y position 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_component_ad602a0e7b04c52b0226dd87ec4e31bab}\label{class_transform_component_ad602a0e7b04c52b0226dd87ec4e31bab}} 
+\index{TransformComponent@{TransformComponent}!MoveX@{MoveX}}
+\index{MoveX@{MoveX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{MoveX()}{MoveX()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+MoveX (\begin{DoxyParamCaption}\item[{int}]{dX }\end{DoxyParamCaption})}
+
+
+
+moving the transform along X axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dX} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_component_a6ad6c49b343f58d39c3dc9987ee01002}\label{class_transform_component_a6ad6c49b343f58d39c3dc9987ee01002}} 
+\index{TransformComponent@{TransformComponent}!MoveY@{MoveY}}
+\index{MoveY@{MoveY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{MoveY()}{MoveY()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+MoveY (\begin{DoxyParamCaption}\item[{int}]{dY }\end{DoxyParamCaption})}
+
+
+
+moving the transform along Y axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_component_ac5ff56ab1f0eb6b1c7afe73c0b2c0c81}\label{class_transform_component_ac5ff56ab1f0eb6b1c7afe73c0b2c0c81}} 
+\index{TransformComponent@{TransformComponent}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the Position of this transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_component_ac64373e3544e608a71478514803f08c4}\label{class_transform_component_ac64373e3544e608a71478514803f08c4}} 
+\index{TransformComponent@{TransformComponent}!Update@{Update}}
+\index{Update@{Update}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updating information based on input 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Transform\+Component.\+hpp\item 
+src/buildin/Transform\+Component.\+cpp\end{DoxyCompactItemize}

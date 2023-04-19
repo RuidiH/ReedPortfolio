@@ -1,0 +1,39 @@
+\hypertarget{_physics2_d_8hpp_source}{}\doxysection{Physics2\+D.\+hpp}
+\label{_physics2_d_8hpp_source}\index{include/core/physics/Physics2D.hpp@{include/core/physics/Physics2D.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <Box2D/Box2D.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}PhysicsComponent.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Engine.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_physics2_d}{Physics2D}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ std::vector<PhysicsComponent\ *>\ physicsComponents;}
+\DoxyCodeLine{00015\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_physics2_d}{Physics2D}}\ *instance;}
+\DoxyCodeLine{00016\ \ \ b2World\ *mWorld;}
+\DoxyCodeLine{00017\ \ \ \textcolor{keywordtype}{int}\ M\_VELOCITY\_ITERATION\ =\ 8;}
+\DoxyCodeLine{00018\ \ \ \textcolor{keywordtype}{int}\ M\_POSITION\_ITERATION\ =\ 3;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{class_physics2_d_a346b49b4084569b2cfd8967bdc7755b4}{Physics2D}}();}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{class_physics2_d}{\string~Physics2D}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_physics2_d}{Physics2D}}\ *\mbox{\hyperlink{class_physics2_d_a27cba9824775d08277693dabc973bd99}{Instance}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics2_d_afbb0abd84e203cec68ae6bee7da2bfe0}{Init}}(b2Vec2\ gravity);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ b2World\ *\mbox{\hyperlink{class_physics2_d_a78a8fb9f32b8a691d9cb691f1e6c96ce}{GetWorld}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics2_d_aca09273ca5e5e961522c4c4afe6a54e9}{RegisterPhysicsComponent}}(\mbox{\hyperlink{class_physics_component}{PhysicsComponent}}\ *p);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics2_d_a8b662d7c0c14bcae553e8607b3c7ca7c}{DeregisterPhysicsComponent}}(\mbox{\hyperlink{class_physics_component}{PhysicsComponent}}\ *p);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_physics2_d_a08e193d71c983b57cd867ad6d3456142}{FixedUpdate}}(\textcolor{keywordtype}{float}\ fixedDeltaTime);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_engine}{Engine}};}
+\DoxyCodeLine{00065\ \};}
+
+\end{DoxyCode}

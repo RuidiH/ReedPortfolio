@@ -1,0 +1,131 @@
+\hypertarget{class_audio_system}{}\doxysection{Audio\+System Class Reference}
+\label{class_audio_system}\index{AudioSystem@{AudioSystem}}
+
+
+A singleton \mbox{\hyperlink{class_audio_system}{Audio\+System}} class that\textquotesingle{}s responsible for playing game audios including music and sfx.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+System.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_audio_system_acc765490a9d1b947c51547a35047026a}{Play\+Music}} (std\+::string path, int volumn=1, bool loop=true, bool change=false)
+\begin{DoxyCompactList}\small\item\em Given a path of a music file, play the music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_system_a7f94d549bb278e5188725e706e5dda09}{Pause\+Music}} (std\+::size\+\_\+t job\+Uid)
+\begin{DoxyCompactList}\small\item\em Pause the current playing music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_system_a6b8b86cda95cd91a3c192a35141c3b98}{Resume\+Music}} (std\+::size\+\_\+t job\+Uid)
+\begin{DoxyCompactList}\small\item\em Resume the paused music, if any. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_system_aeee5f0c4947919149c441722b6e648b4}{Terminate\+Music}} (std\+::size\+\_\+t job\+Uid)
+\begin{DoxyCompactList}\small\item\em Terminate the current playing music. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_audio_system_a4dfa6f9f63d4fe31df7b5f0e529c2ff5}{Play\+SFX}} (std\+::string path, int volumn=1)
+\begin{DoxyCompactList}\small\item\em Play the sfx at the given path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_system_aa15676790eea6b12fdcb9f830f6a145f}\label{class_audio_system_aa15676790eea6b12fdcb9f830f6a145f}} 
+static \mbox{\hyperlink{class_audio_system}{Audio\+System}} $\ast$ {\bfseries Instance} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A singleton \mbox{\hyperlink{class_audio_system}{Audio\+System}} class that\textquotesingle{}s responsible for playing game audios including music and sfx. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_audio_system_a7f94d549bb278e5188725e706e5dda09}\label{class_audio_system_a7f94d549bb278e5188725e706e5dda09}} 
+\index{AudioSystem@{AudioSystem}!PauseMusic@{PauseMusic}}
+\index{PauseMusic@{PauseMusic}!AudioSystem@{AudioSystem}}
+\doxysubsubsection{\texorpdfstring{PauseMusic()}{PauseMusic()}}
+{\footnotesize\ttfamily void Audio\+System\+::\+Pause\+Music (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{job\+Uid }\end{DoxyParamCaption})}
+
+
+
+Pause the current playing music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+Uid} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_audio_system_acc765490a9d1b947c51547a35047026a}\label{class_audio_system_acc765490a9d1b947c51547a35047026a}} 
+\index{AudioSystem@{AudioSystem}!PlayMusic@{PlayMusic}}
+\index{PlayMusic@{PlayMusic}!AudioSystem@{AudioSystem}}
+\doxysubsubsection{\texorpdfstring{PlayMusic()}{PlayMusic()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Audio\+System\+::\+Play\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{int}]{volumn = {\ttfamily 1},  }\item[{bool}]{loop = {\ttfamily true},  }\item[{bool}]{change = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Given a path of a music file, play the music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the audio \\
+\hline
+{\em volumn} & volumn \\
+\hline
+{\em loop} & if the music should loop \\
+\hline
+{\em change} & if there is another music is currently playing, should the function stop that one and playing the new music \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_audio_system_a4dfa6f9f63d4fe31df7b5f0e529c2ff5}\label{class_audio_system_a4dfa6f9f63d4fe31df7b5f0e529c2ff5}} 
+\index{AudioSystem@{AudioSystem}!PlaySFX@{PlaySFX}}
+\index{PlaySFX@{PlaySFX}!AudioSystem@{AudioSystem}}
+\doxysubsubsection{\texorpdfstring{PlaySFX()}{PlaySFX()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Audio\+System\+::\+Play\+SFX (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{int}]{volumn = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Play the sfx at the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the sfx \\
+\hline
+{\em volumn} & volumn \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_audio_system_a6b8b86cda95cd91a3c192a35141c3b98}\label{class_audio_system_a6b8b86cda95cd91a3c192a35141c3b98}} 
+\index{AudioSystem@{AudioSystem}!ResumeMusic@{ResumeMusic}}
+\index{ResumeMusic@{ResumeMusic}!AudioSystem@{AudioSystem}}
+\doxysubsubsection{\texorpdfstring{ResumeMusic()}{ResumeMusic()}}
+{\footnotesize\ttfamily void Audio\+System\+::\+Resume\+Music (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{job\+Uid }\end{DoxyParamCaption})}
+
+
+
+Resume the paused music, if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+Uid} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_audio_system_aeee5f0c4947919149c441722b6e648b4}\label{class_audio_system_aeee5f0c4947919149c441722b6e648b4}} 
+\index{AudioSystem@{AudioSystem}!TerminateMusic@{TerminateMusic}}
+\index{TerminateMusic@{TerminateMusic}!AudioSystem@{AudioSystem}}
+\doxysubsubsection{\texorpdfstring{TerminateMusic()}{TerminateMusic()}}
+{\footnotesize\ttfamily void Audio\+System\+::\+Terminate\+Music (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{job\+Uid }\end{DoxyParamCaption})}
+
+
+
+Terminate the current playing music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+Uid} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/audio/Audio\+System.\+hpp\item 
+src/core/audio/Audio\+System.\+cpp\end{DoxyCompactItemize}

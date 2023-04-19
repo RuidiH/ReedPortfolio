@@ -1,0 +1,157 @@
+\hypertarget{class_controller_component}{}\doxysection{Controller\+Component Class Reference}
+\label{class_controller_component}\index{ControllerComponent@{ControllerComponent}}
+
+
+controlling the player movement, jump and stop  
+
+
+
+
+{\ttfamily \#include $<$Controller\+Component.\+hpp$>$}
+
+Inheritance diagram for Controller\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_controller_component_acbed21ded0b7208f17d90c49858fe2a7}\label{class_controller_component_acbed21ded0b7208f17d90c49858fe2a7}} 
+void {\bfseries Act} ()
+\begin{DoxyCompactList}\small\item\em this function is not being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_ab5d446d840555d0a6fd2b2dce2f11cbb}\label{class_controller_component_ab5d446d840555d0a6fd2b2dce2f11cbb}} 
+void {\bfseries Action\+Bind} (std\+::string name, action action, std\+::vector$<$ condition $>$ conditions)
+\begin{DoxyCompactList}\small\item\em this function is not being used. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_controller_component}{Controller\+Component}} $\ast$ \mbox{\hyperlink{class_controller_component_a0e95781c94ec439ce7832377c400a182}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address of this component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_a104e6cd0d0cb8b1ce4fac13e58963bae}\label{class_controller_component_a104e6cd0d0cb8b1ce4fac13e58963bae}} 
+bool {\bfseries Foo} ()
+\item 
+\mbox{\Hypertarget{class_controller_component_ab07abd20bad7bd9ae266957e7607be15}\label{class_controller_component_ab07abd20bad7bd9ae266957e7607be15}} 
+void {\bfseries Move\+Left} ()
+\begin{DoxyCompactList}\small\item\em control player left movement \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_a7a08e11405ae7e7a66002e6f1bd61b27}\label{class_controller_component_a7a08e11405ae7e7a66002e6f1bd61b27}} 
+void {\bfseries Move\+Right} ()
+\begin{DoxyCompactList}\small\item\em control player right movement \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_aaecfdaaff96f18d79f179e4716b4b21a}\label{class_controller_component_aaecfdaaff96f18d79f179e4716b4b21a}} 
+bool {\bfseries Is\+Grounded} ()
+\begin{DoxyCompactList}\small\item\em this function is not being used \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_ac7688aeb8592e7a8a6a21636f3dcd610}\label{class_controller_component_ac7688aeb8592e7a8a6a21636f3dcd610}} 
+void {\bfseries Jump} ()
+\begin{DoxyCompactList}\small\item\em control player jump \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controller_component_ad83caa4f5f7ac3ffdd36ed898436b28b}{Set\+Jump\+Force}} (float jF)
+\begin{DoxyCompactList}\small\item\em Set the Jump Force. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controller_component_af624d270ed1a7015a1818c6bbed08b09}{Set\+Speed}} (float spd)
+\begin{DoxyCompactList}\small\item\em Set the Speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_component_a28e8bd42b7f085939b2bdf10b46819b4}\label{class_controller_component_a28e8bd42b7f085939b2bdf10b46819b4}} 
+void {\bfseries Stop} ()
+\begin{DoxyCompactList}\small\item\em stop the player from moving \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_a3d097b6ecdf39ae8eb75ffb546a00ac1}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_ab076eb29eeb39aa88b90d040fc4ad50c}{Input}} () override
+\begin{DoxyCompactList}\small\item\em check input and control the player movement based on the input information \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+controlling the player movement, jump and stop 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controller_component_a0e95781c94ec439ce7832377c400a182}\label{class_controller_component_a0e95781c94ec439ce7832377c400a182}} 
+\index{ControllerComponent@{ControllerComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_controller_component}{Controller\+Component}} $\ast$ Controller\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address of this component. 
+
+\begin{DoxyReturn}{Returns}
+pointer of \mbox{\hyperlink{class_controller_component}{Controller\+Component}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controller_component_ab076eb29eeb39aa88b90d040fc4ad50c}\label{class_controller_component_ab076eb29eeb39aa88b90d040fc4ad50c}} 
+\index{ControllerComponent@{ControllerComponent}!Input@{Input}}
+\index{Input@{Input}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+check input and control the player movement based on the input information 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_ad83caa4f5f7ac3ffdd36ed898436b28b}\label{class_controller_component_ad83caa4f5f7ac3ffdd36ed898436b28b}} 
+\index{ControllerComponent@{ControllerComponent}!SetJumpForce@{SetJumpForce}}
+\index{SetJumpForce@{SetJumpForce}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{SetJumpForce()}{SetJumpForce()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Set\+Jump\+Force (\begin{DoxyParamCaption}\item[{float}]{jF }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Jump Force. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jF} & float jump force \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_controller_component_af624d270ed1a7015a1818c6bbed08b09}\label{class_controller_component_af624d270ed1a7015a1818c6bbed08b09}} 
+\index{ControllerComponent@{ControllerComponent}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{float}]{spd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & float set speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_controller_component_a3d097b6ecdf39ae8eb75ffb546a00ac1}\label{class_controller_component_a3d097b6ecdf39ae8eb75ffb546a00ac1}} 
+\index{ControllerComponent@{ControllerComponent}!Update@{Update}}
+\index{Update@{Update}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updating information based on input 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Controller\+Component.\+hpp\item 
+src/buildin/Controller\+Component.\+cpp\end{DoxyCompactItemize}

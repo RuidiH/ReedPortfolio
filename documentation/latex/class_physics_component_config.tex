@@ -1,0 +1,73 @@
+\hypertarget{class_physics_component_config}{}\doxysection{Physics\+Component\+Config Class Reference}
+\label{class_physics_component_config}\index{PhysicsComponentConfig@{PhysicsComponentConfig}}
+
+
+this class is used for storing all the information needed when creating a physic component  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Component\+Config.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_af20b51c87fa3a38bacd6b1f6ed7668ca}\label{class_physics_component_config_af20b51c87fa3a38bacd6b1f6ed7668ca}} 
+enum {\bfseries Body\+Type} \{ {\bfseries Static}
+, {\bfseries Dynamic}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a14ea1344a95f06743078fed64d0dbffe}\label{class_physics_component_config_a14ea1344a95f06743078fed64d0dbffe}} 
+void {\bfseries Assign\+User\+Data} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em storing the game object into a CCSUder\+Data instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_ad4849f918ea5975bf01407f7c5e321f9}\label{class_physics_component_config_ad4849f918ea5975bf01407f7c5e321f9}} 
+int {\bfseries Shape\+Width} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a875b17c3c9ead49636322f298d62bc55}\label{class_physics_component_config_a875b17c3c9ead49636322f298d62bc55}} 
+int {\bfseries Shape\+Height} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_ab780a5fda06c2f6937c30010ce923286}\label{class_physics_component_config_ab780a5fda06c2f6937c30010ce923286}} 
+int {\bfseries PositionX} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a7961c49db466dda244091669cbbc0ab3}\label{class_physics_component_config_a7961c49db466dda244091669cbbc0ab3}} 
+int {\bfseries PositionY} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_ade4fd6ce886022372a6a41bd77f0cf90}\label{class_physics_component_config_ade4fd6ce886022372a6a41bd77f0cf90}} 
+bool {\bfseries Fixed\+Rotation} \{true\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_aef26542795b221264613372e1b8a615a}\label{class_physics_component_config_aef26542795b221264613372e1b8a615a}} 
+float {\bfseries Fixture\+Density} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a49590edeb7fbfa6547de40f16a057cda}\label{class_physics_component_config_a49590edeb7fbfa6547de40f16a057cda}} 
+float {\bfseries Fixture\+Friction} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_acb2ce9ee682815edb134c6ccc95b41e1}\label{class_physics_component_config_acb2ce9ee682815edb134c6ccc95b41e1}} 
+Body\+Type {\bfseries body\+Type} \{Static\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a1ebbfc44d52cfb61a5af2ba28d871159}\label{class_physics_component_config_a1ebbfc44d52cfb61a5af2ba28d871159}} 
+void $\ast$ {\bfseries user\+Data} \{nullptr\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_ae1bf0beaf0dc01774a44be35a30e0622}\label{class_physics_component_config_ae1bf0beaf0dc01774a44be35a30e0622}} 
+int {\bfseries Fixture\+Category\+Bits} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_a2b5d811e7467354b941ba46ce55bb487}\label{class_physics_component_config_a2b5d811e7467354b941ba46ce55bb487}} 
+int {\bfseries Fixture\+Mask\+Bits} \{0\}
+\item 
+\mbox{\Hypertarget{class_physics_component_config_adb005d8f74366451d0c5ba442f883406}\label{class_physics_component_config_adb005d8f74366451d0c5ba442f883406}} 
+bool {\bfseries is\+Sensor} \{false\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class is used for storing all the information needed when creating a physic component 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/physics/Physics\+Component\+Config.\+hpp\item 
+src/core/physics/Physics\+Component\+Config.\+cpp\end{DoxyCompactItemize}

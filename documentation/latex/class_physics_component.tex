@@ -1,0 +1,156 @@
+\hypertarget{class_physics_component}{}\doxysection{Physics\+Component Class Reference}
+\label{class_physics_component}\index{PhysicsComponent@{PhysicsComponent}}
+
+
+class pf the physics component  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Component.\+hpp$>$}
+
+Inheritance diagram for Physics\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_physics_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_component_aeb544a2a04cde8f050c6a51ec436ec4e}\label{class_physics_component_aeb544a2a04cde8f050c6a51ec436ec4e}} 
+{\bfseries Physics\+Component} ()
+\begin{DoxyCompactList}\small\item\em adding this component into the static \mbox{\hyperlink{class_physics2_d}{Physics2D}} instance\textquotesingle{}s physics component vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_component_ac77afe4cc81460ea6027e6c21739a4af}\label{class_physics_component_ac77afe4cc81460ea6027e6c21739a4af}} 
+virtual {\bfseries $\sim$\+Physics\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Physics \mbox{\hyperlink{class_component}{Component}} object removing this component from the static \mbox{\hyperlink{class_physics2_d}{Physics2D}} instance\textquotesingle{}s physics component vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$ \mbox{\hyperlink{class_physics_component_a9f4283e3107d84f00f3de447a2202ab6}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em returning the address of this physics component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_component_af9903df5c50d49b3cc22d2879b740c7c}{Config}} (std\+::vector$<$ \mbox{\hyperlink{class_physics_component_config}{Physics\+Component\+Config}} $>$ configs)
+\begin{DoxyCompactList}\small\item\em creating box2D physics based on all the physics component config information \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_component_ac4ac3d36785aad9dd195ff66f75981fe}{Fixed\+Update}} () override
+\begin{DoxyCompactList}\small\item\em updating the transform position based on the physics body position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_component_acbf31523c7b2ae961f7f381c36919ee5}\label{class_physics_component_acbf31523c7b2ae961f7f381c36919ee5}} 
+void {\bfseries Set\+Velocity} ()
+\begin{DoxyCompactList}\small\item\em Set the Velocity object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_component_ace7ffff3ce60895ad0830d78cd3d9cbe}\label{class_physics_component_ace7ffff3ce60895ad0830d78cd3d9cbe}} 
+void {\bfseries Add\+Force} ()
+\item 
+std\+::vector$<$ b2\+Body $\ast$ $>$ \mbox{\hyperlink{class_physics_component_ae602a0bd552b3e207138929e60ed17ac}{Get\+Bodies}} ()
+\begin{DoxyCompactList}\small\item\em Get the vector of b2\+Body pointers. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_component_ace7ede21ca4228c8d871d03ffdfe81cc}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec) override
+\begin{DoxyCompactList}\small\item\em render of each b2\+Body \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_component_a9fd3c58ec8707c5995232f089e6ef91b}\label{class_physics_component_a9fd3c58ec8707c5995232f089e6ef91b}} 
+class {\bfseries Controller\+Component}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class pf the physics component 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_component_af9903df5c50d49b3cc22d2879b740c7c}\label{class_physics_component_af9903df5c50d49b3cc22d2879b740c7c}} 
+\index{PhysicsComponent@{PhysicsComponent}!Config@{Config}}
+\index{Config@{Config}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{Config()}{Config()}}
+{\footnotesize\ttfamily void Physics\+Component\+::\+Config (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_physics_component_config}{Physics\+Component\+Config}} $>$}]{configs }\end{DoxyParamCaption})}
+
+
+
+creating box2D physics based on all the physics component config information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em configs} & a vector of \mbox{\hyperlink{class_physics_component_config}{Physics\+Component\+Config}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_component_ac4ac3d36785aad9dd195ff66f75981fe}\label{class_physics_component_ac4ac3d36785aad9dd195ff66f75981fe}} 
+\index{PhysicsComponent@{PhysicsComponent}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Physics\+Component\+::\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updating the transform position based on the physics body position 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Component}}.
+
+\mbox{\Hypertarget{class_physics_component_a9f4283e3107d84f00f3de447a2202ab6}\label{class_physics_component_a9f4283e3107d84f00f3de447a2202ab6}} 
+\index{PhysicsComponent@{PhysicsComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics_component}{Physics\+Component}} $\ast$ Physics\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returning the address of this physics component 
+
+\begin{DoxyReturn}{Returns}
+a pointer of \mbox{\hyperlink{class_physics_component}{Physics\+Component}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_component_ae602a0bd552b3e207138929e60ed17ac}\label{class_physics_component_ae602a0bd552b3e207138929e60ed17ac}} 
+\index{PhysicsComponent@{PhysicsComponent}!GetBodies@{GetBodies}}
+\index{GetBodies@{GetBodies}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{GetBodies()}{GetBodies()}}
+{\footnotesize\ttfamily std\+::vector$<$ b2\+Body $\ast$ $>$ Physics\+Component\+::\+Get\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the vector of b2\+Body pointers. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$b2\+Body $\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_component_ace7ede21ca4228c8d871d03ffdfe81cc}\label{class_physics_component_ace7ede21ca4228c8d871d03ffdfe81cc}} 
+\index{PhysicsComponent@{PhysicsComponent}!Render@{Render}}
+\index{Render@{Render}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Physics\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+render of each b2\+Body 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & SDL\+\_\+\+Renderer$\ast$ \\
+\hline
+{\em vec} & \mbox{\hyperlink{struct_vec2_d}{Vec2D}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Physics\+Component.\+hpp\item 
+src/buildin/Physics\+Component.\+cpp\end{DoxyCompactItemize}

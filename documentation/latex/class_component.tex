@@ -1,0 +1,112 @@
+\hypertarget{class_component}{}\doxysection{Component Class Reference}
+\label{class_component}\index{Component@{Component}}
+Inheritance diagram for Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.333333cm]{class_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a00df87c957d8f7ee0fc51f07a0542f4a}\label{class_component_a00df87c957d8f7ee0fc51f07a0542f4a}} 
+class {\bfseries Game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_component_ae675090004914ecc10461b3251381832}\label{class_component_ae675090004914ecc10461b3251381832}} 
+\index{Component@{Component}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+updating physics 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_physics_component_ac4ac3d36785aad9dd195ff66f75981fe}{Physics\+Component}}.
+
+\mbox{\Hypertarget{class_component_abba211bfa6a773487aa8d354a8138d9d}\label{class_component_abba211bfa6a773487aa8d354a8138d9d}} 
+\index{Component@{Component}!Input@{Input}}
+\index{Input@{Input}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+updating player based on input information in controller component 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_controller_component_ab076eb29eeb39aa88b90d040fc4ad50c}{Controller\+Component}}.
+
+\mbox{\Hypertarget{class_component_a1020899c4cee8796a2bb29d960f05daf}\label{class_component_a1020899c4cee8796a2bb29d960f05daf}} 
+\index{Component@{Component}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+updating camera based on target movement 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_camera_component_adafa4ac0bb7eee7e15e0cc891ad431cc}{Camera\+Component}}.
+
+\mbox{\Hypertarget{class_component_a3409f92941b732f8c061324cb4341a41}\label{class_component_a3409f92941b732f8c061324cb4341a41}} 
+\index{Component@{Component}!Render@{Render}}
+\index{Render@{Render}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+rendering objects 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sprite_component_aa28aaaed388e0c9cbb94d18ee662f9d6}{Sprite\+Component}}, \mbox{\hyperlink{class_tile_component_a932b5d6a5556f7737cec2960379b218d}{Tile\+Component}}, \mbox{\hyperlink{class_camera_component_ab422c1943fc29d2282f521550fb08248}{Camera\+Component}}, and \mbox{\hyperlink{class_physics_component_ace7ede21ca4228c8d871d03ffdfe81cc}{Physics\+Component}}.
+
+\mbox{\Hypertarget{class_component_aaf2ce6dc5752072492f790ad4c7955bb}\label{class_component_aaf2ce6dc5752072492f790ad4c7955bb}} 
+\index{Component@{Component}!Update@{Update}}
+\index{Update@{Update}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+updating information based on input 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_camera_component_a4ffb5cf1f776c534d202458482b18840}{Camera\+Component}}, \mbox{\hyperlink{class_controller_component_a3d097b6ecdf39ae8eb75ffb546a00ac1}{Controller\+Component}}, \mbox{\hyperlink{class_sprite_component_abf88db8ae203534a57c8fe5fa3b705a0}{Sprite\+Component}}, \mbox{\hyperlink{class_tile_component_ab584fceecc7483f42584c83c9f0ad810}{Tile\+Component}}, and \mbox{\hyperlink{class_transform_component_ac64373e3544e608a71478514803f08c4}{Transform\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/Component.\+hpp\item 
+src/core/Component.\+cpp\end{DoxyCompactItemize}

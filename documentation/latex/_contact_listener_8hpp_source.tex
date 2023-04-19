@@ -1,0 +1,22 @@
+\hypertarget{_contact_listener_8hpp_source}{}\doxysection{Contact\+Listener.\+hpp}
+\label{_contact_listener_8hpp_source}\index{include/core/physics/ContactListener.hpp@{include/core/physics/ContactListener.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <Box2D/Box2D.h>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_contact_listener}{ContactListener}}\ :\ b2ContactListener}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \ \ \textcolor{keywordtype}{bool}\ IsPlayerAndGround(b2Contact\ *contact);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{int}\ numContacts;}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginContact(b2Contact\ *contact)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ EndContact(b2Contact\ *contact)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_contact_listener}{ContactListener}}();}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_contact_listener}{\string~ContactListener}}();}
+\DoxyCodeLine{00026\ \};}
+
+\end{DoxyCode}

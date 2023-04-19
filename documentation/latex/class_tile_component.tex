@@ -1,0 +1,166 @@
+\hypertarget{class_tile_component}{}\doxysection{Tile\+Component Class Reference}
+\label{class_tile_component}\index{TileComponent@{TileComponent}}
+
+
+handling tiles  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Component.\+hpp$>$}
+
+Inheritance diagram for Tile\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tile_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_component}{Tile\+Component}} $\ast$ \mbox{\hyperlink{class_tile_component_aaa4c823d00f55bfe2860912e71878d29}{Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Get the Address of this tile component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_component_ab700cd5c82894f17946e1b96220bb60a}{Init}} (std\+::uintptr\+\_\+t ren\+Address, float texture\+Speed=1.\+0f)
+\begin{DoxyCompactList}\small\item\em assigning the width, height, of the sizes of the sprites both from the source image and the destination rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tile_component_a2dc26c48ec33655157b9a097e252e3bc}\label{class_tile_component_a2dc26c48ec33655157b9a097e252e3bc}} 
+void {\bfseries Update\+Map} (std\+::vector$<$ \mbox{\hyperlink{struct_tile_grid_data}{Tile\+Grid\+Data}} $>$ data)
+\item 
+void \mbox{\hyperlink{class_tile_component_a8fae5ab95939088ef27b6f72c0cfd11a}{Build\+Physics}} ()
+\begin{DoxyCompactList}\small\item\em add physics component for gameobjects with Tile components \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_component_a2b2aef7425c3eed1a928475e3f8206e8}{Set\+Grid\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em Set the Grid Size. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tile_component_a932b5d6a5556f7737cec2960379b218d}{Render}} (SDL\+\_\+\+Renderer $\ast$ren, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} offset) override
+\begin{DoxyCompactList}\small\item\em handling the rendering of the tile component \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tile_component_ab584fceecc7483f42584c83c9f0ad810}{Update}} ()
+\begin{DoxyCompactList}\small\item\em handling the updating of the tile component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}} ()
+\begin{DoxyCompactList}\small\item\em updating information based on input \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating physics \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em updating camera based on target movement \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{struct_vec2_d}{Vec2D}} vec)
+\begin{DoxyCompactList}\small\item\em rendering objects \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}} ()
+\begin{DoxyCompactList}\small\item\em updating player based on input information in controller component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_af4a2157b3d021916719085f26f1548b0}\label{class_component_af4a2157b3d021916719085f26f1548b0}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handling tiles 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_component_a8fae5ab95939088ef27b6f72c0cfd11a}\label{class_tile_component_a8fae5ab95939088ef27b6f72c0cfd11a}} 
+\index{TileComponent@{TileComponent}!BuildPhysics@{BuildPhysics}}
+\index{BuildPhysics@{BuildPhysics}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{BuildPhysics()}{BuildPhysics()}}
+{\footnotesize\ttfamily void Tile\+Component\+::\+Build\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+add physics component for gameobjects with Tile components 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_component_aaa4c823d00f55bfe2860912e71878d29}\label{class_tile_component_aaa4c823d00f55bfe2860912e71878d29}} 
+\index{TileComponent@{TileComponent}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tile_component}{Tile\+Component}} $\ast$ Tile\+Component\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Address of this tile component. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the \mbox{\hyperlink{class_tile_component}{Tile\+Component}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tile_component_ab700cd5c82894f17946e1b96220bb60a}\label{class_tile_component_ab700cd5c82894f17946e1b96220bb60a}} 
+\index{TileComponent@{TileComponent}!Init@{Init}}
+\index{Init@{Init}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Tile\+Component\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::uintptr\+\_\+t}]{ren\+Address,  }\item[{float}]{texture\+Speed = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+
+
+assigning the width, height, of the sizes of the sprites both from the source image and the destination rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em srcW} & \\
+\hline
+{\em srcH} & \\
+\hline
+{\em destW} & \\
+\hline
+{\em destH} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_component_a932b5d6a5556f7737cec2960379b218d}\label{class_tile_component_a932b5d6a5556f7737cec2960379b218d}} 
+\index{TileComponent@{TileComponent}!Render@{Render}}
+\index{Render@{Render}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Tile\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren,  }\item[{\mbox{\hyperlink{struct_vec2_d}{Vec2D}}}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+handling the rendering of the tile component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & \\
+\hline
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Component}}.
+
+\mbox{\Hypertarget{class_tile_component_a2b2aef7425c3eed1a928475e3f8206e8}\label{class_tile_component_a2b2aef7425c3eed1a928475e3f8206e8}} 
+\index{TileComponent@{TileComponent}!SetGridSize@{SetGridSize}}
+\index{SetGridSize@{SetGridSize}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{SetGridSize()}{SetGridSize()}}
+{\footnotesize\ttfamily void Tile\+Component\+::\+Set\+Grid\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Grid Size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_component_ab584fceecc7483f42584c83c9f0ad810}\label{class_tile_component_ab584fceecc7483f42584c83c9f0ad810}} 
+\index{TileComponent@{TileComponent}!Update@{Update}}
+\index{Update@{Update}!TileComponent@{TileComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Tile\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+handling the updating of the tile component 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buildin/Tile\+Component.\+hpp\item 
+src/buildin/Tile\+Component.\+cpp\end{DoxyCompactItemize}

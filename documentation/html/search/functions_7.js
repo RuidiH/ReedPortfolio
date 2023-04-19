@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['getaddress_0',['GetAddress',['../class_camera_component.html#aadc2f656efdfe1dc29f2a7425d9a4208',1,'CameraComponent::GetAddress()'],['../class_controller_component.html#a0e95781c94ec439ce7832377c400a182',1,'ControllerComponent::GetAddress()'],['../class_physics_component.html#a9f4283e3107d84f00f3de447a2202ab6',1,'PhysicsComponent::GetAddress()'],['../class_sprite_component.html#a925ffd08b564f9835121e907a145d36e',1,'SpriteComponent::GetAddress()'],['../class_tile_component.html#aaa4c823d00f55bfe2860912e71878d29',1,'TileComponent::GetAddress()'],['../class_transform_component.html#ab815e450551252ecfd87c8818d7fa6e7',1,'TransformComponent::GetAddress()'],['../class_game_object.html#ae885d43da0a344bc5fb097be93408338',1,'GameObject::GetAddress()'],['../class_layer_manager.html#a2ddbcd194de9ffaea9234e5d04ac0b5f',1,'LayerManager::GetAddress()']]],
+  ['getbodies_1',['GetBodies',['../class_physics_component.html#ae602a0bd552b3e207138929e60ed17ac',1,'PhysicsComponent']]],
+  ['getcomponent_2',['GetComponent',['../class_game_object.html#afc7d6a0479b7e6ea4eced8ccd3ddfbc6',1,'GameObject']]],
+  ['getcomponentsize_3',['GetComponentSize',['../class_game_object.html#abc2483b09c818335fc048fa1e73df806',1,'GameObject']]],
+  ['getdesth_4',['GetDestH',['../class_sprite_component.html#acfedcd07dc33d31e33dfe6b2eac8b24e',1,'SpriteComponent']]],
+  ['getdestw_5',['GetDestW',['../class_sprite_component.html#a94e48ec177ffbbb67b69bbe71c61bd9a',1,'SpriteComponent']]],
+  ['getdestx_6',['GetDestX',['../class_sprite_component.html#a9a6e366065cfd520d85e4fe10bbe3e6b',1,'SpriteComponent']]],
+  ['getdesty_7',['GetDestY',['../class_sprite_component.html#a3f5b6f36db4a4b063d4c536253740a02',1,'SpriteComponent']]],
+  ['getid_8',['GetID',['../classmaster_1_1_game_object_t_k.html#a55bc3956bfeacc572a0900d1cbddad64',1,'master::GameObjectTK']]],
+  ['getrenderer_9',['GetRenderer',['../class_s_d_l_graphics_engine_renderer.html#a93e5f435d003933cf3304e44c5aa7324',1,'SDLGraphicsEngineRenderer']]],
+  ['getrendererref_10',['GetRendererRef',['../class_engine.html#a44eaac757fe97f5c0c387c066ef98bfc',1,'Engine']]],
+  ['getresource_11',['GetResource',['../class_resource_manager.html#a02db32275477bd91425cb5dddedd935f',1,'ResourceManager']]],
+  ['gettextureresource_12',['GetTextureResource',['../class_resource_manager.html#aadf5713591311c1952c7d0ffa51c9963',1,'ResourceManager']]],
+  ['getwindow_13',['GetWindow',['../class_s_d_l_graphics_engine_renderer.html#abd24deb029577fc237b47a3cbf30c121',1,'SDLGraphicsEngineRenderer']]],
+  ['getworld_14',['GetWorld',['../class_engine.html#a48890d852ea28bb96f9f7164de145708',1,'Engine::GetWorld()'],['../class_physics2_d.html#a78a8fb9f32b8a691d9cb691f1e6c96ce',1,'Physics2D::GetWorld()']]],
+  ['getx_15',['GetX',['../class_transform_component.html#a96ab446331fd0732c258b099b49c9714',1,'TransformComponent']]],
+  ['gety_16',['GetY',['../class_transform_component.html#a7f582f8cef62c002187c4d46d28fceac',1,'TransformComponent']]]
+];

@@ -1,0 +1,72 @@
+\hypertarget{_controller_component_8hpp_source}{}\doxysection{Controller\+Component.\+hpp}
+\label{_controller_component_8hpp_source}\index{include/buildin/ControllerComponent.hpp@{include/buildin/ControllerComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLLERCOMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLLERCOMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}TinyMath.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}ContactListener.hpp"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ std::function<bool()>\ condition;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ std::function<void()>\ action;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ std::pair<action,\ std::vector<condition>>\ actionPair;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_controller_component}{ControllerComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{class_controller_component}{ControllerComponent}}();}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{class_controller_component}{\string~ControllerComponent}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_acbed21ded0b7208f17d90c49858fe2a7}{Act}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_ab5d446d840555d0a6fd2b2dce2f11cbb}{ActionBind}}(std::string\ name,\ action\ action,\ std::vector<condition>\ conditions);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{class_controller_component}{ControllerComponent}}\ *\mbox{\hyperlink{class_controller_component_a0e95781c94ec439ce7832377c400a182}{GetAddress}}()}
+\DoxyCodeLine{00047\ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00049\ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{comment}{//\ Movement}}
+\DoxyCodeLine{00052\ \ \ \textcolor{keywordtype}{bool}\ Foo()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_ab07abd20bad7bd9ae266957e7607be15}{MoveLeft}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_a7a08e11405ae7e7a66002e6f1bd61b27}{MoveRight}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_controller_component_aaecfdaaff96f18d79f179e4716b4b21a}{IsGrounded}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_ac7688aeb8592e7a8a6a21636f3dcd610}{Jump}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_ad83caa4f5f7ac3ffdd36ed898436b28b}{SetJumpForce}}(\textcolor{keywordtype}{float}\ jF)\ \{\ jumpForce\ =\ jF;\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_af624d270ed1a7015a1818c6bbed08b09}{SetSpeed}}(\textcolor{keywordtype}{float}\ spd)\ \{\ speed\ =\ spd;\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_a28e8bd42b7f085939b2bdf10b46819b4}{Stop}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_a3d097b6ecdf39ae8eb75ffb546a00ac1}{Update}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_controller_component_ab076eb29eeb39aa88b90d040fc4ad50c}{Input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00100\ \ \ std::unordered\_map<std::string,\ actionPair>\ mActionBindings;}
+\DoxyCodeLine{00101\ \ \ \textcolor{keywordtype}{float}\ jumpForce\ =\ 50.0f;}
+\DoxyCodeLine{00102\ \ \ \textcolor{keywordtype}{float}\ speed\ =\ 30.0f;}
+\DoxyCodeLine{00103\ \ \ \mbox{\hyperlink{class_contact_listener}{ContactListener}}\ *ongroundListener;}
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

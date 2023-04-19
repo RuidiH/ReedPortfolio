@@ -1,0 +1,40 @@
+\hypertarget{_component_8hpp_source}{}\doxysection{Component.\+hpp}
+\label{_component_8hpp_source}\index{include/core/Component.hpp@{include/core/Component.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}TinyMath.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}GameObject.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_object}{GameObject}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_component}{\string~Component}}();}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_component_aaf2ce6dc5752072492f790ad4c7955bb}{Update}}()\{\};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_component_ae675090004914ecc10461b3251381832}{FixedUpdate}}()\{\};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_component_a1020899c4cee8796a2bb29d960f05daf}{LateUpdate}}()\{\};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_component_a3409f92941b732f8c061324cb4341a41}{Render}}(SDL\_Renderer\ *renderer,\ \mbox{\hyperlink{struct_vec2_d}{Vec2D}}\ vec)\{\};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_component_abba211bfa6a773487aa8d354a8138d9d}{Input}}()\{\};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{class_component}{Component}}();}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}\ *gameObject;}
+\DoxyCodeLine{00050\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_object}{GameObject}};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

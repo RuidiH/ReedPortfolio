@@ -1,0 +1,153 @@
+\hypertarget{class_audio_job}{}\doxysection{Audio\+Job Class Reference}
+\label{class_audio_job}\index{AudioJob@{AudioJob}}
+
+
+An abstract \mbox{\hyperlink{class_audio_job}{Audio\+Job}} class wraps information needed to play an audio. This class is managed by \mbox{\hyperlink{class_audio_system}{Audio\+System}}.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+Job.\+hpp$>$}
+
+Inheritance diagram for Audio\+Job\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_audio_job}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_job_aa141ae14f39ca74bf53e418bffd17d87}\label{class_audio_job_aa141ae14f39ca74bf53e418bffd17d87}} 
+{\bfseries Audio\+Job} (std\+::string p)
+\item 
+virtual bool \mbox{\hyperlink{class_audio_job_af1dd27df9c5dc671b4e433bd10582df1}{Load\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Load the audio with the path given during construction. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_audio_job_a3fce25d340d3c9197b3728d0cce417a0}{Play\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Play the audio wrapped by this job. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_audio_job_a827521ef2d86cd2b75f63eda54dca657}{Pause\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Pause the audio wrapped by this job. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_audio_job_a6c45cd8b965f2533f644b23dadc84c94}{Resume\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Resume the audio wrapped by this job. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_audio_job_a452761e065cb58b0705c44c6be0b3306}{Terminate\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Terminate the audio wrapped by this job. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_job_ae77de9efe3cef5c93b2482be8a7f26d5}\label{class_audio_job_ae77de9efe3cef5c93b2482be8a7f26d5}} 
+std\+::string {\bfseries path}
+\item 
+\mbox{\Hypertarget{class_audio_job_aa559eda94330424bb8b5d6f8b92e216c}\label{class_audio_job_aa559eda94330424bb8b5d6f8b92e216c}} 
+std\+::size\+\_\+t {\bfseries uid}
+\item 
+\mbox{\Hypertarget{class_audio_job_a9a78a74c14eb4c01875857295764d608}\label{class_audio_job_a9a78a74c14eb4c01875857295764d608}} 
+int {\bfseries playing\+Channel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract \mbox{\hyperlink{class_audio_job}{Audio\+Job}} class wraps information needed to play an audio. This class is managed by \mbox{\hyperlink{class_audio_system}{Audio\+System}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_audio_job_af1dd27df9c5dc671b4e433bd10582df1}\label{class_audio_job_af1dd27df9c5dc671b4e433bd10582df1}} 
+\index{AudioJob@{AudioJob}!LoadMedia@{LoadMedia}}
+\index{LoadMedia@{LoadMedia}!AudioJob@{AudioJob}}
+\doxysubsubsection{\texorpdfstring{LoadMedia()}{LoadMedia()}}
+{\footnotesize\ttfamily virtual bool Audio\+Job\+::\+Load\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Load the audio with the path given during construction. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_music_audio_job_a6cc72e1dbd85ce0c47946b37b1f159d7}{Music\+Audio\+Job}}, and \mbox{\hyperlink{class_s_f_x_audio_job_a9984eb22a6b93ea97121d16ea0b8a039}{SFXAudio\+Job}}.
+
+\mbox{\Hypertarget{class_audio_job_a827521ef2d86cd2b75f63eda54dca657}\label{class_audio_job_a827521ef2d86cd2b75f63eda54dca657}} 
+\index{AudioJob@{AudioJob}!PauseMedia@{PauseMedia}}
+\index{PauseMedia@{PauseMedia}!AudioJob@{AudioJob}}
+\doxysubsubsection{\texorpdfstring{PauseMedia()}{PauseMedia()}}
+{\footnotesize\ttfamily virtual void Audio\+Job\+::\+Pause\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pause the audio wrapped by this job. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_music_audio_job_ab3094fa5e80e0d28c0a38dc4e9d8fdf2}{Music\+Audio\+Job}}, and \mbox{\hyperlink{class_s_f_x_audio_job_a8f3503c1d48598f9dc1df1735b05aaff}{SFXAudio\+Job}}.
+
+\mbox{\Hypertarget{class_audio_job_a3fce25d340d3c9197b3728d0cce417a0}\label{class_audio_job_a3fce25d340d3c9197b3728d0cce417a0}} 
+\index{AudioJob@{AudioJob}!PlayMedia@{PlayMedia}}
+\index{PlayMedia@{PlayMedia}!AudioJob@{AudioJob}}
+\doxysubsubsection{\texorpdfstring{PlayMedia()}{PlayMedia()}}
+{\footnotesize\ttfamily virtual bool Audio\+Job\+::\+Play\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play the audio wrapped by this job. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_music_audio_job_a5393725b20fa37618b8cae3467d65b34}{Music\+Audio\+Job}}, and \mbox{\hyperlink{class_s_f_x_audio_job_a231751de872e02e81703353b3eb290a9}{SFXAudio\+Job}}.
+
+\mbox{\Hypertarget{class_audio_job_a6c45cd8b965f2533f644b23dadc84c94}\label{class_audio_job_a6c45cd8b965f2533f644b23dadc84c94}} 
+\index{AudioJob@{AudioJob}!ResumeMedia@{ResumeMedia}}
+\index{ResumeMedia@{ResumeMedia}!AudioJob@{AudioJob}}
+\doxysubsubsection{\texorpdfstring{ResumeMedia()}{ResumeMedia()}}
+{\footnotesize\ttfamily virtual void Audio\+Job\+::\+Resume\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Resume the audio wrapped by this job. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_music_audio_job_a2ea868b635d300f21ac0e690d5d8fa2d}{Music\+Audio\+Job}}, and \mbox{\hyperlink{class_s_f_x_audio_job_a45dc4d1356adca58138a51d18b6dc6a3}{SFXAudio\+Job}}.
+
+\mbox{\Hypertarget{class_audio_job_a452761e065cb58b0705c44c6be0b3306}\label{class_audio_job_a452761e065cb58b0705c44c6be0b3306}} 
+\index{AudioJob@{AudioJob}!TerminateMedia@{TerminateMedia}}
+\index{TerminateMedia@{TerminateMedia}!AudioJob@{AudioJob}}
+\doxysubsubsection{\texorpdfstring{TerminateMedia()}{TerminateMedia()}}
+{\footnotesize\ttfamily virtual void Audio\+Job\+::\+Terminate\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Terminate the audio wrapped by this job. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_music_audio_job_a8ab26a9d850b5b29045b64648134a172}{Music\+Audio\+Job}}, and \mbox{\hyperlink{class_s_f_x_audio_job_a1ca2043df5fb78146df175303f8db115}{SFXAudio\+Job}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/core/audio/Audio\+Job.\+hpp\end{DoxyCompactItemize}
